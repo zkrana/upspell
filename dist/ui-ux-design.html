@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title> UPSPELL </title>
+</head>
+<body>
+    <main>
+        <!-- Header -->
+        <header class="relative">
+            <div class="container">
+                <div class="desk-menu flex justify-between items-center pt-[22.67px] tab:pt-[33px]">
+                    <!-- Logo -->
+                    <a href="index.html">
+                        <img src="assets/images/logo.png" alt="Logo">
+                    </a>
+                    <!-- Desktop Menubar -->
+                    <div class="menu-wrapper flex gap-[87px] items-center">
+                        <a href="#" class="text-xl uppercase border-t border-b border-primarycolor transition-colors hover:text-primarycolor hover:border-white">
+                            WORK WITH US
+                        </a>
+                        <!-- Menu Div -->
+                        <div id="menu-nav" class="menu-icon cursor-pointer relative w-[47px] h-[34px]">
+                            <span class="line-up absolute top-0 w-full h-[2px] bg-white rounded-full"></span>
+                            <span class="line-middle absolute transform top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] w-[80%] h-[2px] bg-white rounded-full"></span>
+                            <span class="line-down absolute bottom-0 w-full h-[2px] bg-white rounded-full"></span>
+                        </div>
+                    </div>
+                </div>   
+            </div>
+            
+            <!-- Navigation Menu -->
+            <div class="main-nav-wrapper hidden fixed left-0 top-0 right-0 bottom-0 w-full h-screen bg-black z-10 pt-[16px] tab:pt-[33px] pl-[20px] tab:pl-[83px] xl:pl-[133px] pr-[21px] tab:pr-[51px] transition-all">
+                <div class="menu-header w-full flex justify-between">
+                    <img src="assets/images/logo.png" alt="Logo">
+                    <span id="closeMenu">
+                        <i class="fa-solid fa-xmark text-primary-text-color text-[28px] cursor-pointer"></i>
+                    </span>
+                </div>
+                <ul class=" max-w-[400px] mt-[21px] tab:mt-[51px] text-[14px] tab:text-[24px] leading-[21px] tab:leading-[32px]">
+                    <li class="pb-[8px] tab:pb-[12px]"> <a href="#" class="transition-colors hover:text-primarycolor"> Home </a> </li>
+                    <li class="pb-[8px] tab:pb-[12px]"> <a href="#" class="transition-colors hover:text-primarycolor"> About Us </a> </li>
+                    <li class="pb-[8px] tab:pb-[12px]"> 
+                        <a href="#" class="flex items-center gap-[12px] transition-colors hover:text-primarycolor" id="sub-menu-trigger"> 
+                            <span> Services </span> <span class="mt-1 transition-transform"> 
+                                <i class="fa-solid fa-angle-down text-primarycolor"></i> 
+                            </span> 
+                        </a> 
+                        <div class="sub-menu hidden pl-[20px] tab:pl-[34px]">
+                            <ul class="mt-[8px] tab:mt-[20px]">
+                                <li class="pb-[5px] tab:pb-[12px]"> <a href="#" class="transition-colors hover:text-primarycolor"> Digital Marketing </a> </li>
+                                <li class="pb-[5px] tab:pb-[12px]"> <a href="#" class="transition-colors hover:text-primarycolor"> Web Design and Development </a> </li>
+                                <li class="pb-[5px] tab:pb-[12px]"> <a href="#" class="transition-colors hover:text-primarycolor"> Social Media Marketing </a> </li>
+                                <li class="pb-[5px] tab:pb-[12px]"> <a href="#" class="transition-colors hover:text-primarycolor"> E-Commerce Development </a> </li>
+                                <li class="pb-[5px] tab:pb-[12px]"> <a href="#" class="transition-colors hover:text-primarycolor"> SEO </a> </li>
+                                <li class="pb-[5px] tab:pb-[12px]"> <a href="#" class="transition-colors hover:text-primarycolor"> UI/UX Design </a> </li>
+                                <li class="pb-[5px] tab:pb-[12px]"> <a href="#" class="transition-colors hover:text-primarycolor"> Graphic Design </a> </li>
+                                <li class="pb-[5px] tab:pb-[12px]"> <a href="#" class="transition-colors hover:text-primarycolor"> Online Reputation Management </a> </li>
+                                <li class="pb-[5px] tab:pb-[12px]"> <a href="#" class="transition-colors hover:text-primarycolor"> PPC Management </a> </li>
+                                <li class="pb-[5px] tab:pb-[12px]"> <a href="#" class="transition-colors hover:text-primarycolor"> Social Media Manager </a> </li>
+                                <li class="pb-[5px] tab:pb-[12px]"> <a href="#" class="transition-colors hover:text-primarycolor"> Content Writing </a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="pb-[8px] tab:pb-[12px]"> <a href="#" class="transition-colors hover:text-primarycolor"> Life at SHUVO IT </a> </li>
+                    <li class="pb-[8px] tab:pb-[12px]"> <a href="#" class="transition-colors hover:text-primarycolor"> Career </a> </li>
+                    <li class="pb-[8px] tab:pb-[12px]"> <a href="#" class="transition-colors hover:text-primarycolor"> Our Team </a> </li>
+                    <li class="pb-[8px] tab:pb-[12px]"> <a href="#" class="transition-colors hover:text-primarycolor"> Contact Us </a> </li>
+                </ul>
+            </div>
+        </header>
+        <!-- Header End -->
+
+
+        <!-- Hero Section -->
+        <div class="web-dev-hero hero-ui-banner pt-[205px]">
+            <div class="container relative">
+                <h1 class="smm-hero-title">
+                    <div class="relative flex">
+                        <span class="future-of text-[120px] leading-[191px]"> FUTURE OF </span>
+                        <div class="future-of-dots flex flex-col gap-[5.2px] mt-[48px] ml-[40px]">
+                            <div class="dot-1 w-[25px] h-[25px] bg-[#182B58]"></div>
+                            <div class="dot-2 w-[25px] h-[25px] bg-[#407BFF]"></div>
+                            <div class="dot-3 w-[25px] h-[25px] bg-[#0c1113]"></div>
+                        </div>
+                    </div>
+                    <span class="ui-ux-title font-bold flex items-center text-[175px] leading-[195px]"> 
+                        UI/UX 
+                        <span> <svg xmlns="http://www.w3.org/2000/svg" width="68.862" height="33.959" viewBox="0 0 68.862 33.959">
+                            <g id="Group_84" data-name="Group 84" transform="translate(-182.525 -236.861)">
+                            <path id="Path_429" data-name="Path 429" d="M60.271,0H0" transform="translate(186.821 239.813)" fill="none" stroke="rgba(255,255,255,0.13)" stroke-linecap="round" stroke-width="2"/>
+                            <path id="Path_427" data-name="Path 427" d="M247.63,267.136a31.991,31.991,0,0,0-5.437-16.427c-4.1-5.957-11.838-11.578-25.858-11.578-31.295,0-31.295,28-31.295,28" transform="translate(0.621 0.546)" fill="none" stroke="rgba(255,255,255,0.13)" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                            <circle id="Ellipse_181" data-name="Ellipse 181" cx="2.637" cy="2.637" r="2.637" transform="translate(245.614 265.046)" fill="#4e4e4e" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+                            <path id="Path_428" data-name="Path 428" d="M183.025,261.157a2.636,2.636,0,1,1,2.636,2.636A2.636,2.636,0,0,1,183.025,261.157Z" transform="translate(0 6.525)" fill="#4e4e4e" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+                            <g id="Group_83" data-name="Group 83" transform="translate(183.343 237.361)">
+                                <rect id="Rectangle_220" data-name="Rectangle 220" width="4.636" height="4.636" transform="translate(67.225 4.636) rotate(180)" fill="#e1e1e1" stroke="#616161" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+                                <rect id="Rectangle_221" data-name="Rectangle 221" width="4.636" height="4.636" transform="translate(35.931 4.636) rotate(180)" fill="#e1e1e1" stroke="#616161" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+                                <rect id="Rectangle_222" data-name="Rectangle 222" width="4.636" height="4.636" transform="translate(4.636 4.636) rotate(180)" fill="#e1e1e1" stroke="#616161" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+                            </g>
+                            </g>
+                        </svg> 
+                        </span> 
+                          DESIGN 
+                    </span>
+                </h1>
+                <p class="wd-hero-sub-desc text-[30px] leading-[20px] mt-[15px]">
+                    Explore the Boundless Horizons of UI/UX Design
+                </p>
+                <a href="#" 
+                    class="wd-hero-btn block text-black text-[30px] leading-[60px] font-medium py-[12px] bg-primarycolor rounded-[15px] w-[311px] text-center uppercase mt-[76px]"> 
+                    Let's Talk 
+                </a>
+
+                <!-- Hover Element -->
+                <img class="ui-ux-art-tools absolute right-[137px] -top-[80px]" src="assets/images/ui-ux/art-tools.svg" alt="Art tools">
+                <img class="ui-ux-hover-banner hidden" src="assets/images/ui-ux/hero-ui-ux-icon.svg" alt="Hero Hover Banner">
+                
+            </div>
+        </div>
+        <!-- Hero Section End -->
+
+        <!-- Marquee Section -->
+        <section class="marquee mt-[151px]">
+            <div class="container">
+                <div class="swiper-container swiper--bottom">
+                    <ul class="swiper-wrapper">
+                        <li class="swiper-slide">
+                            <span class="text-[110px] leading-[120px] text-[#171717] font-[900]"> - </span>
+                        </li>
+                        <li class="swiper-slide">
+                            <span class="text-[110px] leading-[120px] text-[#171717] font-[900]"> Explore  </span>
+                        </li>
+                        <li class="swiper-slide">
+                            <span class="text-[110px] leading-[120px] text-[#171717] font-[900]"> - </span>
+                        </li>
+                        <li class="swiper-slide">
+                            <span class="text-[110px] leading-[120px] text-[#171717] font-[900]"> Research </span>
+                        </li>
+                        <li class="swiper-slide">
+                            <span class="text-[110px] leading-[120px] text-[#171717] font-[900]"> - </span>
+                        </li>
+                        <li class="swiper-slide">
+                            <span class="text-[110px] leading-[120px] text-[#171717] font-[900]"> Analysis</span>
+                        </li>
+                        <li class="swiper-slide">
+                            <span class="text-[110px] leading-[120px] text-[#171717] font-[900]"> - </span>
+                        </li>
+                        <li class="swiper-slide">
+                            <span class="text-[110px] leading-[120px] text-[#171717] font-[900]"> Design </span>
+                        </li>
+                        <li class="swiper-slide">
+                            <span class="text-[110px] leading-[120px] text-[#171717] font-[900]"> - </span>
+                        </li>
+                        <li class="swiper-slide">
+                            <span class="text-[110px] leading-[120px] text-[#171717] font-[900]"> Testing </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- Marquee Section End -->
+
+
+        <!-- Work Process -->
+        <section class="work-process com-sec-gap mt-[108px]">
+            <div class="container">
+                <div class="page-s-header-content flex justify-between items-center gap-11">
+                    <h2 class="text-[70px] leading-[120px] font-semibold uppercase w-full relative after:content-[''] after:absolute after:bottom-[25px] after:ml-[15px] after:w-[45%] after:h-[1px] after:bg-primarycolor after:top-[]"> WORK <span class="text-primarycolor"> PROCESS </span> </h2>
+                    <p class="max-w-[856px]">
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt.
+                    </p>
+                </div>
+
+                <!-- Work Process Wrapper -->
+                <div class="work-process-wrapper flex justify-between items-stretch flex-wrap mt-[96px] h-[858px] px-[208px] pt-[150px] pb-[124px]">
+                    <div class="tb1">
+                        <div class="work-process-item b1">
+                            <div class="work-process-icon w-[107px] h-[104px] mx-auto rounded-[10px] bg-primarycolor flex justify-center items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="51.388" height="48" viewBox="0 0 51.388 48">
+                                    <g id="Group_96" data-name="Group 96" transform="translate(-74 -86)">
+                                      <path id="Path_445" data-name="Path 445" d="M111.841,120.2a1.482,1.482,0,1,0,1.482,1.482A1.482,1.482,0,0,0,111.841,120.2Zm-8.259,0a1.482,1.482,0,1,0,1.482,1.482h0A1.482,1.482,0,0,0,103.582,120.2Z" transform="translate(-24.133 -29.372)" fill="#151515"/>
+                                      <path id="Path_446" data-name="Path 446" d="M120.856,86H78.532A4.534,4.534,0,0,0,74,90.518v8.047h51.388V90.518A4.534,4.534,0,0,0,120.856,86ZM79.449,96.052a3.741,3.741,0,1,1,3.741-3.741h0A3.748,3.748,0,0,1,79.449,96.052Zm8.259,0a3.741,3.741,0,1,1,3.741-3.741h0a3.748,3.748,0,0,1-3.741,3.741Zm8.245,0a3.741,3.741,0,1,1,3.741-3.741h0A3.739,3.739,0,0,1,95.953,96.052ZM74,129.482A4.534,4.534,0,0,0,78.532,134h42.325a4.534,4.534,0,0,0,4.532-4.518V100.824H74Zm31.6-17.718a1.124,1.124,0,0,1,1.412-1.751l7.624,6.1a1.111,1.111,0,0,1,.169,1.581.958.958,0,0,1-.169.169l-7.624,6.1a1.124,1.124,0,0,1-1.412-1.751h0L112.118,117Zm-10,15.6,5.379-21.176a1.128,1.128,0,1,1,2.188.551h0l-5.379,21.176a1.133,1.133,0,1,1-2.2-.536c.014.014.014,0,.014-.014ZM84.772,116.1,92.4,110a1.124,1.124,0,0,1,1.412,1.751l-6.522,5.209,6.522,5.209A1.124,1.124,0,0,1,92.4,123.92l-7.624-6.1a1.111,1.111,0,0,1-.169-1.581C84.645,116.212,84.7,116.155,84.772,116.1Z" fill="#151515"/>
+                                      <path id="Path_447" data-name="Path 447" d="M220.482,120.2a1.482,1.482,0,1,0,1.482,1.482A1.482,1.482,0,0,0,220.482,120.2Z" transform="translate(-124.529 -29.372)" fill="#151515"/>
+                                    </g>
+                                </svg>
+                            </div>
+                            <span class="work-process-t text-[24px] leading-[30px] text-[#707070] capitalize block text-center mt-[24px]"> Explore </span>
+                        </div>    
+                    </div>
+
+                    <div class="tb1">
+                        <div class="work-process-item b2 mx-auto">
+                            <div class="work-process-icon w-[107px] h-[104px] mx-auto rounded-[10px] bg-primarycolor flex justify-center items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="51.388" height="48" viewBox="0 0 51.388 48">
+                                    <g id="Group_96" data-name="Group 96" transform="translate(-74 -86)">
+                                      <path id="Path_445" data-name="Path 445" d="M111.841,120.2a1.482,1.482,0,1,0,1.482,1.482A1.482,1.482,0,0,0,111.841,120.2Zm-8.259,0a1.482,1.482,0,1,0,1.482,1.482h0A1.482,1.482,0,0,0,103.582,120.2Z" transform="translate(-24.133 -29.372)" fill="#151515"/>
+                                      <path id="Path_446" data-name="Path 446" d="M120.856,86H78.532A4.534,4.534,0,0,0,74,90.518v8.047h51.388V90.518A4.534,4.534,0,0,0,120.856,86ZM79.449,96.052a3.741,3.741,0,1,1,3.741-3.741h0A3.748,3.748,0,0,1,79.449,96.052Zm8.259,0a3.741,3.741,0,1,1,3.741-3.741h0a3.748,3.748,0,0,1-3.741,3.741Zm8.245,0a3.741,3.741,0,1,1,3.741-3.741h0A3.739,3.739,0,0,1,95.953,96.052ZM74,129.482A4.534,4.534,0,0,0,78.532,134h42.325a4.534,4.534,0,0,0,4.532-4.518V100.824H74Zm31.6-17.718a1.124,1.124,0,0,1,1.412-1.751l7.624,6.1a1.111,1.111,0,0,1,.169,1.581.958.958,0,0,1-.169.169l-7.624,6.1a1.124,1.124,0,0,1-1.412-1.751h0L112.118,117Zm-10,15.6,5.379-21.176a1.128,1.128,0,1,1,2.188.551h0l-5.379,21.176a1.133,1.133,0,1,1-2.2-.536c.014.014.014,0,.014-.014ZM84.772,116.1,92.4,110a1.124,1.124,0,0,1,1.412,1.751l-6.522,5.209,6.522,5.209A1.124,1.124,0,0,1,92.4,123.92l-7.624-6.1a1.111,1.111,0,0,1-.169-1.581C84.645,116.212,84.7,116.155,84.772,116.1Z" fill="#151515"/>
+                                      <path id="Path_447" data-name="Path 447" d="M220.482,120.2a1.482,1.482,0,1,0,1.482,1.482A1.482,1.482,0,0,0,220.482,120.2Z" transform="translate(-124.529 -29.372)" fill="#151515"/>
+                                    </g>
+                                </svg>
+                            </div>
+                            <span class="work-process-t text-[24px] leading-[30px] text-[#707070] capitalize block text-center mt-[24px]"> Research </span>
+                        </div>    
+                    </div>
+
+                    <div class="tb1">
+                        <div class="work-process-item b3 float-right">
+                            <div class="work-process-icon w-[107px] h-[104px] mx-auto rounded-[10px] bg-primarycolor flex justify-center items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="51.388" height="48" viewBox="0 0 51.388 48">
+                                    <g id="Group_96" data-name="Group 96" transform="translate(-74 -86)">
+                                      <path id="Path_445" data-name="Path 445" d="M111.841,120.2a1.482,1.482,0,1,0,1.482,1.482A1.482,1.482,0,0,0,111.841,120.2Zm-8.259,0a1.482,1.482,0,1,0,1.482,1.482h0A1.482,1.482,0,0,0,103.582,120.2Z" transform="translate(-24.133 -29.372)" fill="#151515"/>
+                                      <path id="Path_446" data-name="Path 446" d="M120.856,86H78.532A4.534,4.534,0,0,0,74,90.518v8.047h51.388V90.518A4.534,4.534,0,0,0,120.856,86ZM79.449,96.052a3.741,3.741,0,1,1,3.741-3.741h0A3.748,3.748,0,0,1,79.449,96.052Zm8.259,0a3.741,3.741,0,1,1,3.741-3.741h0a3.748,3.748,0,0,1-3.741,3.741Zm8.245,0a3.741,3.741,0,1,1,3.741-3.741h0A3.739,3.739,0,0,1,95.953,96.052ZM74,129.482A4.534,4.534,0,0,0,78.532,134h42.325a4.534,4.534,0,0,0,4.532-4.518V100.824H74Zm31.6-17.718a1.124,1.124,0,0,1,1.412-1.751l7.624,6.1a1.111,1.111,0,0,1,.169,1.581.958.958,0,0,1-.169.169l-7.624,6.1a1.124,1.124,0,0,1-1.412-1.751h0L112.118,117Zm-10,15.6,5.379-21.176a1.128,1.128,0,1,1,2.188.551h0l-5.379,21.176a1.133,1.133,0,1,1-2.2-.536c.014.014.014,0,.014-.014ZM84.772,116.1,92.4,110a1.124,1.124,0,0,1,1.412,1.751l-6.522,5.209,6.522,5.209A1.124,1.124,0,0,1,92.4,123.92l-7.624-6.1a1.111,1.111,0,0,1-.169-1.581C84.645,116.212,84.7,116.155,84.772,116.1Z" fill="#151515"/>
+                                      <path id="Path_447" data-name="Path 447" d="M220.482,120.2a1.482,1.482,0,1,0,1.482,1.482A1.482,1.482,0,0,0,220.482,120.2Z" transform="translate(-124.529 -29.372)" fill="#151515"/>
+                                    </g>
+                                </svg>
+                            </div>
+                            <span class="work-process-t text-[24px] leading-[30px] text-[#707070] capitalize block text-center mt-[24px]"> Analysis </span>
+                        </div>    
+                    </div>
+
+                    <div class="tb1">
+                        <div class="work-process-item b1 b4">
+                            <div class="work-process-icon w-[107px] h-[104px] mx-auto rounded-[10px] bg-primarycolor flex justify-center items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="51.388" height="48" viewBox="0 0 51.388 48">
+                                    <g id="Group_96" data-name="Group 96" transform="translate(-74 -86)">
+                                      <path id="Path_445" data-name="Path 445" d="M111.841,120.2a1.482,1.482,0,1,0,1.482,1.482A1.482,1.482,0,0,0,111.841,120.2Zm-8.259,0a1.482,1.482,0,1,0,1.482,1.482h0A1.482,1.482,0,0,0,103.582,120.2Z" transform="translate(-24.133 -29.372)" fill="#151515"/>
+                                      <path id="Path_446" data-name="Path 446" d="M120.856,86H78.532A4.534,4.534,0,0,0,74,90.518v8.047h51.388V90.518A4.534,4.534,0,0,0,120.856,86ZM79.449,96.052a3.741,3.741,0,1,1,3.741-3.741h0A3.748,3.748,0,0,1,79.449,96.052Zm8.259,0a3.741,3.741,0,1,1,3.741-3.741h0a3.748,3.748,0,0,1-3.741,3.741Zm8.245,0a3.741,3.741,0,1,1,3.741-3.741h0A3.739,3.739,0,0,1,95.953,96.052ZM74,129.482A4.534,4.534,0,0,0,78.532,134h42.325a4.534,4.534,0,0,0,4.532-4.518V100.824H74Zm31.6-17.718a1.124,1.124,0,0,1,1.412-1.751l7.624,6.1a1.111,1.111,0,0,1,.169,1.581.958.958,0,0,1-.169.169l-7.624,6.1a1.124,1.124,0,0,1-1.412-1.751h0L112.118,117Zm-10,15.6,5.379-21.176a1.128,1.128,0,1,1,2.188.551h0l-5.379,21.176a1.133,1.133,0,1,1-2.2-.536c.014.014.014,0,.014-.014ZM84.772,116.1,92.4,110a1.124,1.124,0,0,1,1.412,1.751l-6.522,5.209,6.522,5.209A1.124,1.124,0,0,1,92.4,123.92l-7.624-6.1a1.111,1.111,0,0,1-.169-1.581C84.645,116.212,84.7,116.155,84.772,116.1Z" fill="#151515"/>
+                                      <path id="Path_447" data-name="Path 447" d="M220.482,120.2a1.482,1.482,0,1,0,1.482,1.482A1.482,1.482,0,0,0,220.482,120.2Z" transform="translate(-124.529 -29.372)" fill="#151515"/>
+                                    </g>
+                                </svg>
+                            </div>
+                            <span class="work-process-t text-[24px] leading-[30px] text-[#707070] capitalize block text-center mt-[24px]"> Design </span>
+                        </div>    
+                    </div>
+
+                    <div class="tb1">
+                        <div class="work-process-item b2 b5 mx-auto">
+                            <div class="work-process-icon w-[107px] h-[104px] mx-auto rounded-[10px] bg-primarycolor flex justify-center items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="51.388" height="48" viewBox="0 0 51.388 48">
+                                    <g id="Group_96" data-name="Group 96" transform="translate(-74 -86)">
+                                    <path id="Path_445" data-name="Path 445" d="M111.841,120.2a1.482,1.482,0,1,0,1.482,1.482A1.482,1.482,0,0,0,111.841,120.2Zm-8.259,0a1.482,1.482,0,1,0,1.482,1.482h0A1.482,1.482,0,0,0,103.582,120.2Z" transform="translate(-24.133 -29.372)" fill="#151515"/>
+                                    <path id="Path_446" data-name="Path 446" d="M120.856,86H78.532A4.534,4.534,0,0,0,74,90.518v8.047h51.388V90.518A4.534,4.534,0,0,0,120.856,86ZM79.449,96.052a3.741,3.741,0,1,1,3.741-3.741h0A3.748,3.748,0,0,1,79.449,96.052Zm8.259,0a3.741,3.741,0,1,1,3.741-3.741h0a3.748,3.748,0,0,1-3.741,3.741Zm8.245,0a3.741,3.741,0,1,1,3.741-3.741h0A3.739,3.739,0,0,1,95.953,96.052ZM74,129.482A4.534,4.534,0,0,0,78.532,134h42.325a4.534,4.534,0,0,0,4.532-4.518V100.824H74Zm31.6-17.718a1.124,1.124,0,0,1,1.412-1.751l7.624,6.1a1.111,1.111,0,0,1,.169,1.581.958.958,0,0,1-.169.169l-7.624,6.1a1.124,1.124,0,0,1-1.412-1.751h0L112.118,117Zm-10,15.6,5.379-21.176a1.128,1.128,0,1,1,2.188.551h0l-5.379,21.176a1.133,1.133,0,1,1-2.2-.536c.014.014.014,0,.014-.014ZM84.772,116.1,92.4,110a1.124,1.124,0,0,1,1.412,1.751l-6.522,5.209,6.522,5.209A1.124,1.124,0,0,1,92.4,123.92l-7.624-6.1a1.111,1.111,0,0,1-.169-1.581C84.645,116.212,84.7,116.155,84.772,116.1Z" fill="#151515"/>
+                                    <path id="Path_447" data-name="Path 447" d="M220.482,120.2a1.482,1.482,0,1,0,1.482,1.482A1.482,1.482,0,0,0,220.482,120.2Z" transform="translate(-124.529 -29.372)" fill="#151515"/>
+                                    </g>
+                                </svg>
+                            </div>
+                            <span class="work-process-t text-[24px] leading-[30px] text-[#707070] capitalize block text-center mt-[24px]"> Launch </span>
+                        </div>    
+                    </div>
+
+                    <div class="tb1">
+                        <div class="work-process-item b3 b6 float-right">
+                            <div class="work-process-icon w-[107px] h-[104px] mx-auto rounded-[10px] bg-primarycolor flex justify-center items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="51.388" height="48" viewBox="0 0 51.388 48">
+                                    <g id="Group_96" data-name="Group 96" transform="translate(-74 -86)">
+                                    <path id="Path_445" data-name="Path 445" d="M111.841,120.2a1.482,1.482,0,1,0,1.482,1.482A1.482,1.482,0,0,0,111.841,120.2Zm-8.259,0a1.482,1.482,0,1,0,1.482,1.482h0A1.482,1.482,0,0,0,103.582,120.2Z" transform="translate(-24.133 -29.372)" fill="#151515"/>
+                                    <path id="Path_446" data-name="Path 446" d="M120.856,86H78.532A4.534,4.534,0,0,0,74,90.518v8.047h51.388V90.518A4.534,4.534,0,0,0,120.856,86ZM79.449,96.052a3.741,3.741,0,1,1,3.741-3.741h0A3.748,3.748,0,0,1,79.449,96.052Zm8.259,0a3.741,3.741,0,1,1,3.741-3.741h0a3.748,3.748,0,0,1-3.741,3.741Zm8.245,0a3.741,3.741,0,1,1,3.741-3.741h0A3.739,3.739,0,0,1,95.953,96.052ZM74,129.482A4.534,4.534,0,0,0,78.532,134h42.325a4.534,4.534,0,0,0,4.532-4.518V100.824H74Zm31.6-17.718a1.124,1.124,0,0,1,1.412-1.751l7.624,6.1a1.111,1.111,0,0,1,.169,1.581.958.958,0,0,1-.169.169l-7.624,6.1a1.124,1.124,0,0,1-1.412-1.751h0L112.118,117Zm-10,15.6,5.379-21.176a1.128,1.128,0,1,1,2.188.551h0l-5.379,21.176a1.133,1.133,0,1,1-2.2-.536c.014.014.014,0,.014-.014ZM84.772,116.1,92.4,110a1.124,1.124,0,0,1,1.412,1.751l-6.522,5.209,6.522,5.209A1.124,1.124,0,0,1,92.4,123.92l-7.624-6.1a1.111,1.111,0,0,1-.169-1.581C84.645,116.212,84.7,116.155,84.772,116.1Z" fill="#151515"/>
+                                    <path id="Path_447" data-name="Path 447" d="M220.482,120.2a1.482,1.482,0,1,0,1.482,1.482A1.482,1.482,0,0,0,220.482,120.2Z" transform="translate(-124.529 -29.372)" fill="#151515"/>
+                                    </g>
+                                </svg>
+                            </div>
+                            <span class="work-process-t text-[24px] leading-[30px] text-[#707070] capitalize block text-center mt-[24px]"> Evaluate </span>
+                        </div>    
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Why Rely On -->
+        <section class="why-rely com-sec-gap mt-[180px]">
+            <div class="container">
+                 <!-- Why Rely On Wrapper -->
+                <div class="why-rely-wrapper flex gap-[41px]">
+                    <h2 class="w-rely-title max-w-[793px] text-[101px] leading-[115px] font-semibold uppercase"> WHY RELY ON US TO MAKE YOUR UI/UX MORE INTUITIVE </h2>
+                    
+                    <div class="why-rely-right flex gap-[32px]">
+                        <div class="why-rely-right-d flex flex-col gap-[32px] mt-[132px]">
+                            <div class="why-rely-right-item w-[385px] min-h-[359px] flex flex-col justify-end bg-[#1C1410] pl-[42px] pb-[41px] pr-[42px] transition-all">
+                                <span class="why-rely-right-item-n block text-[70px] leading-[120px] font-medium text-primarycolor"> 01 </span>
+                                <span class="why-rely-right-item-t block text-[22px] leading-[35px] font-medium text-primarycolor"> FASTER GO-TO MARKET </span>
+                                <p class="why-rely-right-item-p text-[16px] leading-3-[20psx] pt-[32px] hidden">
+                                    Our processes are optimised to meet tight deadlines
+                                </p>
+                            </div>
+                            <div class="why-rely-right-item w-[385px] min-h-[359px] flex flex-col justify-end bg-[#1C1410] pl-[42px] pb-[41px] pr-[42px] transition-all">
+                                <span class="why-rely-right-item-n block text-[70px] leading-[120px] font-medium text-primarycolor"> 02 </span>
+                                <span class="why-rely-right-item-t block text-[22px] leading-[35px] font-medium text-primarycolor"> FASTER GO-TO MARKET </span>
+                                <p class="why-rely-right-item-p text-[16px] leading-3-[20psx] pt-[32px] hidden">
+                                    Our processes are optimised to meet tight deadlines
+                                </p>
+                            </div>
+                            <div class="why-rely-right-item w-[385px] min-h-[359px] flex flex-col justify-end bg-[#1C1410] pl-[42px] pb-[41px] pr-[42px] transition-all">
+                                <span class="why-rely-right-item-n block text-[70px] leading-[120px] font-medium text-primarycolor"> 03 </span>
+                                <span class="why-rely-right-item-t block text-[22px] leading-[35px] font-medium text-primarycolor"> FASTER GO-TO MARKET </span>
+                                <p class="why-rely-right-item-p text-[16px] leading-3-[20psx] pt-[32px] hidden">
+                                    Our processes are optimised to meet tight deadlines
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="why-rely-right-d flex flex-col gap-[32px]">
+                            <div class="why-rely-right-item w-[385px] min-h-[359px] flex flex-col justify-end bg-[#1C1410] pl-[42px] pb-[41px] pr-[42px] transition-all">
+                                <span class="why-rely-right-item-n block text-[70px] leading-[120px] font-medium text-primarycolor"> 04 </span>
+                                <span class="why-rely-right-item-t block text-[22px] leading-[35px] font-medium text-primarycolor"> FASTER GO-TO MARKET </span>
+                                <p class="why-rely-right-item-p text-[16px] leading-3-[20psx] pt-[32px] hidden">
+                                    Our processes are optimised to meet tight deadlines
+                                </p>
+                            </div>
+                            <div class="why-rely-right-item w-[385px] min-h-[359px] flex flex-col justify-end bg-[#1C1410] pl-[42px] pb-[41px] pr-[42px] transition-all">
+                                <span class="why-rely-right-item-n block text-[70px] leading-[120px] font-medium text-primarycolor"> 05 </span>
+                                <span class="why-rely-right-item-t block text-[22px] leading-[35px] font-medium text-primarycolor"> FASTER GO-TO MARKET </span>
+                                <p class="why-rely-right-item-p text-[16px] leading-3-[20psx] pt-[32px] hidden">
+                                    Our processes are optimised to meet tight deadlines
+                                </p>
+                            </div>
+                            <div class="why-rely-right-item w-[385px] min-h-[359px] flex flex-col justify-end bg-[#1C1410] pl-[42px] pb-[41px] pr-[42px] transition-all">
+                                <span class="why-rely-right-item-n block text-[70px] leading-[120px] font-medium text-primarycolor"> 06 </span>
+                                <span class="why-rely-right-item-t block text-[22px] leading-[35px] font-medium text-primarycolor"> FASTER GO-TO MARKET </span>
+                                <p class="why-rely-right-item-p text-[16px] leading-3-[20psx] pt-[32px] hidden">
+                                    Our processes are optimised to meet tight deadlines
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Why Rely On End -->
+
+
+        <!-- Our Portfolio -->
+        <section class="uiux-portffolio com-sec-gap mt-[180px]">
+            <div class="container">
+                <div class="page-s-header-content flex justify-between items-center gap-11">
+                    <h2 class="text-[70px] leading-[120px] font-semibold uppercase w-full relative after:content-[''] after:absolute after:bottom-[25px] after:ml-[15px] after:w-[45%] after:h-[1px] after:bg-primarycolor after:top-[]"> our <span class="text-primarycolor"> Portfolio </span> </h2>
+                    <p class="max-w-[856px]">
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt.
+                    </p>
+                </div>
+
+                <!-- Our Portfolio Wrapper -->
+                <div class="uiux-portfolio-wrapper mt-[113px]">
+
+                    <div class="uiux-portfolio-item flex items-end gap-[171px] ">
+                        <figure>
+                            <img src="assets/images/ui-ux/car-portfolio.png" alt="car portfolio">
+                        </figure>
+                        <div class="uiux-portfolio-wrapper-r">
+                            <span class="uiux-port-sub-t block text-[35px] leading-[55px] font-medium uppercase"> AUTOMOBILE </span>
+                            <h3 class="uiux-port-t text-[65px] leading-[85px] font-bold text-primarycolor uppercase"> LUXURY LIMO </h3>
+                            <div class="portfolio-tag flex gap-[32px] mt-[35px]">
+                                <span class="portfolio-tag-i bg-[#2C2C2C] text-[24px] leading-[30px] px-[44px] pt-[18px] pb-[10px] rounded-[10px]"> User Research </span>
+                                <span class="portfolio-tag-i bg-[#2C2C2C] text-[24px] leading-[30px] px-[44px] pt-[18px] pb-[10px] rounded-[10px]"> UI/UX Design </span>
+                            </div>
+                            <p class="portfolio-desc max-w-[802px] mt-[43px] text-[24px] leading-[36px]">
+                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+                            </p>
+                            <a href="#" type="submit" 
+                            class="hire-action uiux-action flex justify-between items-center max-w-[246px] mt-[24px] border border-white hover:bg-primarycolor hover:text-black hover:border-none rounded-[10px] px-[24.5px] py-[14px] text-[30px] leading-[30px] transition-colors"> 
+                                <span> Details </span> 
+                                <span class="uiux-action-i w-[38px] h-[38px] flex justify-center items-center rounded-full bg-[#67676791]"> 
+                                    <i class="fa-solid fa-arrow-right text-[14px] txt-[#A7A7A7]"></i> 
+                                </span> 
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="uiux-portfolio-item flex items-end gap-[171px] mt-[90px]">
+                        <figure>
+                            <img src="assets/images/ui-ux/car-portfolio.png" alt="car portfolio">
+                        </figure>
+                        <div class="uiux-portfolio-wrapper-r">
+                            <span class="uiux-port-sub-t block text-[35px] leading-[55px] font-medium uppercase"> AUTOMOBILE </span>
+                            <h3 class="uiux-port-t text-[65px] leading-[85px] font-bold text-primarycolor uppercase"> LUXURY LIMO </h3>
+                            <div class="portfolio-tag flex gap-[32px] mt-[35px]">
+                                <span class="portfolio-tag-i bg-[#2C2C2C] text-[24px] leading-[30px] px-[44px] pt-[18px] pb-[10px] rounded-[10px]"> User Research </span>
+                                <span class="portfolio-tag-i bg-[#2C2C2C] text-[24px] leading-[30px] px-[44px] pt-[18px] pb-[10px] rounded-[10px]"> UI/UX Design </span>
+                            </div>
+                            <p class="portfolio-desc max-w-[802px] mt-[43px] text-[24px] leading-[36px]">
+                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+                            </p>
+                            <a href="#" type="submit" 
+                            class="hire-action uiux-action flex justify-between items-center max-w-[246px] mt-[24px] border border-white hover:bg-primarycolor hover:text-black hover:border-none rounded-[10px] px-[24.5px] py-[14px] text-[30px] leading-[30px] transition-colors"> 
+                                <span> Details </span> 
+                                <span class="uiux-action-i w-[38px] h-[38px] flex justify-center items-center rounded-full bg-[#67676791]"> 
+                                    <i class="fa-solid fa-arrow-right text-[14px] txt-[#A7A7A7]"></i> 
+                                </span> 
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Load More Item -->
+                    <div id="load-more-portfolio" 
+                    class="load-more-portfolio max-w-[160px] mx-auto mt-[89px] flex justify-center items-center gap-[9.2px] text-[24px] leading-[18px] text-primarycolor cursor-pointer"> 
+                        <span> See more</span>  
+                        <i class="fa-solid fa-angle-down mt-[5px]"></i> 
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Our Portfolio End -->
+
+
+        <!-- Industries We Served -->
+        <section class="industries-served com-sec-gap mt-[180px]">
+            <div class="container">
+                <!-- Industries We Served Wrapper -->
+                <div class="industries-served-wrapper flex gap-[160px]">
+                    <h2 class="industries-s-t block max-w-[535px] text-[70px] leading-[80px] font-semibold uppercase"> INDUSTRIES WE DESIGN FOR </h2>
+                    <div class="industries-served-w-r w-[calc(100%-520px)] h-[155px] flex flex-wrap gap-[32px]">
+                        <span class="portfolio-tag-i h-[61px] bg-[#2C2C2C] text-[30px] leading-[40px] px-[23px] pt-[10px] pb-[10px] cursor-pointer"> 
+                            <i class="fa-solid fa-cart-shopping text-primarycolor text-[24px]"></i> E-commerce 
+                        </span>
+                        <span class="portfolio-tag-i h-[61px] bg-[#2C2C2C] text-[30px] leading-[40px] px-[23px] pt-[10px] pb-[10px] cursor-pointer"> 
+                            <i class="fa-solid fa-shield-heart text-primarycolor text-[24px]"></i> Healthcare 
+                        </span>
+                        <span class="portfolio-tag-i h-[61px] bg-[#2C2C2C] text-[30px] leading-[40px] px-[23px] pt-[10px] pb-[10px] cursor-pointer"> 
+                            <i class="fa-solid fa-money-check-dollar text-primarycolor text-[24px]"></i> Finance 
+                        </span>
+                        <span class="portfolio-tag-i h-[61px] bg-[#2C2C2C] text-[30px] leading-[40px] px-[23px] pt-[10px] pb-[10px] cursor-pointer"> 
+                            <i class="fa-solid fa-graduation-cap text-primarycolor text-[24px]"></i> Education 
+                        </span>
+                        <span class="portfolio-tag-i h-[61px] bg-[#2C2C2C] text-[30px] leading-[40px] px-[23px] pt-[10px] pb-[10px] cursor-pointer"> 
+                            <i class="fa-solid fa-plane-departure text-primarycolor text-[24px]"></i> Travel 
+                        </span>
+                        <span class="portfolio-tag-i h-[61px] bg-[#2C2C2C] text-[30px] leading-[40px] px-[23px] pt-[10px] pb-[10px] cursor-pointer"> 
+                            <i class="fa-solid fa-house-circle-check text-primarycolor text-[24px]"></i> Real Estate 
+                        </span>
+                        <span class="portfolio-tag-i h-[61px] bg-[#2C2C2C] text-[30px] leading-[40px] px-[23px] pt-[10px] pb-[10px] cursor-pointer"> 
+                            <i class="fa-solid fa-shirt text-primarycolor text-[24px]"></i> Apparel 
+                        </span>
+                        <span class="portfolio-tag-i h-[61px] bg-[#2C2C2C] text-[30px] leading-[40px] px-[23px] pt-[10px] pb-[10px] cursor-pointer"> 
+                            <i class="fa-solid fa-truck-monster text-primarycolor text-[24px]"></i> Automotive 
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Industries We Served End -->
+        
+
+        <!-- UI/UX Call To Action -->
+        <section class="uiux-call-to-action mt-[200px] pl-[142px] pt-[46px] pb-[42px] bg-primarycolor">
+            <h4 class="text-[70px] leading-[80px] tracking-[1.4px] font-bold"> LET’S TURN IDEAS TO REALITY </h4>
+            <a href="#" class="text-[50px] leading-[80px] pt-[14px] transition hover:text-black">
+                Say Hello <i class="fa-solid fa-arrow-right"></i>
+            </a>
+        </section>
+        <!-- UI/UX Call To Action End -->
+
+        
+        <!-- Footer Section -->
+        <footer class="mt-[75.05px] tab:mt-[202.75px]">
+            <div class="container">
+                <div class="footer-wrapper flex justify-between">
+                    <div class="footer-item w-full">
+                        <div class="f-company-details max-w-[480px] xl:max-w-[560px]">
+                            <img src="assets/images/logo.png" alt="Footer">
+                            <p class=" text-[14px] tab:text-[20px] leading-[18px] tab:leading-[27px] text-[#E1E1E1] mt-[9px]">
+                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.
+                            </p>
+                        </div>
+                        <div class="flex justify-between gap-[78.75px]">
+                            <div class="mt-[41px] tab:mt-[67px] w-[480px] xl:w-[560px]">
+                                <ul class="w-full flex flex-col gap-[12px]">
+                                    <li class="pb-[10px] border-b border-primary-text-color transition-colors hover:text-primarycolor hover:border-primarycolor text-primary-text-color text-[14px] tab:text-[24px] leading-[19px] tab:leading-[32px]"> 
+                                        <a href="#" class="flex justify-between items-center">
+                                            <span> ABOUT US </span> <i class="fa-solid fa-arrow-right transform -rotate-[45deg]"></i> 
+                                        </a>
+                                    </li>
+                                    <li class="pb-[10px] border-b border-primary-text-color transition-colors hover:text-primarycolor hover:border-primarycolor text-primary-text-color text-[14px] tab:text-[24px] leading-[19px] tab:leading-[32px]"> 
+                                        <a href="#" class="flex justify-between items-center">
+                                            <span> SEO </span> <i class="fa-solid fa-arrow-right transform -rotate-[45deg]"></i>
+                                        </a> 
+                                    </li>
+                                    <li class="pb-[10px]  transition-colors hover:text-primarycolor hover:border-primarycolor text-primary-text-color text-[14px] tab:text-[24px] leading-[19px] tab:leading-[32px]"> 
+                                        <a href="#" class="flex justify-between items-center">
+                                            <span> DIGITAL MARKETING </span> <i class="fa-solid fa-arrow-right transform -rotate-[45deg]"></i> 
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <ul class="social text-right -mt-[55px] tab:-mt-[105px]">
+                                <li class="pb-[8px] tab:pb-[15px] xl:pb-[23px]">
+                                    <a href="#" 
+                                    class="block text-primary-text-color transition-colors hover:text-primarycolor text-[16px] tab:text-[30px] leading-[22px] tab:leading-[35px] tracking-[0.32px] tab:tracking-normal font-bold">
+                                        FACEBOOK
+                                    </a>
+                                </li>
+                                <li class="pb-[8px] tab:pb-[15px] xl:pb-[23px]">
+                                    <a href="#" 
+                                    class="block text-primary-text-color transition-colors hover:text-primarycolor text-[16px] tab:text-[30px] leading-[22px] tab:leading-[35px] tracking-[0.32px] tab:tracking-normal font-bold">
+                                        TWITTER
+                                    </a>
+                                </li>
+                                <li class="pb-[8px] tab:pb-[15px] xl:pb-[23px]">
+                                    <a href="#" 
+                                    class="block text-primary-text-color transition-colors hover:text-primarycolor text-[16px] tab:text-[30px] leading-[22px] tab:leading-[35px] tracking-[0.32px] tab:tracking-normal font-bold">
+                                        INSTAGRAM
+                                    </a>
+                                </li>
+                                <li class="pb-[8px] tab:pb-[15px] xl:pb-[23px]">
+                                    <a href="#" 
+                                    class="block text-primary-text-color transition-colors hover:text-primarycolor text-[16px] tab:text-[30px] leading-[22px] tab:leading-[35px] tracking-[0.32px] tab:tracking-normal font-bold">
+                                        LINKEDIN
+                                    </a>
+                                </li>
+                                <li class="pb-[8px] tab:pb-[15px] xl:pb-[23px]">
+                                    <a href="#" 
+                                    class="block text-primary-text-color transition-colors hover:text-primarycolor text-[16px] tab:text-[30px] leading-[22px] tab:leading-[35px] tracking-[0.32px] tab:tracking-normal font-bold">
+                                        YOUTUBE
+                                    </a>
+                                </li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="footer-copyright pt-[12px] pb-[11.23px] tab:pb-[28.75px] border-t border-primary-text-color mt-[41.75px] tab:mt-[72px] xl:mt-[92px]">
+                    <p class="text-primary-text-color text-[12px] tab:text-[18px] leading-[16px] tab:leading-[24px] text-center">
+                        Copyright © 2023 <a href="#" class="text-primarycolor">UPSPELL</a>. All Rights Reserved.
+                    </p>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer End -->
+        
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script defer src="assets/js/main.js"></script>
+    <!-- <script>
+        let SwiperBottom = new Swiper(".swiper--bottom", {
+        spaceBetween: 0,
+        centeredSlides: true,
+        infinite: true,
+        speed: 10000,
+        autoplay: {
+            delay: 1,
+            reverseDirection: false,
+        },
+        loop: true,
+        loopedSlides: 4,
+        slidesPerView: "auto",
+        allowTouchMove: false,
+        disableOnInteraction: true,
+        });
+    </script> -->
+
+</body>
+</html>

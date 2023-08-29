@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title> UPSPELL </title>
+</head>
+<body>
+    <main>
+        <!-- Header -->
+        <header class="relative">
+            <div class="container">
+                <div class="desk-menu flex justify-between items-center pt-[22.67px] tab:pt-[33px]">
+                    <!-- Logo -->
+                    <a href="index.html">
+                        <img src="assets/images/logo.png" alt="Logo">
+                    </a>
+                    <!-- Desktop Menubar -->
+                    <div class="menu-wrapper flex gap-[87px] items-center">
+                        <a href="#" class="text-xl uppercase border-t border-b border-primarycolor transition-colors hover:text-primarycolor hover:border-white">
+                            WORK WITH US
+                        </a>
+                        <!-- Menu Div -->
+                        <div id="menu-nav" class="menu-icon cursor-pointer relative w-[47px] h-[34px]">
+                            <span class="line-up absolute top-0 w-full h-[2px] bg-white rounded-full"></span>
+                            <span class="line-middle absolute transform top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] w-[80%] h-[2px] bg-white rounded-full"></span>
+                            <span class="line-down absolute bottom-0 w-full h-[2px] bg-white rounded-full"></span>
+                        </div>
+                    </div>
+                </div>   
+            </div>
+            
+            <!-- Navigation Menu -->
+            <div class="main-nav-wrapper hidden fixed left-0 top-0 right-0 bottom-0 w-full h-screen bg-black z-10 pt-[16px] tab:pt-[33px] pl-[20px] tab:pl-[83px] xl:pl-[133px] pr-[21px] tab:pr-[51px] transition-all">
+                <div class="menu-header w-full flex justify-between">
+                    <img src="assets/images/logo.png" alt="Logo">
+                    <span id="closeMenu">
+                        <i class="fa-solid fa-xmark text-primary-text-color text-[28px] cursor-pointer"></i>
+                    </span>
+                </div>
+                <ul class=" max-w-[400px] mt-[21px] tab:mt-[51px] text-[14px] tab:text-[24px] leading-[21px] tab:leading-[32px]">
+                    <li class="pb-[8px] tab:pb-[12px]"> <a href="#" class="transition-colors hover:text-primarycolor"> Home </a> </li>
+                    <li class="pb-[8px] tab:pb-[12px]"> <a href="#" class="transition-colors hover:text-primarycolor"> About Us </a> </li>
+                    <li class="pb-[8px] tab:pb-[12px]"> 
+                        <a href="#" class="flex items-center gap-[12px] transition-colors hover:text-primarycolor" id="sub-menu-trigger"> 
+                            <span> Services </span> <span class="mt-1 transition-transform"> 
+                                <i class="fa-solid fa-angle-down text-primarycolor"></i> 
+                            </span> 
+                        </a> 
+                        <div class="sub-menu hidden pl-[20px] tab:pl-[34px]">
+                            <ul class="mt-[8px] tab:mt-[20px]">
+                                <li class="pb-[5px] tab:pb-[12px]"> <a href="#" class="transition-colors hover:text-primarycolor"> Digital Marketing </a> </li>
+                                <li class="pb-[5px] tab:pb-[12px]"> <a href="#" class="transition-colors hover:text-primarycolor"> Web Design and Development </a> </li>
+                                <li class="pb-[5px] tab:pb-[12px]"> <a href="#" class="transition-colors hover:text-primarycolor"> Social Media Marketing </a> </li>
+                                <li class="pb-[5px] tab:pb-[12px]"> <a href="#" class="transition-colors hover:text-primarycolor"> E-Commerce Development </a> </li>
+                                <li class="pb-[5px] tab:pb-[12px]"> <a href="#" class="transition-colors hover:text-primarycolor"> SEO </a> </li>
+                                <li class="pb-[5px] tab:pb-[12px]"> <a href="#" class="transition-colors hover:text-primarycolor"> UI/UX Design </a> </li>
+                                <li class="pb-[5px] tab:pb-[12px]"> <a href="#" class="transition-colors hover:text-primarycolor"> Graphic Design </a> </li>
+                                <li class="pb-[5px] tab:pb-[12px]"> <a href="#" class="transition-colors hover:text-primarycolor"> Online Reputation Management </a> </li>
+                                <li class="pb-[5px] tab:pb-[12px]"> <a href="#" class="transition-colors hover:text-primarycolor"> PPC Management </a> </li>
+                                <li class="pb-[5px] tab:pb-[12px]"> <a href="#" class="transition-colors hover:text-primarycolor"> Social Media Manager </a> </li>
+                                <li class="pb-[5px] tab:pb-[12px]"> <a href="#" class="transition-colors hover:text-primarycolor"> Content Writing </a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="pb-[8px] tab:pb-[12px]"> <a href="#" class="transition-colors hover:text-primarycolor"> Life at SHUVO IT </a> </li>
+                    <li class="pb-[8px] tab:pb-[12px]"> <a href="#" class="transition-colors hover:text-primarycolor"> Career </a> </li>
+                    <li class="pb-[8px] tab:pb-[12px]"> <a href="#" class="transition-colors hover:text-primarycolor"> Our Team </a> </li>
+                    <li class="pb-[8px] tab:pb-[12px]"> <a href="#" class="transition-colors hover:text-primarycolor"> Contact Us </a> </li>
+                </ul>
+            </div>
+        </header>
+        <!-- Header End -->
+
+
+
+
+
+        <!-- Footer Section -->
+        <footer class="mt-[75.05px] tab:mt-[202.75px]">
+            <div class="container">
+                <div class="footer-wrapper flex justify-between">
+                    <div class="footer-item w-full">
+                        <div class="f-company-details max-w-[480px] xl:max-w-[560px]">
+                            <img src="assets/images/logo.png" alt="Footer">
+                            <p class=" text-[14px] tab:text-[20px] leading-[18px] tab:leading-[27px] text-[#E1E1E1] mt-[9px]">
+                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.
+                            </p>
+                        </div>
+                        <div class="flex justify-between gap-[78.75px]">
+                            <div class="mt-[41px] tab:mt-[67px] w-[480px] xl:w-[560px]">
+                                <ul class="w-full flex flex-col gap-[12px]">
+                                    <li class="pb-[10px] border-b border-primary-text-color transition-colors hover:text-primarycolor hover:border-primarycolor text-primary-text-color text-[14px] tab:text-[24px] leading-[19px] tab:leading-[32px]"> 
+                                        <a href="#" class="flex justify-between items-center">
+                                            <span> ABOUT US </span> <i class="fa-solid fa-arrow-right transform -rotate-[45deg]"></i> 
+                                        </a>
+                                    </li>
+                                    <li class="pb-[10px] border-b border-primary-text-color transition-colors hover:text-primarycolor hover:border-primarycolor text-primary-text-color text-[14px] tab:text-[24px] leading-[19px] tab:leading-[32px]"> 
+                                        <a href="#" class="flex justify-between items-center">
+                                            <span> SEO </span> <i class="fa-solid fa-arrow-right transform -rotate-[45deg]"></i>
+                                        </a> 
+                                    </li>
+                                    <li class="pb-[10px]  transition-colors hover:text-primarycolor hover:border-primarycolor text-primary-text-color text-[14px] tab:text-[24px] leading-[19px] tab:leading-[32px]"> 
+                                        <a href="#" class="flex justify-between items-center">
+                                            <span> DIGITAL MARKETING </span> <i class="fa-solid fa-arrow-right transform -rotate-[45deg]"></i> 
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <ul class="social text-right -mt-[55px] tab:-mt-[105px]">
+                                <li class="pb-[8px] tab:pb-[15px] xl:pb-[23px]">
+                                    <a href="#" 
+                                    class="block text-primary-text-color transition-colors hover:text-primarycolor text-[16px] tab:text-[30px] leading-[22px] tab:leading-[35px] tracking-[0.32px] tab:tracking-normal font-bold">
+                                        FACEBOOK
+                                    </a>
+                                </li>
+                                <li class="pb-[8px] tab:pb-[15px] xl:pb-[23px]">
+                                    <a href="#" 
+                                    class="block text-primary-text-color transition-colors hover:text-primarycolor text-[16px] tab:text-[30px] leading-[22px] tab:leading-[35px] tracking-[0.32px] tab:tracking-normal font-bold">
+                                        TWITTER
+                                    </a>
+                                </li>
+                                <li class="pb-[8px] tab:pb-[15px] xl:pb-[23px]">
+                                    <a href="#" 
+                                    class="block text-primary-text-color transition-colors hover:text-primarycolor text-[16px] tab:text-[30px] leading-[22px] tab:leading-[35px] tracking-[0.32px] tab:tracking-normal font-bold">
+                                        INSTAGRAM
+                                    </a>
+                                </li>
+                                <li class="pb-[8px] tab:pb-[15px] xl:pb-[23px]">
+                                    <a href="#" 
+                                    class="block text-primary-text-color transition-colors hover:text-primarycolor text-[16px] tab:text-[30px] leading-[22px] tab:leading-[35px] tracking-[0.32px] tab:tracking-normal font-bold">
+                                        LINKEDIN
+                                    </a>
+                                </li>
+                                <li class="pb-[8px] tab:pb-[15px] xl:pb-[23px]">
+                                    <a href="#" 
+                                    class="block text-primary-text-color transition-colors hover:text-primarycolor text-[16px] tab:text-[30px] leading-[22px] tab:leading-[35px] tracking-[0.32px] tab:tracking-normal font-bold">
+                                        YOUTUBE
+                                    </a>
+                                </li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="footer-copyright pt-[12px] pb-[11.23px] tab:pb-[28.75px] border-t border-primary-text-color mt-[41.75px] tab:mt-[72px] xl:mt-[92px]">
+                    <p class="text-primary-text-color text-[12px] tab:text-[18px] leading-[16px] tab:leading-[24px] text-center">
+                        Copyright © 2023 <a href="#" class="text-primarycolor">UPSPELL</a>. All Rights Reserved.
+                    </p>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer End -->
+
+    </main>
+
+       
+    <script defer src="assets/js/main.js"></script>
+
+
+</body>
+</html>

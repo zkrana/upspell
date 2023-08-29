@@ -1,0 +1,14 @@
+
+/* About Us */
+.left-indicator{
+    margin-top: 135px;
+    background: transparent linear-gradient(270deg, #FFF 0%, #fff 20%, #80808000 100%) 0% 0% no-repeat padding-box;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    }
+.right-indicator{
+    background: transparent linear-gradient(90deg, #653C29 0%, #653C29 20%, #80808000 100%) 0% 0% no-repeat padding-box;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+

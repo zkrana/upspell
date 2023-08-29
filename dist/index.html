@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title> UPSPELL </title>
+</head>
+<body>
+    <main>
+        <!-- Header -->
+        <header class="relative">
+            <div class="container">
+                <div class="desk-menu flex justify-between items-center pt-[22.67px] tab:pt-[33px]">
+                    <!-- Logo -->
+                    <a href="index.html">
+                        <img src="assets/images/logo.png" alt="Logo">
+                    </a>
+                    <!-- Desktop Menubar -->
+                    <div class="menu-wrapper flex gap-[87px] items-center">
+                        <a href="#" class="text-xl uppercase border-t border-b border-primarycolor transition-colors hover:text-primarycolor hover:border-white">
+                            WORK WITH US
+                        </a>
+                        <!-- Menu Div -->
+                        <div id="menu-nav" class="menu-icon cursor-pointer relative w-[47px] h-[34px]">
+                            <span class="line-up absolute top-0 w-full h-[2px] bg-white rounded-full"></span>
+                            <span class="line-middle absolute transform top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] w-[80%] h-[2px] bg-white rounded-full"></span>
+                            <span class="line-down absolute bottom-0 w-full h-[2px] bg-white rounded-full"></span>
+                        </div>
+                    </div>
+                </div>   
+            </div>
+            
+            <!-- Navigation Menu -->
+            <div class="main-nav-wrapper hidden fixed left-0 top-0 right-0 bottom-0 w-full h-screen bg-black z-10 pt-[16px] tab:pt-[33px] pl-[20px] tab:pl-[83px] xl:pl-[133px] pr-[21px] tab:pr-[51px] transition-all">
+                <div class="menu-header w-full flex justify-between">
+                    <img src="assets/images/logo.png" alt="Logo">
+                    <span id="closeMenu">
+                        <i class="fa-solid fa-xmark text-primary-text-color text-[28px] cursor-pointer"></i>
+                    </span>
+                </div>
+                <ul class=" max-w-[400px] mt-[21px] tab:mt-[51px] text-[14px] tab:text-[24px] leading-[21px] tab:leading-[32px]">
+                    <li class="pb-[8px] tab:pb-[12px]"> <a href="#" class="transition-colors hover:text-primarycolor"> Home </a> </li>
+                    <li class="pb-[8px] tab:pb-[12px]"> <a href="#" class="transition-colors hover:text-primarycolor"> About Us </a> </li>
+                    <li class="pb-[8px] tab:pb-[12px]"> 
+                        <a href="#" class="flex items-center gap-[12px] transition-colors hover:text-primarycolor" id="sub-menu-trigger"> 
+                            <span> Services </span> <span class="mt-1 transition-transform"> 
+                                <i class="fa-solid fa-angle-down text-primarycolor"></i> 
+                            </span> 
+                        </a> 
+                        <div class="sub-menu hidden pl-[20px] tab:pl-[34px]">
+                            <ul class="mt-[8px] tab:mt-[20px]">
+                                <li class="pb-[5px] tab:pb-[12px]"> <a href="#" class="transition-colors hover:text-primarycolor"> Digital Marketing </a> </li>
+                                <li class="pb-[5px] tab:pb-[12px]"> <a href="#" class="transition-colors hover:text-primarycolor"> Web Design and Development </a> </li>
+                                <li class="pb-[5px] tab:pb-[12px]"> <a href="#" class="transition-colors hover:text-primarycolor"> Social Media Marketing </a> </li>
+                                <li class="pb-[5px] tab:pb-[12px]"> <a href="#" class="transition-colors hover:text-primarycolor"> E-Commerce Development </a> </li>
+                                <li class="pb-[5px] tab:pb-[12px]"> <a href="#" class="transition-colors hover:text-primarycolor"> SEO </a> </li>
+                                <li class="pb-[5px] tab:pb-[12px]"> <a href="#" class="transition-colors hover:text-primarycolor"> UI/UX Design </a> </li>
+                                <li class="pb-[5px] tab:pb-[12px]"> <a href="#" class="transition-colors hover:text-primarycolor"> Graphic Design </a> </li>
+                                <li class="pb-[5px] tab:pb-[12px]"> <a href="#" class="transition-colors hover:text-primarycolor"> Online Reputation Management </a> </li>
+                                <li class="pb-[5px] tab:pb-[12px]"> <a href="#" class="transition-colors hover:text-primarycolor"> PPC Management </a> </li>
+                                <li class="pb-[5px] tab:pb-[12px]"> <a href="#" class="transition-colors hover:text-primarycolor"> Social Media Manager </a> </li>
+                                <li class="pb-[5px] tab:pb-[12px]"> <a href="#" class="transition-colors hover:text-primarycolor"> Content Writing </a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="pb-[8px] tab:pb-[12px]"> <a href="#" class="transition-colors hover:text-primarycolor"> Life at SHUVO IT </a> </li>
+                    <li class="pb-[8px] tab:pb-[12px]"> <a href="#" class="transition-colors hover:text-primarycolor"> Career </a> </li>
+                    <li class="pb-[8px] tab:pb-[12px]"> <a href="#" class="transition-colors hover:text-primarycolor"> Our Team </a> </li>
+                    <li class="pb-[8px] tab:pb-[12px]"> <a href="#" class="transition-colors hover:text-primarycolor"> Contact Us </a> </li>
+                </ul>
+            </div>
+        </header>
+        <!-- Header End -->
+
+        <!-- Hero -->
+        <section class="home-hero-wrapper mt-[77px]">
+            <div class="container">
+                <h2 class="sub-tittle text-[40px] leading-[53px] text-center uppercase"> WE ARE </h2>
+                <h1 class="hero-title text-[9.6vw] leading-[246px] uppercase text-center font-extrabold"> MARKET BOOSTER </h1>
+                <!-- Services -->
+                <div class="hero-body w-full flex justify-between gap-8">
+                    <div class="hero-service flex flex-col gap-6 min-w-[265px]">
+                        <a class="hero-h-item  px-[30px] py-8 bg-secendary-bgcolor rounded-xl text-primary-text-color text-2xl capitalize text-center" href="#"> <span> Digital Marketing </span> </a>
+                        <a class="hero-h-item px-[30px] py-8 bg-secendary-bgcolor rounded-xl text-primary-text-color text-2xl capitalize text-center" href="#"> <span> Web Development </span> </a>
+                        <a class="hero-h-item px-[30px] py-8 bg-secendary-bgcolor rounded-xl text-primary-text-color text-2xl capitalize text-center" href="#"> <span> UI/UX Design </span> </a>
+                        <a class="hero-h-item px-[30px] py-8 bg-secendary-bgcolor rounded-xl text-primary-text-color text-2xl capitalize text-center" href="#"> <span> SEO </span> </a>
+                    </div>
+                    <!-- Service Banner -->
+                    <figure>
+                        <img class="hero-banner rounded-3xl" src="assets/images/home/home-hero-banner.png" alt="hero Banner" width="1338" height="454" >
+                    </figure>
+                </div>
+            </div>
+        </section>
+        <!-- Hero End -->
+
+        <!-- Slider -->
+        <section class="slider-wrapper pt-[86px]">
+            <div class="container">
+
+                <!-- Slider Wrapper -->
+                <div class="slider flex justify-between gap-[60px]">
+                    <div class="slider-item">
+                        <img src="assets/images/home/slider/aven.png" alt="aven" width="164" height="43">
+                    </div>
+                    <div class="slider-item">
+                        <img src="assets/images/home/slider/birch-fog.png" alt="birch fog" width="164" height="43">
+                    </div>
+                    <div class="slider-item">
+                        <img src="assets/images/home/slider/cyprus.png" alt="cyprus" width="164" height="43">
+                    </div>
+                    <div class="slider-item">
+                        <img src="assets/images/home/slider/earth-2.png" alt="earth" width="164" height="43">
+                    </div>
+                    <div class="slider-item">
+                        <img src="assets/images/home/slider/fox-hub.png" alt="fox hub" width="164" height="43">
+                    </div>
+                    <div class="slider-item">
+                        <img src="assets/images/home/slider/hospitality.png" alt="hospitality" width="164" height="43">
+                    </div>
+                    <div class="slider-item">
+                        <img src="assets/images/home/slider/maxicab.png" alt="mexicab" width="164" height="43">
+                    </div>
+                    <div class="slider-item">
+                        <img src="assets/images/home/slider/test.png" alt="Aven" width="164" height="43">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- Slider End -->
+
+        <!-- About US Section -->
+        <section class="about-wrapper pt-[139px]">
+            <div class="container">
+
+                <!-- Home About Section -->
+                <div class="page-s-header-content flex justify-between items-center gap-11 pb-[16px] tab:pb-[39px]">
+                    <h2 class="text-[70px] leading-[93px] uppercase font-medium w-full relative after:content-[''] after:absolute after:bottom-[25px] after:ml-[15px] after:w-[60%] after:h-[1px] after:bg-primarycolor after:top-[]"> ABOUT <span class="text-primarycolor"> US </span> </h2>
+                    <p class="max-w-[856px]">
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt.
+                    </p>
+                </div>
+
+                <div class="h-about-content w-full flex gap-[57px]">
+                    <figure>
+                        <img class="rounded-[20px]" src="assets/images/home/about.png" alt="About Banner" width="923" height="650">
+                    </figure>
+                    <div class="total-stats-wrapper max-w-[656px] flex flex-col gap-[29px] bg-secendary-bgcolor rounded-2xl pl-[73px] pt-[61px] pr-[54px] pb-[76px]">
+                        <div>
+                            <span class="text-primarycolor text-[14px] xl:text-2xl capitalize"> <span class="total-stats text-[80px] leading-[106px] font-medium"> 6 </span> Years experience </span>
+                            <p class="text-xl">
+                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt.
+                            </p>
+                        </div>
+                        <div>
+                            <span class="text-primarycolor text-[14px] xl:text-2xl capitalize"> <span class="total-stats text-[80px] leading-[106px] font-medium"> 3265 </span> Projects completed </span>
+                            <p class="text-xl">
+                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt.
+                            </p>
+                        </div>
+                        <div>
+                            <span class="text-primarycolor text-[14px] xl:text-2xl capitalize"> <span class="total-stats text-[80px] leading-[106px] font-medium"> 350 </span> Happy Clients </span>
+                            <p class="text-xl">
+                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- About Section End -->
+
+        <!-- Our Service Section -->
+        <section class="h-wrapper max-w-full pt-[180px]">
+            <!-- Home Services Header Section -->
+            <div class="page-s-header-content page-s-s-c px-[136px] flex justify-between items-center gap-11">
+                <h2 class="text-[70px] leading-[93px] font-medium uppercase w-full relative after:content-[''] after:absolute after:bottom-[25px] after:ml-[15px] after:w-[45%] after:h-[1px] after:bg-primarycolor after:top-[]"> OUR  <span class="text-primarycolor"> SERVICES </span> </h2>
+                <p class="max-w-[856px]">
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt.
+                </p>
+            </div>
+
+            <!-- Home Services Box Section -->
+            <div class="h-services-content w-full flex flex-col pt-[104px]">
+                <!-- Home Services Box Item -->
+                <div class="h-services-item flex justify-between transition-all hover:bg-[#0F0602] cursor-pointer">
+                    <div class="h-box-pad h-s-content-main mx-[135px] flex justify-between items-center pb-14 w-full border-b border-primary-text-color">
+                        <div class="max-w-[836px]">
+                            <a href="#"> 
+                                <h3 class="text-primary-text-color text-[35px] leading-[26px] pb-[10px] transition-all"> SEARCH ENGINE OPTIMIZATION </h3>    
+                            </a>
+                            <p class="text-primary-text-color text-xl"> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et </p>
+                        </div>
+                        
+                        <img class="services-portfolio rounded-xl hidden transition" src="assets/images/home/services.png" alt="Portfolio">
+                        
+                        <a href="#" class="icon w-[107px] h-[107px] rounded-full border-2 border-primary-text-color flex justify-center items-center">
+                            <i class="fa-solid fa-arrow-right-long text-[12px] tab:text-2xl text-primary-text-color transform rotate-[45deg]"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- Home Services Box Item -->
+                <div class="h-services-item flex justify-between pt-[51.5px] transition-all hover:bg-[#0F0602] cursor-pointer">
+                    <div class="h-box-pad h-s-content-main mx-[135px] flex justify-between items-center pb-14 w-full border-b border-primary-text-color">
+                        <div class="max-w-[836px]">
+                            <a href="#"> 
+                                <h3 class="text-primary-text-color text-[35px] leading-[26px] pb-[10px] transition-all"> DIGITAL MARKETING </h3>    
+                            </a>
+                            <p class="text-primary-text-color text-xl"> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et </p>
+                        </div>
+                        
+                        <img class="services-portfolio rounded-xl hidden transition" src="assets/images/home/services.png" alt="Portfolio">
+
+                        <a href="#" class="icon w-[107px] h-[107px] rounded-full border-2 border-primary-text-color flex justify-center items-center">
+                            <i class="fa-solid fa-arrow-right-long text-[12px] tab:text-2xl text-primary-text-color transform rotate-[45deg]"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- Home Services Box Item -->
+                <div class="h-services-item flex justify-between pt-[51.5px] transition-all hover:bg-[#0F0602] cursor-pointer">
+                    <div class="h-box-pad h-s-content-main mx-[135px] flex justify-between items-center pb-14 w-full border-b border-primary-text-color">
+                        <div class="max-w-[836px]">
+                            <a href="#"> 
+                                <h3 class="text-primary-text-color text-[35px] leading-[26px] pb-[10px] transition-all"> WEB DESIGN AND DEVELOPMENT </h3>    
+                            </a>
+                            <p class="text-primary-text-color text-xl"> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et </p>
+                        </div>
+                        
+                        <img class="services-portfolio rounded-xl hidden transition" src="assets/images/home/services.png" alt="Portfolio">
+
+                        <a href="#" class="icon w-[107px] h-[107px] rounded-full border-2 border-primary-text-color flex justify-center items-center">
+                            <i class="fa-solid fa-arrow-right-long text-[12px] tab:text-2xl text-primary-text-color transform rotate-[45deg]"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- Home Services Box Item -->
+                <div class="h-services-item flex justify-between pt-[51.5px] transition-all hover:bg-[#0F0602] cursor-pointer">
+                    <div class="h-box-pad h-s-content-main mx-[135px] flex justify-between items-center pb-14 w-full border-b border-primary-text-color">
+                        <div class="max-w-[836px]">
+                            <a href="#"> 
+                                <h3 class="text-primary-text-color text-[35px] leading-[26px] pb-[10px] transition-all"> UI/UX DESIGN </h3>    
+                            </a>
+                            <p class="text-primary-text-color text-xl"> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et </p>
+                        </div>
+                        
+                        <img class="services-portfolio rounded-xl hidden transition" src="assets/images/home/services.png" alt="Portfolio">
+                        
+                        <a href="#" class="icon w-[107px] h-[107px] rounded-full border-2 border-primary-text-color flex justify-center items-center">
+                            <i class="fa-solid fa-arrow-right-long text-[12px] tab:text-2xl text-primary-text-color transform rotate-[45deg]"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- Home Services Box Item -->
+                <div class="h-services-item flex justify-between pt-[51.5px] transition-all hover:bg-[#0F0602] cursor-pointer">
+                    <div class="h-box-pad h-s-content-main mx-[135px] flex justify-between items-center pb-14 w-full border-b border-primary-text-color">
+                        <div class="max-w-[836px]">
+                            <a href="#"> 
+                                <h3 class="text-primary-text-color text-[35px] leading-[26px] pb-[10px] transition-all"> GRAPHIC DESIGN </h3>    
+                            </a>
+                            <p class="text-primary-text-color text-xl"> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et </p>
+                        </div>
+                        
+                        <img class="services-portfolio rounded-xl hidden transition" src="assets/images/home/services.png" alt="Portfolio">
+
+                        <a href="#" class="icon w-[107px] h-[107px] rounded-full border-2 border-primary-text-color flex justify-center items-center">
+                            <i class="fa-solid fa-arrow-right-long text-[12px] tab:text-2xl text-primary-text-color transform rotate-[45deg]"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- Home Services Box Item -->
+                <div class="h-services-item flex justify-between pt-[51.5px] transition-all hover:bg-[#0F0602] cursor-pointer">
+                    <div class="h-box-pad h-s-content-main mx-[135px] flex justify-between items-center pb-14 w-full border-b border-primary-text-color">
+                        <div class="max-w-[836px]">
+                            <a href="#"> 
+                                <h3 class="text-primary-text-color text-[35px] leading-[26px] pb-[10px] transition-all"> SOCIAL MEDIA MARKETING </h3>    
+                            </a>
+                            <p class="text-primary-text-color text-xl"> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et </p>
+                        </div>
+                        
+                        <img class="services-portfolio rounded-xl hidden transition" src="assets/images/home/services.png" alt="Portfolio">
+
+                        <a href="#" class="icon w-[107px] h-[107px] rounded-full border-2 border-primary-text-color flex justify-center items-center">
+                            <i class="fa-solid fa-arrow-right-long text-[12px] tab:text-2xl text-primary-text-color transform rotate-[45deg]"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Our Service Section End -->
+
+        <!-- Recent Works Section -->
+        <section class="h-wrapper max-w-full pt-[180px]">
+            <div class="container">
+                <!-- Recent Works Header Section -->
+                <div class="page-s-header-content flex justify-between items-center gap-11 pb-[16px] tab:pb-[39px]">
+                    <h2 class="text-[70px] leading-[93px] font-medium uppercase w-full relative after:content-[''] after:absolute after:bottom-[25px] after:ml-[15px] after:w-[40%] after:h-[1px] after:bg-primarycolor after:top-[]"> RECENT  <span class="text-primarycolor"> WORKS </span> </h2>
+                    <p class="max-w-[856px]">
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt.
+                    </p>
+                </div>
+                <!-- Recent Works Box -->
+                <div class="recent-box-wrapper relative w-full min-h-[592px] flex justify-between gap-[27px]">
+                    <div class="recent-task-item w-[33%] flex justify-between flex-col gap-[27px] cursor-pointer">
+                        <div class="s-web-d l-m-height-1 min-h-[386px] bg-secendary-bgcolor px-[79px] py-[127px] rounded-[20px] flex justify-center items-center">
+                            <span class="r-w-title text-primarycolor text-[42px] leading-[52px] text-center"> WEB DESIGN & DEVELOPMENT </span>
+                            <div class="recent-box-display-wrapper" data-content="WEB DESIGN & DEVELOPMENT">
+                                <!-- Recent Works Display -->
+                                <div class="recent-box-display w-[1086px] min-h-[593px] absolute z-10 right-0 top-0 pt-[48px] pl-[56px] pb-[73px] pr-[86px] rounded-xl bg-[#0E0602] justify-between gap-[86px]">
+                                    <div class="recent-projects-content max-w-[532px]">
+                                        <span class="cat-title block text-[39px] leading-[52px] font-medium text-primarycolor mb-[25px]"> WEB DESIGN & DEVELOPMENT </span>
+                                        <p class="cat-desc text-[20px] leading-[30px]">
+                                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. 
+                                        </p>
+                                        <a href="#" class="flex items-center gap-[12px] text-primarycolor mt-[33px]">
+                                            <span class="text-[20px] leading-[30px]"> View full project</span>
+                                            <span class="w-[38px] h-[38px] bg-primarycolor rounded-full flex justify-center items-center"> <i class="fa-solid fa-arrow-right-long text-[#0E0602]"></i> </span>
+                                        </a>
+                                    </div>
+                                    <img class="rounded-xl" src="assets/images/home/projects/projects.png" alt="Projects" height="463px">
+                                    <span id="closeProject" class="hidden">
+                                        <i class="fa-solid fa-xmark text-primary-text-color text-[28px] cursor-pointer"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="s-web-d little-box-1 bg-secendary-bgcolor px-[64px] py-[58px] rounded-[20px] min-h-[180px] flex justify-center items-center">
+                            <span class="r-w-title text-primarycolor text-[42px] leading-[52px] text-center"> SEO </span>
+                            <div class="recent-box-display-wrapper" data-content="SEO">
+                                <!-- Recent Works Display for SEO -->
+                                <div class="recent-box-display w-[1086px] min-h-[593px] absolute z-10 right-0 top-0 pt-[48px] pl-[56px] pb-[73px] pr-[86px] rounded-xl bg-[#0E0602] justify-between gap-[86px]">
+                                    <div class="recent-projects-content max-w-[532px]">
+                                        <span class="cat-title block text-[39px] leading-[52px] font-medium text-primarycolor mb-[25px]"> SEO </span>
+                                        <p class="cat-desc text-[20px] leading-[30px]">
+                                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. 
+                                        </p>
+                                        <a href="#" class="flex items-center gap-[12px] text-primarycolor mt-[33px]">
+                                            <span class="text-[20px] leading-[30px]"> View full project</span>
+                                            <span class="w-[38px] h-[38px] bg-primarycolor rounded-full flex justify-center items-center"> <i class="fa-solid fa-arrow-right-long text-[#0E0602]"></i> </span>
+                                        </a>
+                                    </div>
+                                    <img class="rounded-xl" src="assets/images/home/projects/projects.png" alt="Projects" height="463px">
+                                    <span id="closeProject" class="hidden">
+                                        <i class="fa-solid fa-xmark text-primary-text-color text-[28px] cursor-pointer"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="recent-task-item w-[33%] flex justify-between flex-col gap-[27px] cursor-pointer">
+                        <div class="s-web-d little-box-2 bg-secendary-bgcolor px-[64px] py-[58px] rounded-[20px] min-h-[180px] flex justify-center items-center">
+                            <span class="r-w-title text-primarycolor text-[42px] leading-[52px] text-center"> DIGITAL MARKETING </span>
+                            <div class="recent-box-display-wrapper" data-content="DIGITAL MARKETING">
+                                <!-- Recent Works Display for DIGITAL MARKETING -->
+                                <div class="recent-box-display w-[1086px] min-h-[593px] absolute z-10 right-0 top-0 pt-[48px] pl-[56px] pb-[73px] pr-[86px] rounded-xl bg-[#0E0602] justify-between gap-[86px]">
+                                    <div class="recent-projects-content max-w-[532px]">
+                                        <span class="cat-title block text-[39px] leading-[52px] font-medium text-primarycolor mb-[25px]"> DIGITAL MARKETING </span>
+                                        <p class="cat-desc text-[20px] leading-[30px]">
+                                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. 
+                                        </p>
+                                        <a href="#" class="flex items-center gap-[12px] text-primarycolor mt-[33px]">
+                                            <span class="text-[20px] leading-[30px]"> View full project</span>
+                                            <span class="w-[38px] h-[38px] bg-primarycolor rounded-full flex justify-center items-center"> <i class="fa-solid fa-arrow-right-long text-[#0E0602]"></i> </span>
+                                        </a>
+                                    </div>
+                                    <img class="rounded-xl" src="assets/images/home/projects/projects.png" alt="Projects" height="463px">
+                                    <span id="closeProject" class="hidden">
+                                        <i class="fa-solid fa-xmark text-primary-text-color text-[28px] cursor-pointer"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="s-web-d l-m-height-2 min-h-[386px] bg-secendary-bgcolor px-[79px] py-[127px] rounded-[20px] flex justify-center items-center">
+                            <span class="r-w-title text-primarycolor text-[42px] leading-[52px] text-center"> SOCIAL MEDIA MARKETING </span>
+                            <div class="recent-box-display-wrapper" data-content="SOCIAL MEDIA MARKETING">
+                                <!-- Recent Works Display -->
+                                <div class="recent-box-display w-[1086px] min-h-[593px] absolute z-10 right-0 top-0 pt-[48px] pl-[56px] pb-[73px] pr-[86px] rounded-xl bg-[#0E0602] justify-between gap-[86px]">
+                                    <div class="recent-projects-content max-w-[532px]">
+                                        <span class="cat-title block text-[39px] leading-[52px] font-medium text-primarycolor mb-[25px]"> SOCIAL MEDIA MARKETING </span>
+                                        <p class="cat-desc text-[20px] leading-[30px]">
+                                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. 
+                                        </p>
+                                        <a href="#" class="flex items-center gap-[12px] text-primarycolor mt-[33px]">
+                                            <span class="text-[20px] leading-[30px]"> View full project</span>
+                                            <span class="w-[38px] h-[38px] bg-primarycolor rounded-full flex justify-center items-center"> <i class="fa-solid fa-arrow-right-long text-[#0E0602]"></i> </span>
+                                        </a>
+                                    </div>
+                                    <img class="rounded-xl" src="assets/images/home/projects/projects.png" alt="Projects" height="463px">
+                                    <span id="closeProject" class="hidden">
+                                        <i class="fa-solid fa-xmark text-primary-text-color text-[28px] cursor-pointer"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="recent-task-item w-[33%] flex justify-between flex-col gap-[27px] cursor-pointer">
+                        <div class="s-web-d min-h-full bg-secendary-bgcolor px-[79px] py-[127px] rounded-[20px] flex justify-center items-center">
+                            <span class="r-w-title text-primarycolor text-[42px] leading-[52px] text-center"> UI/UX DESIGN </span>
+                            <div class="recent-box-display-wrapper" data-content="UI/UX DESIGN">
+                                <!-- Recent Works Display -->
+                                <div class="recent-box-display w-[1086px] min-h-[593px] absolute z-10 right-0 top-0 pt-[48px] pl-[56px] pb-[73px] pr-[86px] rounded-xl bg-[#0E0602] justify-between gap-[86px]">
+                                    <div class="recent-projects-content max-w-[532px]">
+                                        <span class="cat-title block text-[39px] leading-[52px] font-medium text-primarycolor mb-[25px]"> UI/UX DESIGN </span>
+                                        <p class="cat-desc text-[20px] leading-[30px]">
+                                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. 
+                                        </p>
+                                        <a href="#" class="flex items-center gap-[12px] text-primarycolor mt-[33px]">
+                                            <span class="text-[20px] leading-[30px]"> View full project</span>
+                                            <span class="w-[38px] h-[38px] bg-primarycolor rounded-full flex justify-center items-center"> <i class="fa-solid fa-arrow-right-long text-[#0E0602]"></i> </span>
+                                        </a>
+                                    </div>
+                                    <img class="rounded-xl" src="assets/images/home/projects/projects.png" alt="Projects" height="463px">
+                                    <span id="closeProject" class="hidden">
+                                        <i class="fa-solid fa-xmark text-primary-text-color text-[28px] cursor-pointer"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Clients Testmonial Section -->
+        <section class="h-wrapper max-w-full pt-[180px]">
+            <div class="container">
+                <!-- Testmonial Header Section -->
+                <div class="page-s-header-content flex justify-between items-center gap-11 pb-[16px] tab:pb-[39px]">
+                    <h2 class="text-[70px] leading-[93px] font-medium uppercase w-full relative after:content-[''] after:absolute after:bottom-[25px] after:ml-[15px] after:w-[47%] after:h-[1px] after:bg-primarycolor after:top-[]"> CLIENTS <span class="text-primarycolor"> SAYS </span> </h2>
+                    <p class="max-w-[856px]">
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt.
+                    </p>
+                </div>
+
+                <!-- Reviews Box -->
+                <div class="reviews-wrapper flex justify-between gap-[27px]">
+                    <div class="reviews-item max-w-[941px] flex flex-col gap-[26px]">
+                        <div class="testmonial-content hover-trigger rounded-[20px] pl-[46px] pt-[45px] pb-[44px] pr-[27px] bg-secendary-bgcolor transition-colors hover:bg-[#1c1410]">
+                            <p class="testmonial-c-desc text-[#616161] text-[20px] leading-[27px]">
+                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+                            </p>
+                            <div class="author-box flex items-center gap-[20px] mt-[45px]">
+                                <img src="assets/images/home/testmonial/avatar.png" alt="reviwer">
+                                <div>
+                                    <span class="author block text-[20px] leading-[27px] uppercase"> GRAHAMS RICK </span>
+                                    <span class="position block text-[#E1E1E1] text-[16px] leading-[21px] font-light uppercase"> CEO, SWISS TONG </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="testmonial-content rounded-[20px] pl-[46px] pt-[45px] pb-[44px] pr-[27px]  bg-secendary-bgcolor transition-colors hover:bg-[#1c1410]">
+                            <p class="testmonial-c-desc text-[#616161] text-[20px] leading-[27px]">
+                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+                            </p>
+                            <div class="author-box flex items-center gap-[20px] mt-[45px]">
+                                <img src="assets/images/home/testmonial/avatar.png" alt="reviwer">
+                                <div>
+                                    <span class="author block text-[20px] leading-[27px] uppercase"> GRAHAMS RICK </span>
+                                    <span class="position block text-primary-text-color text-[16px] leading-[21px] font-light uppercase"> CEO, SWISS TONG </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reviews-item max-w-[668px]">
+                        <div class="testmonial-content  min-h-[calc(100%-127px)] rounded-[20px] pl-[85px] pt-[44px] pb-[72px] pr-[59px] flex flex-col justify-between  bg-secendary-bgcolor transition-colors hover:bg-[#1c1410]">
+                            <p class="testmonial-c-desc text-[#616161] text-[20px] leading-[27px]">
+                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+                            </p>
+                            <div class="author-box flex items-center gap-[20px] mt-[35px]">
+                                <img src="assets/images/home/testmonial/avatar.png" alt="reviwer">
+                                <div>
+                                    <span class="author block text-[20px] leading-[27px] uppercase"> GRAHAMS RICK </span>
+                                    <span class="position block text-primary-text-color text-[16px] leading-[21px] font-light uppercase"> CEO, SWISS TONG </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="slide-control flex gap-[15px] justify-end mt-[41px]">
+                            <span class="w-[86px] h-[86px] rounded-xl flex justify-center items-center bg-secendary-bgcolor cursor-pointer"> <i class="fa-solid fa-chevron-left text-primary-text-color"></i> </span>
+                            <span class="w-[86px] h-[86px] rounded-xl flex justify-center items-center bg-[#1C1410] cursor-pointer"> <i class="fa-solid fa-chevron-right text-primarycolor"></i> </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Clients Testmonial End -->
+
+        <!-- Hire Us Section -->
+        <section class="h-wrapper max-w-full pt-[180px]">
+            <div class="container">
+                <!-- Hire Us Section -->
+                <div class="page-s-header-content flex justify-between items-center gap-11 pb-[16px] tab:pb-[39px]">
+                    <h2 class="text-[70px] leading-[93px] font-medium uppercase w-full relative after:content-[''] after:absolute after:bottom-[25px] after:ml-[15px] after:w-[69%] after:h-[1px] after:bg-primarycolor after:top-[]"> HIRE <span class="text-primarycolor"> US </span> </h2>
+                    <p class="max-w-[856px]">
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt.
+                    </p>
+                </div>
+
+                <!-- service Tags -->
+                <div class="our-expertise mt-[70px]">
+
+                    <form class="flex flex-col gap-[68px]">
+                        <div class="form-item">
+                            <h4 class="text-[30px] leading-[40px]"> SERVICE </h4>
+                            <div class="tag-wrapper max-w-[1494px] mt-[35px] flex gap-[26px] flex-wrap">
+                                <span class="
+                                inline-block px-[76px] py-[30px] border border-[#E1E1E1] rounded-[20px] text-[#CFCFCF] text-[30px] leading-[40px] 
+                                cursor-pointer transition-colors hover:bg-[#1C1410] hover:text-primarycolor hover:border-primarycolor"> Web Design & Development </span>
+                                <span class="
+                                inline-block px-[62.5px] py-[30px] border border-[#E1E1E1] rounded-[20px] text-[#CFCFCF] text-[30px] leading-[40px]
+                                cursor-pointer transition-colors hover:bg-[#1C1410] hover:text-primarycolor hover:border-primarycolor"> UI/UX Design  </span>
+                                <span class="
+                                inline-block px-[55.5px] py-[30px] border border-[#E1E1E1] rounded-[20px] text-[#CFCFCF] text-[30px] leading-[40px]
+                                cursor-pointer transition-colors hover:bg-[#1C1410] hover:text-primarycolor hover:border-primarycolor"> Social Media Marketing  </span>
+                                <span class="
+                                inline-block px-[80px] py-[30px] border border-[#E1E1E1] rounded-[20px] text-[#CFCFCF] text-[30px] leading-[40px]
+                                cursor-pointer transition-colors hover:bg-[#1C1410] hover:text-primarycolor hover:border-primarycolor"> SEO  </span>
+                                <span class="
+                                inline-block px-[55.5px] py-[30px] border rounded-[20px] text-[30px] leading-[40px]
+                                cursor-pointer transition-colors hover:bg-[#1C1410] text-primarycolor border-primarycolor"> Domain & Hosting  </span>
+                                <span class="
+                                inline-block px-[55.5px] py-[30px] border border-[#E1E1E1] rounded-[20px] text-[#CFCFCF] text-[30px] leading-[40px]
+                                cursor-pointer transition-colors hover:bg-[#1C1410] hover:text-primarycolor hover:border-primarycolor"> Graphic Design </span>
+                                <span class="
+                                inline-block px-[55.5px] py-[30px] border border-[#E1E1E1] rounded-[20px] text-[#CFCFCF] text-[30px] leading-[40px]
+                                cursor-pointer transition-colors hover:bg-[#1C1410] hover:text-primarycolor hover:border-primarycolor"> Digital Marketing  </span>
+                            </div>
+                        </div>
+                        <div class="form-item">
+                            <h4 class="text-[30px] leading-[40px]"> BUDGET IN USD </h4>
+                            <div class="tag-wrapper max-w-[1494px] mt-[35px] flex gap-[26px] flex-wrap">
+                                <span class="
+                                inline-block px-[76px] py-[30px] border rounded-[20px] text-[30px] leading-[40px] 
+                                cursor-pointer transition-colors hover:bg-[#1C1410] text-primarycolor border-primarycolor"> $1k - $3k </span>
+                                <span class="
+                                inline-block px-[62.5px] py-[30px] border border-[#E1E1E1] rounded-[20px] text-[#CFCFCF] text-[30px] leading-[40px]
+                                cursor-pointer transition-colors hover:bg-[#1C1410] hover:text-primarycolor hover:border-primarycolor"> $3k - $5k  </span>
+                                <span class="
+                                inline-block px-[55.5px] py-[30px] border border-[#E1E1E1] rounded-[20px] text-[#CFCFCF] text-[30px] leading-[40px]
+                                cursor-pointer transition-colors hover:bg-[#1C1410] hover:text-primarycolor hover:border-primarycolor"> $5k - $8k  </span>
+                                <span class="
+                                inline-block px-[80px] py-[30px] border border-[#E1E1E1] rounded-[20px] text-[#CFCFCF] text-[30px] leading-[40px]
+                                cursor-pointer transition-colors hover:bg-[#1C1410] hover:text-primarycolor hover:border-primarycolor"> $8k - $15k  </span>
+                                <span class="
+                                inline-block px-[55.5px] py-[30px] border border-[#E1E1E1] rounded-[20px] text-[#CFCFCF] text-[30px] leading-[40px]
+                                cursor-pointer transition-colors hover:bg-[#1C1410] hover:text-primarycolor hover:border-primarycolor"> $15k+  </span>
+                            </div>
+                        </div>
+                        <div class="form-item w-full relative">
+                            <h4 class="text-[30px] leading-[40px]"> PROJECT/JOB DETAILS </h4>
+                            <div class="file-attach mt-[35px] w-full relative mb-0 tab:mb-[5px] xl:mb-[14px]">
+                                <div class="custom-file-upload max-w-[calc(100%-134px)] h-[100px] text-[#1C51FD] text-[18px] leading-[24px] pl-[64px] border border-[#CFCFCF]
+                                rounded-lg px-[21px] tab:px-[61px] py-[30px]">
+                                    <input type="file" id="file" name="myfiles[]" multiple placeholder="Text" />
+                                </div>
+                            </div>
+                            <span class=" text-[12px] tab:text-[18px] lg:text-[24px] xl:text-[30px] leading-[18px] tab:leading-[25px] lg:leading-[32px] xl:leading-[40px] -mt-[8px] tab:mt-0 text-[#653C29]"> Project.pdf (2.2MB) <i id="close-selection" class="fa-solid fa-xmark text-white cursor-pointer"></i> </span>
+                        </div>
+                        
+                        <button type="submit" class="hire-action max-w-[382px] mt-[36px] bg-primarycolor text-[#000000] rounded-[20px] px-[130px] py-[29.5px] text-[30px] leading-[40px] font-semibold"> Send Us </button>
+                    </form>
+                </div>
+            </div>
+        <section>
+        <!-- Hire Us End -->
+
+        <!-- Subscription -->
+        <section class="h-wrapper pt-[180px]">
+            <div class="container">
+                <div class="subscription-wrapper relative min-h-[541px]">
+                    <img class="absolute top-0 left-0 bottom-0 right-0 w-full h-full rounded-[20px]" src="assets/images/home/subscription/subscription-bg.png" alt="Subscription">
+                    <div  class="absolute top-0 left-0 bottom-0 right-0 w-full h-full flex justify-center items-center">
+                        <div>
+                            <h2 class="subscription-title text-[70px] leading-[93px] font-medium uppercase"> LETS COLLABORATE WITH US </h2>
+                            <a href="#"
+                                class="subscription-btn flex gap-[14px] items-center justify-between mx-auto mt-[35px] max-w-[399px] bg-white transition-colors hover:bg-primarycolor rounded-full px-[43px] pt-[18px] pb-[14px]">     
+                                <span class="subscription-text text-[#125688] text-[45px] leading-[60px] font-bold uppercase"> START NOW </span> 
+                                <i class="fa-solid fa-arrow-right transform -rotate-[45deg] text-[#125688] text-[40px]"></i>  
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Subscription End -->
+
+        <!-- Footer Section -->
+        <footer class="mt-[75.05px] tab:mt-[202.75px]">
+            <div class="container">
+                <div class="footer-wrapper flex justify-between">
+                    <div class="footer-item w-full">
+                        <div class="f-company-details max-w-[480px] xl:max-w-[560px]">
+                            <img src="assets/images/logo.png" alt="Footer">
+                            <p class=" text-[14px] tab:text-[20px] leading-[18px] tab:leading-[27px] text-[#E1E1E1] mt-[9px]">
+                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.
+                            </p>
+                        </div>
+                        <div class="flex justify-between gap-[78.75px]">
+                            <div class="mt-[41px] tab:mt-[67px] w-[480px] xl:w-[560px]">
+                                <ul class="w-full flex flex-col gap-[12px]">
+                                    <li class="pb-[10px] border-b border-primary-text-color transition-colors hover:text-primarycolor hover:border-primarycolor text-primary-text-color text-[14px] tab:text-[24px] leading-[19px] tab:leading-[32px]"> 
+                                        <a href="#" class="flex justify-between items-center">
+                                            <span> ABOUT US </span> <i class="fa-solid fa-arrow-right transform -rotate-[45deg]"></i> 
+                                        </a>
+                                    </li>
+                                    <li class="pb-[10px] border-b border-primary-text-color transition-colors hover:text-primarycolor hover:border-primarycolor text-primary-text-color text-[14px] tab:text-[24px] leading-[19px] tab:leading-[32px]"> 
+                                        <a href="#" class="flex justify-between items-center">
+                                            <span> SEO </span> <i class="fa-solid fa-arrow-right transform -rotate-[45deg]"></i>
+                                        </a> 
+                                    </li>
+                                    <li class="pb-[10px]  transition-colors hover:text-primarycolor hover:border-primarycolor text-primary-text-color text-[14px] tab:text-[24px] leading-[19px] tab:leading-[32px]"> 
+                                        <a href="#" class="flex justify-between items-center">
+                                            <span> DIGITAL MARKETING </span> <i class="fa-solid fa-arrow-right transform -rotate-[45deg]"></i> 
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <ul class="social text-right -mt-[55px] tab:-mt-[105px]">
+                                <li class="pb-[8px] tab:pb-[15px] xl:pb-[23px]">
+                                    <a href="#" 
+                                    class="block text-primary-text-color transition-colors hover:text-primarycolor text-[16px] tab:text-[30px] leading-[22px] tab:leading-[35px] tracking-[0.32px] tab:tracking-normal font-bold">
+                                        FACEBOOK
+                                    </a>
+                                </li>
+                                <li class="pb-[8px] tab:pb-[15px] xl:pb-[23px]">
+                                    <a href="#" 
+                                    class="block text-primary-text-color transition-colors hover:text-primarycolor text-[16px] tab:text-[30px] leading-[22px] tab:leading-[35px] tracking-[0.32px] tab:tracking-normal font-bold">
+                                        TWITTER
+                                    </a>
+                                </li>
+                                <li class="pb-[8px] tab:pb-[15px] xl:pb-[23px]">
+                                    <a href="#" 
+                                    class="block text-primary-text-color transition-colors hover:text-primarycolor text-[16px] tab:text-[30px] leading-[22px] tab:leading-[35px] tracking-[0.32px] tab:tracking-normal font-bold">
+                                        INSTAGRAM
+                                    </a>
+                                </li>
+                                <li class="pb-[8px] tab:pb-[15px] xl:pb-[23px]">
+                                    <a href="#" 
+                                    class="block text-primary-text-color transition-colors hover:text-primarycolor text-[16px] tab:text-[30px] leading-[22px] tab:leading-[35px] tracking-[0.32px] tab:tracking-normal font-bold">
+                                        LINKEDIN
+                                    </a>
+                                </li>
+                                <li class="pb-[8px] tab:pb-[15px] xl:pb-[23px]">
+                                    <a href="#" 
+                                    class="block text-primary-text-color transition-colors hover:text-primarycolor text-[16px] tab:text-[30px] leading-[22px] tab:leading-[35px] tracking-[0.32px] tab:tracking-normal font-bold">
+                                        YOUTUBE
+                                    </a>
+                                </li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="footer-copyright pt-[12px] pb-[11.23px] tab:pb-[28.75px] border-t border-primary-text-color mt-[41.75px] tab:mt-[72px] xl:mt-[92px]">
+                    <p class="text-primary-text-color text-[12px] tab:text-[18px] leading-[16px] tab:leading-[24px] text-center">
+                        Copyright © 2023 <a href="#" class="text-primarycolor">UPSPELL</a>. All Rights Reserved.
+                    </p>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer End -->
+
+    </main>
+
+       
+    <script defer src="assets/js/main.js"></script>
+
+
+</body>
+</html>

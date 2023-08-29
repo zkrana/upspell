@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title> UPSPELL </title>
+</head>
+<body>
+    <main>
+        <!-- Header -->
+        <header class="relative">
+            <div class="container">
+                <div class="desk-menu flex justify-between items-center pt-[22.67px] tab:pt-[33px]">
+                    <!-- Logo -->
+                    <a href="index.html">
+                        <img src="assets/images/logo.png" alt="Logo">
+                    </a>
+                    <!-- Desktop Menubar -->
+                    <div class="menu-wrapper flex gap-[87px] items-center">
+                        <a href="#" class="text-xl uppercase border-t border-b border-primarycolor transition-colors hover:text-primarycolor hover:border-white">
+                            WORK WITH US
+                        </a>
+                        <!-- Menu Div -->
+                        <div id="menu-nav" class="menu-icon cursor-pointer relative w-[47px] h-[34px]">
+                            <span class="line-up absolute top-0 w-full h-[2px] bg-white rounded-full"></span>
+                            <span class="line-middle absolute transform top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] w-[80%] h-[2px] bg-white rounded-full"></span>
+                            <span class="line-down absolute bottom-0 w-full h-[2px] bg-white rounded-full"></span>
+                        </div>
+                    </div>
+                </div>   
+            </div>
+            
+            <!-- Navigation Menu -->
+            <div class="main-nav-wrapper hidden fixed left-0 top-0 right-0 bottom-0 w-full h-screen bg-black z-10 pt-[16px] tab:pt-[33px] pl-[20px] tab:pl-[83px] xl:pl-[133px] pr-[21px] tab:pr-[51px] transition-all">
+                <div class="menu-header w-full flex justify-between">
+                    <img src="assets/images/logo.png" alt="Logo">
+                    <span id="closeMenu">
+                        <i class="fa-solid fa-xmark text-primary-text-color text-[28px] cursor-pointer"></i>
+                    </span>
+                </div>
+                <ul class=" max-w-[400px] mt-[21px] tab:mt-[51px] text-[14px] tab:text-[24px] leading-[21px] tab:leading-[32px]">
+                    <li class="pb-[8px] tab:pb-[12px]"> <a href="#" class="transition-colors hover:text-primarycolor"> Home </a> </li>
+                    <li class="pb-[8px] tab:pb-[12px]"> <a href="#" class="transition-colors hover:text-primarycolor"> About Us </a> </li>
+                    <li class="pb-[8px] tab:pb-[12px]"> 
+                        <a href="#" class="flex items-center gap-[12px] transition-colors hover:text-primarycolor" id="sub-menu-trigger"> 
+                            <span> Services </span> <span class="mt-1 transition-transform"> 
+                                <i class="fa-solid fa-angle-down text-primarycolor"></i> 
+                            </span> 
+                        </a> 
+                        <div class="sub-menu hidden pl-[20px] tab:pl-[34px]">
+                            <ul class="mt-[8px] tab:mt-[20px]">
+                                <li class="pb-[5px] tab:pb-[12px]"> <a href="#" class="transition-colors hover:text-primarycolor"> Digital Marketing </a> </li>
+                                <li class="pb-[5px] tab:pb-[12px]"> <a href="#" class="transition-colors hover:text-primarycolor"> Web Design and Development </a> </li>
+                                <li class="pb-[5px] tab:pb-[12px]"> <a href="#" class="transition-colors hover:text-primarycolor"> Social Media Marketing </a> </li>
+                                <li class="pb-[5px] tab:pb-[12px]"> <a href="#" class="transition-colors hover:text-primarycolor"> E-Commerce Development </a> </li>
+                                <li class="pb-[5px] tab:pb-[12px]"> <a href="#" class="transition-colors hover:text-primarycolor"> SEO </a> </li>
+                                <li class="pb-[5px] tab:pb-[12px]"> <a href="#" class="transition-colors hover:text-primarycolor"> UI/UX Design </a> </li>
+                                <li class="pb-[5px] tab:pb-[12px]"> <a href="#" class="transition-colors hover:text-primarycolor"> Graphic Design </a> </li>
+                                <li class="pb-[5px] tab:pb-[12px]"> <a href="#" class="transition-colors hover:text-primarycolor"> Online Reputation Management </a> </li>
+                                <li class="pb-[5px] tab:pb-[12px]"> <a href="#" class="transition-colors hover:text-primarycolor"> PPC Management </a> </li>
+                                <li class="pb-[5px] tab:pb-[12px]"> <a href="#" class="transition-colors hover:text-primarycolor"> Social Media Manager </a> </li>
+                                <li class="pb-[5px] tab:pb-[12px]"> <a href="#" class="transition-colors hover:text-primarycolor"> Content Writing </a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="pb-[8px] tab:pb-[12px]"> <a href="#" class="transition-colors hover:text-primarycolor"> Life at SHUVO IT </a> </li>
+                    <li class="pb-[8px] tab:pb-[12px]"> <a href="#" class="transition-colors hover:text-primarycolor"> Career </a> </li>
+                    <li class="pb-[8px] tab:pb-[12px]"> <a href="#" class="transition-colors hover:text-primarycolor"> Our Team </a> </li>
+                    <li class="pb-[8px] tab:pb-[12px]"> <a href="#" class="transition-colors hover:text-primarycolor"> Contact Us </a> </li>
+                </ul>
+            </div>
+        </header>
+        <!-- Header End -->
+
+        <!-- Digital Marketing Hero -->
+        <section class="dm-hero-section pt-[190px] pb-[247px]">
+            <div class="container">
+                <div class="dm-h-wrapper flex justify-between items-center">
+                    <div class="dm-h-item max-w-[1060px] pr-[20px]">
+                        <h3 class="dm-hero-sub-tittle text-[40px] leading-[53px] uppercase pb-3"> YOUR DIGITAL </h3>
+                        <h1 class="dm-hero-title text-[9.219vw] leading-[191px] uppercase font-extrabold"> MARKETING <span class="text-primarycolor">EXPERT</span> </h1>
+                        <p class="dm-hero-desc text-white text-[30px] leading-[45px]">
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+                        </p>
+                    </div>
+                    <figure>
+                        <img class="dm-h-item dm-h-main-banner" src="assets/images/digital-marketing/dm-target.png" alt="Digital Marketing Banner">
+                    </figure>
+                </div>
+            </div>
+        </section>
+        <!-- Digital Marketing Hero End -->
+
+
+        <!-- Digital Solution -->
+        <section class="digital-solution">
+            <div class="container">
+                <h3 class="dm-sub-title text-[70px] leading-[93px] font-semibold uppercase"> OUR DIGITAL <span class="text-primarycolor"> SOLUTIONS </span> </h3>
+
+                <!-- Digital Solution Wrapper -->
+                <div class="dm-ds-wrapper flex justify-between gap-[32px] ml-[420px] mt-[40px]">
+                    <div class="ds-item w-[385px] bg-[#1C1410] rounded-[20px] py-[177px] text-center">
+                        <span class="text-[35px] leading-[46px] font-medium uppercase"> FULL-FUNNEL <span class="text-primarycolor block"> LEAD GENERATION </span> </span>
+                    </div>
+                    <div class="ds-item w-[385px] bg-[#1C1410] rounded-[20px] py-[177px] text-center">
+                        <span class="text-[35px] leading-[46px] font-medium uppercase"> DIGITAL BRAND <span class="text-primarycolor block"> AWARENESS </span> </span>
+                    </div>
+                    <div class="ds-item w-[385px] bg-[#1C1410] rounded-[20px] py-[177px] text-center">
+                        <span class="text-[35px] leading-[46px] font-medium uppercase"> E-COMMERCE <span class="text-primarycolor block"> SALES </span> </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Digital Solution End -->
+
+
+        <!-- DM Services -->
+        <section class="dm-services pt-[180px]">
+            <div class="container">
+                <h2 class="dm-ds-tittle max-w-[1132px] text-[70px] leading-[80px] font-medium uppercase">
+                    ARE YOU LOOKING TO GENERATE AN INSANE AMOUNT OF 
+                    <a href="#" class="dm-ds-traffic-ms bg-primarycolor text-black rounded-lg px-2 w-[155px]"> <span> TRAFFIC? </span> 
+                    <i class="fa-solid fa-arrow-right-long text-primarycolor text-[12px] bg-black w-[24px] h-[24px] flex justify-center items-center rounded-full transform -rotate-[45deg]"></i> 
+                    </a> 
+                    <span class="dm-ds-traffic-h text-primarycolor"> TRAFFIC <span class="!text-white"> ? </span> </span> THEN YOU’VE HIT PAYDIRT!
+                </h2>
+                <p class="dm-ds-sub max-w-[1497px] text-white text-[30px] leading-[45px]">
+                    Honest, 100% transparency and evidence-based decisions is how we operate. Shonky operators come and go, but UPSPELL has been operating since 2011 with a 4.9/5 Google review rating.
+                </p>
+
+                <!-- DM Services Services Wrapper -->
+                <div class="dm-services-wrapper flex justify-between gap-[32px] pt-[100px]">
+                    <div 
+                    class="dm-ds-s-item w-[385px] h-[560px] bg-[url(../images/digital-marketing/digital-solution/seo.png)] 
+                    rounded-[20px] flex justify-between items-center relative transition-opacity cursor-pointer">
+                        <div class="dm-ds-item-layer hidden absolute w-full h-full"></div>
+                        <span class="dm-ds-seo text-[100px] leading-[102px] text-[#E1E1E1] uppercase block mx-auto"> SEO </span>
+                    </div>
+                    <div 
+                    class="dm-ds-s-item w-[385px] h-[560px] bg-[url(../images/digital-marketing/digital-solution/google-ads.png)] 
+                    rounded-[20px] flex justify-between items-center relative transition-opacity cursor-pointer">
+                        <div class="dm-ds-item-layer hidden absolute w-full h-full"></div>
+                        <span class="dm-ds-seo text-[100px] leading-[102px] text-[#E1E1E1] uppercase block mx-auto"> GOOGLE ADS </span>
+                    </div>
+                    <div 
+                    class="dm-ds-s-item w-[385px] h-[560px] bg-[url(../images/digital-marketing/digital-solution/social-media.png)] 
+                    rounded-[20px] flex justify-between items-center relative transition-opacity cursor-pointer">
+                        <div class="dm-ds-item-layer hidden absolute w-full h-full"></div>
+                        <span class="dm-ds-seo text-[100px] leading-[102px] text-[#E1E1E1] uppercase block mx-auto"> SOCIAL MEDIA </span>
+                    </div>
+                    <div 
+                    class="dm-ds-s-item w-[385px] h-[560px] bg-[url(../images/digital-marketing/digital-solution/reputation.png)] 
+                    rounded-[20px] flex justify-between items-center relative transition-opacity cursor-pointer">
+                        <div class="dm-ds-item-layer hidden absolute w-full h-full"></div>
+                        <span class="dm-ds-seo text-[100px] leading-[102px] text-[#E1E1E1] uppercase block mx-auto"> REPUTATION </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- DM Services Services End -->
+        
+        <!-- DM Free Proposal End -->
+        <section class="dm-proposal pt-[180px] h-fit">
+            <div class="container">
+                <div class="relative">
+                    <h3 class="dm-pro-tittle text-[70px] leading-[80px] font-semibold uppercase">
+                        WHEN IT COMES TO YOUR BUSINESS – WE SETTLE FOR NOTHING BUT THE <span class="text-primarycolor">BEST</span>.
+                    </h3>
+                    <button type="button" id="proposal-btn" class="text-[40px] leading-[80px] bg-[#1C1410] rounded-[20px] px-[32px] mt-[32px]"> GET A FREE PROPOSAL </button>
+                    <div id="dm-proposal-wrapper" class="hidden mb-[180px]">
+                        <div class="max-w-[973px] pr-[20px] flex flex-col justify-between">
+                            <h3 class="text-[70px] leading-[80px] font-medium uppercase">
+                                WHEN IT COMES TO YOUR BUSINESS – WE SETTLE FOR NOTHING BUT THE <span class="text-primarycolor">BEST</span>.
+                            </h3>
+                            <p class="proposal-desc text-[30px] leading-[40px] pt-[36px]">
+                                Increase your organic traffic with the best SEO agency in Bangladesh. Every online business indeed needs an SEO practice to grow profit. But it would help if you relied on the right tactics. Therefore, our enthusiastic SEO team digs deep to find the exact results for you without excuse.
+                            </p>
+            
+                            <a id="proposal-link" href="https://www.google.com" class="proposal-btn max-w-[534px] text-[40px] leading-[80px] bg-primarycolor text-[#1C1410] rounded-[20px] px-[32px] mt-[36px]"> GET A FREE PROPOSAL </a>
+                        </div>
+                        <img src="assets/images/digital-marketing/proposal.png" alt="Proposal">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- DM Free Proposal End -->
+
+        <!-- !Agency -->
+        <section class="not-just-agency pt-[180px]">
+            <div class="container">
+                <h3 class="dm-sub-title text-[70px] leading-[93px] font-semibold uppercase"> JUST <span class="text-primarycolor"> JUST AGENCY? </span> </h3>
+                <p class="dm-agency-desc text-[30px] leading-[40px]">
+                    We Aren’t Just Your Agency - We Are Your Partner In Growth.
+                </p>
+                <!-- !Agency Wrapper -->
+                <div class="dm-agency-wrapper flex justify-between gap-[32px] mt-[80px]">
+                    <div class="dm-agency-item w-[385px] bg-[#1C1410] rounded-[20px] py-[177px] text-center relative cursor-pointer transition-all">
+                        <span class="dm-agency-item-t text-[35px] leading-[46px] font-medium uppercase"> COMPLETE BUSINESS <span class="text-primarycolor block"> AUDIT </span> </span>
+                        <div class="agency-layer hidden pl-[35px] pt-[45px] pb-[31px] pr-[28px]">
+                            <span class="block text-[30px] leading-[40px] font-medium uppercase"> COMPLETE BUSINESS <span class="text-primarycolor block"> AUDIT </span> </span>
+                            <i class="fa-solid fa-file-circle-check text-[55px]"></i>
+                            <p class="text-[24px] leading-[32px]">
+                                Take time to understand your target audience and benefit from valuable lead generation.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="dm-agency-item w-[385px] bg-[#1C1410] rounded-[20px] py-[177px] text-center relative cursor-pointer transition-all">
+                        <span class="dm-agency-item-t text-[35px] leading-[46px] font-medium uppercase"> IN-DEPTH COMPETITOR <span class="text-primarycolor block"> ANALYSIS </span> </span>
+                        <div class="agency-layer hidden pl-[35px] pt-[45px] pb-[31px] pr-[28px]">
+                            <span class="block text-[30px] leading-[40px] font-medium uppercase"> IN-DEPTH COMPETITOR <span class="text-primarycolor block"> ANALYSIS </span> </span>
+                            <i class="fa-solid fa-magnifying-glass-chart text-[55px]"></i>
+                            <p class="text-[24px] leading-[32px]">
+                                Build your brand awareness effectively with digital marketing techniques that generate results.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="dm-agency-item w-[385px] bg-[#1C1410] rounded-[20px] py-[177px] text-center relative cursor-pointer transition-all">
+                        <span class="dm-agency-item-t text-[35px] leading-[46px] font-medium uppercase"> BESPOKE GROWTH <span class="text-primarycolor block"> STRATEGY </span> </span>
+                        <div class="agency-layer hidden pl-[35px] pt-[45px] pb-[31px] pr-[28px]">
+                            <span class="block text-[30px] leading-[40px] font-medium uppercase"> BESPOKE GROWTH <span class="text-primarycolor block"> STRATEGY </span> </span>
+                            <i class="fa-solid fa-chess-rook text-[55px]"></i>
+                            <p class="text-[24px] leading-[32px]">
+                                Learn how to compete with the best and accelerate your growth with effective e-commerce marketing.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="dm-agency-item w-[385px] bg-[#1C1410] rounded-[20px] py-[177px] text-center relative cursor-pointer transition-all">
+                        <span class="dm-agency-item-t text-[35px] leading-[46px] font-medium uppercase"> PROJECTIONS FOR <span class="text-primarycolor block"> ROI </span> </span>
+                        <div class="agency-layer hidden pl-[35px] pt-[45px] pb-[31px] pr-[28px]">
+                            <span class="block text-[30px] leading-[40px] font-medium uppercase"> PROJECTIONS FOR <span class="text-primarycolor block"> ROI </span> </span>
+                            <i class="fa-solid fa-arrow-up-right-dots text-[55px]"></i>
+                            <p class="text-[24px] leading-[32px]">
+                                Learn how to compete with the best and accelerate your growth with effective e-commerce marketing.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- !Agency End -->
+
+        <!-- Build Brand -->
+        <section class="dm-b-brand pt-[180px]">
+            <!-- Build Brand Wrapper -->
+            <div 
+            class="dm-brand-wrapper h-[865px] bg-[url(../images/digital-marketing/dm-brand.png)] transition-all hover:bg-[url(../images/digital-marketing/dm-brand-hover.png)] pt-[84px] pl-[142px]">
+                <span class="dm-b-sub-tittle text-[30px] leading-[40px] font-bold text-primarycolor block pb-[22px]"> NEED HELP BUILDING YOUR BRAND? </span>
+                <p class="dm-brand-desc-m max-w-[1160px] text-[60px] leading-[80px] font-medium">
+                    <span class="empower text-[85px] leading-[80px] font-bold"> EMPOWER </span> YOUR DIGITAL PRESENCE WITH OUR COMPREHENSIVE MARKETING AND WEB DEVELOPMENT SOLUTIONS
+                </p>
+                <a href="#" class="dm-chat w-[266.09px] h-[266.09px] flex justify-center px-[40px] pt-[45px] text-center bg-contain bg-[url(../images/digital-marketing/chat.png)] mt-[40px]">
+                    <span class="text-[50px] leading-[60px] font-medium"> LET'S TALK </span>
+                </a>
+            </div> 
+        </section>
+        <!-- Build Brand End -->
+
+        <!-- DM Faq -->
+        <section class="dm-faq pt-[180px]">
+            <div class="container">
+                <h3 class="dm-faq-tittle max-w-[1485px] text-[70px] leading-[80px] font-semibold"> HOW CAN A DIGITAL MARKETING AGENCY HELP YOUR BUSINESS? </h3>
+                
+                <!-- DM Faq Wrapper -->
+                <ul class="dm-faq-wrapper flex flex-col gap-[16px] mt-[81px]">
+                    <li class="dm-faq-item bg-[#2C2C2C] rounded-xl py-[45px] px-[50px] flex justify-center flex-col items-start cursor-pointer relative"> 
+                        <span class="text-[30px] leading-[40px] text-left"> How can digital marketing improve lead generation? </span> 
+                        <i class="fa-solid fa-arrow-right-long text-[35px] text-primarycolor transform rotate-[45deg] absolute right-[50px] top-[50%] -translate-y-[50%]"></i>
+                        <p class="dm-faq-desc hidden pt-[20px]">
+                            The cost of digital marketing can vary widely depending on the specific strategies and tactics used, the level of competition in the market, and the goals of the business. Some digital marketing strategies, such as social media marketing and email marketing, can be relatively inexpensive, while others, such as pay-per-click advertising and search engine optimization, can be more costly. Additionally, the cost of digital marketing can depend on whether a business chooses to handle their marketing in-house or work with an agency or freelancer. Ultimately, the cost of digital marketing will depend on a variety of factors unique to each business, and it's important to carefully consider the potential return on investment before investing in any marketing strategy.
+                        </p>
+                    </li>
+                    <li class="dm-faq-item bg-[#2C2C2C] rounded-xl py-[45px] px-[50px] flex justify-center flex-col items-start cursor-pointer relative"> 
+                        <span class="text-[30px] leading-[40px] text-left"> How can digital marketing help small businesses? </span> 
+                        <i class="fa-solid fa-arrow-right-long text-[35px] text-primarycolor transform rotate-[45deg] absolute right-[50px] top-[50%] -translate-y-[50%]"></i>
+                        <p class="dm-faq-desc hidden pt-[20px]">
+                            The cost of digital marketing can vary widely depending on the specific strategies and tactics used, the level of competition in the market, and the goals of the business. Some digital marketing strategies, such as social media marketing and email marketing, can be relatively inexpensive, while others, such as pay-per-click advertising and search engine optimization, can be more costly. Additionally, the cost of digital marketing can depend on whether a business chooses to handle their marketing in-house or work with an agency or freelancer. Ultimately, the cost of digital marketing will depend on a variety of factors unique to each business, and it's important to carefully consider the potential return on investment before investing in any marketing strategy.
+                        </p>
+                    </li>
+                    <li class="dm-faq-item bg-[#2C2C2C] rounded-xl py-[45px] px-[50px] flex justify-center flex-col items-start cursor-pointer relative"> 
+                        <span class="text-[30px] leading-[40px] text-left"> How much does digital marketing cost? </span> 
+                        <i class="fa-solid fa-arrow-right-long text-[35px] text-primarycolor transform rotate-[45deg] absolute right-[50px] top-[50%] -translate-y-[50%]"></i>
+                        <p class="dm-faq-desc hidden pt-[20px]">
+                            The cost of digital marketing can vary widely depending on the specific strategies and tactics used, the level of competition in the market, and the goals of the business. Some digital marketing strategies, such as social media marketing and email marketing, can be relatively inexpensive, while others, such as pay-per-click advertising and search engine optimization, can be more costly. Additionally, the cost of digital marketing can depend on whether a business chooses to handle their marketing in-house or work with an agency or freelancer. Ultimately, the cost of digital marketing will depend on a variety of factors unique to each business, and it's important to carefully consider the potential return on investment before investing in any marketing strategy.
+                        </p>
+                    </li>
+                    <li class="dm-faq-item bg-[#2C2C2C] rounded-xl py-[45px] px-[50px] flex justify-center flex-col items-start cursor-pointer relative"> 
+                        <span class="text-[30px] leading-[40px] text-left"> What does a digital marketing agency do? </span> 
+                        <i class="fa-solid fa-arrow-right-long text-[35px] text-primarycolor transform rotate-[45deg] absolute right-[50px] top-[50%] -translate-y-[50%]"></i>
+                        <p class="dm-faq-desc hidden pt-[20px]">
+                            The cost of digital marketing can vary widely depending on the specific strategies and tactics used, the level of competition in the market, and the goals of the business. Some digital marketing strategies, such as social media marketing and email marketing, can be relatively inexpensive, while others, such as pay-per-click advertising and search engine optimization, can be more costly. Additionally, the cost of digital marketing can depend on whether a business chooses to handle their marketing in-house or work with an agency or freelancer. Ultimately, the cost of digital marketing will depend on a variety of factors unique to each business, and it's important to carefully consider the potential return on investment before investing in any marketing strategy.
+                        </p>
+                    </li>
+                    <li class="dm-faq-item bg-[#2C2C2C] rounded-xl py-[45px] px-[50px] flex justify-center flex-col items-start cursor-pointer relative"> 
+                        <span class="text-[30px] leading-[40px] text-left"> Can you guarantee an ROI for my campaign? </span> 
+                        <i class="fa-solid fa-arrow-right-long text-[35px] text-primarycolor transform rotate-[45deg] absolute right-[50px] top-[50%] -translate-y-[50%]"></i>
+                        <p class="dm-faq-desc hidden pt-[20px]">
+                            The cost of digital marketing can vary widely depending on the specific strategies and tactics used, the level of competition in the market, and the goals of the business. Some digital marketing strategies, such as social media marketing and email marketing, can be relatively inexpensive, while others, such as pay-per-click advertising and search engine optimization, can be more costly. Additionally, the cost of digital marketing can depend on whether a business chooses to handle their marketing in-house or work with an agency or freelancer. Ultimately, the cost of digital marketing will depend on a variety of factors unique to each business, and it's important to carefully consider the potential return on investment before investing in any marketing strategy.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- DM Faq End -->
+
+
+        <!-- Footer Section -->
+        <footer class="mt-[75.05px] tab:mt-[202.75px]">
+            <div class="container">
+                <div class="footer-wrapper flex justify-between">
+                    <div class="footer-item w-full">
+                        <div class="f-company-details max-w-[480px] xl:max-w-[560px]">
+                            <img src="assets/images/logo.png" alt="Footer">
+                            <p class=" text-[14px] tab:text-[20px] leading-[18px] tab:leading-[27px] text-[#E1E1E1] mt-[9px]">
+                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.
+                            </p>
+                        </div>
+                        <div class="flex justify-between gap-[78.75px]">
+                            <div class="mt-[41px] tab:mt-[67px] w-[480px] xl:w-[560px]">
+                                <ul class="w-full flex flex-col gap-[12px]">
+                                    <li class="pb-[10px] border-b border-primary-text-color transition-colors hover:text-primarycolor hover:border-primarycolor text-primary-text-color text-[14px] tab:text-[24px] leading-[19px] tab:leading-[32px]"> 
+                                        <a href="#" class="flex justify-between items-center">
+                                            <span> ABOUT US </span> <i class="fa-solid fa-arrow-right transform -rotate-[45deg]"></i> 
+                                        </a>
+                                    </li>
+                                    <li class="pb-[10px] border-b border-primary-text-color transition-colors hover:text-primarycolor hover:border-primarycolor text-primary-text-color text-[14px] tab:text-[24px] leading-[19px] tab:leading-[32px]"> 
+                                        <a href="#" class="flex justify-between items-center">
+                                            <span> SEO </span> <i class="fa-solid fa-arrow-right transform -rotate-[45deg]"></i>
+                                        </a> 
+                                    </li>
+                                    <li class="pb-[10px]  transition-colors hover:text-primarycolor hover:border-primarycolor text-primary-text-color text-[14px] tab:text-[24px] leading-[19px] tab:leading-[32px]"> 
+                                        <a href="#" class="flex justify-between items-center">
+                                            <span> DIGITAL MARKETING </span> <i class="fa-solid fa-arrow-right transform -rotate-[45deg]"></i> 
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <ul class="social text-right -mt-[55px] tab:-mt-[105px]">
+                                <li class="pb-[8px] tab:pb-[15px] xl:pb-[23px]">
+                                    <a href="#" 
+                                    class="block text-primary-text-color transition-colors hover:text-primarycolor text-[16px] tab:text-[30px] leading-[22px] tab:leading-[35px] tracking-[0.32px] tab:tracking-normal font-bold">
+                                        FACEBOOK
+                                    </a>
+                                </li>
+                                <li class="pb-[8px] tab:pb-[15px] xl:pb-[23px]">
+                                    <a href="#" 
+                                    class="block text-primary-text-color transition-colors hover:text-primarycolor text-[16px] tab:text-[30px] leading-[22px] tab:leading-[35px] tracking-[0.32px] tab:tracking-normal font-bold">
+                                        TWITTER
+                                    </a>
+                                </li>
+                                <li class="pb-[8px] tab:pb-[15px] xl:pb-[23px]">
+                                    <a href="#" 
+                                    class="block text-primary-text-color transition-colors hover:text-primarycolor text-[16px] tab:text-[30px] leading-[22px] tab:leading-[35px] tracking-[0.32px] tab:tracking-normal font-bold">
+                                        INSTAGRAM
+                                    </a>
+                                </li>
+                                <li class="pb-[8px] tab:pb-[15px] xl:pb-[23px]">
+                                    <a href="#" 
+                                    class="block text-primary-text-color transition-colors hover:text-primarycolor text-[16px] tab:text-[30px] leading-[22px] tab:leading-[35px] tracking-[0.32px] tab:tracking-normal font-bold">
+                                        LINKEDIN
+                                    </a>
+                                </li>
+                                <li class="pb-[8px] tab:pb-[15px] xl:pb-[23px]">
+                                    <a href="#" 
+                                    class="block text-primary-text-color transition-colors hover:text-primarycolor text-[16px] tab:text-[30px] leading-[22px] tab:leading-[35px] tracking-[0.32px] tab:tracking-normal font-bold">
+                                        YOUTUBE
+                                    </a>
+                                </li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="footer-copyright pt-[12px] pb-[11.23px] tab:pb-[28.75px] border-t border-primary-text-color mt-[41.75px] tab:mt-[72px] xl:mt-[92px]">
+                    <p class="text-primary-text-color text-[12px] tab:text-[18px] leading-[16px] tab:leading-[24px] text-center">
+                        Copyright © 2023 <a href="#" class="text-primarycolor">UPSPELL</a>. All Rights Reserved.
+                    </p>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer End -->
+
+    </main>
+
+    <script defer src="assets/js/main.js"></script>
+
+    
+    
+
+</body>
+</html>

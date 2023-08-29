@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+/>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title> UPSPELL </title>
+</head>
+<body>
+    <main>
+        <!-- Header -->
+        <header class="relative">
+            <div class="container">
+                <div class="desk-menu flex justify-between items-center pt-[22.67px] tab:pt-[33px]">
+                    <!-- Logo -->
+                    <a href="index.html">
+                        <img src="assets/images/logo.png" alt="Logo">
+                    </a>
+                    <!-- Desktop Menubar -->
+                    <div class="menu-wrapper flex gap-[87px] items-center">
+                        <a href="#" class="text-xl uppercase border-t border-b border-primarycolor transition-colors hover:text-primarycolor hover:border-white">
+                            WORK WITH US
+                        </a>
+                        <!-- Menu Div -->
+                        <div id="menu-nav" class="menu-icon cursor-pointer relative w-[47px] h-[34px]">
+                            <span class="line-up absolute top-0 w-full h-[2px] bg-white rounded-full"></span>
+                            <span class="line-middle absolute transform top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] w-[80%] h-[2px] bg-white rounded-full"></span>
+                            <span class="line-down absolute bottom-0 w-full h-[2px] bg-white rounded-full"></span>
+                        </div>
+                    </div>
+                </div>   
+            </div>
+            
+            <!-- Navigation Menu -->
+            <div class="main-nav-wrapper hidden fixed left-0 top-0 right-0 bottom-0 w-full h-screen bg-black z-10 pt-[16px] tab:pt-[33px] pl-[20px] tab:pl-[83px] xl:pl-[133px] pr-[21px] tab:pr-[51px] transition-all">
+                <div class="menu-header w-full flex justify-between">
+                    <img src="assets/images/logo.png" alt="Logo">
+                    <span id="closeMenu">
+                        <i class="fa-solid fa-xmark text-primary-text-color text-[28px] cursor-pointer"></i>
+                    </span>
+                </div>
+                <ul class=" max-w-[400px] mt-[21px] tab:mt-[51px] text-[14px] tab:text-[24px] leading-[21px] tab:leading-[32px]">
+                    <li class="pb-[8px] tab:pb-[12px]"> <a href="#" class="transition-colors hover:text-primarycolor"> Home </a> </li>
+                    <li class="pb-[8px] tab:pb-[12px]"> <a href="#" class="transition-colors hover:text-primarycolor"> About Us </a> </li>
+                    <li class="pb-[8px] tab:pb-[12px]"> 
+                        <a href="#" class="flex items-center gap-[12px] transition-colors hover:text-primarycolor" id="sub-menu-trigger"> 
+                            <span> Services </span> <span class="mt-1 transition-transform"> 
+                                <i class="fa-solid fa-angle-down text-primarycolor"></i> 
+                            </span> 
+                        </a> 
+                        <div class="sub-menu hidden pl-[20px] tab:pl-[34px]">
+                            <ul class="mt-[8px] tab:mt-[20px]">
+                                <li class="pb-[5px] tab:pb-[12px]"> <a href="#" class="transition-colors hover:text-primarycolor"> Digital Marketing </a> </li>
+                                <li class="pb-[5px] tab:pb-[12px]"> <a href="#" class="transition-colors hover:text-primarycolor"> Web Design and Development </a> </li>
+                                <li class="pb-[5px] tab:pb-[12px]"> <a href="#" class="transition-colors hover:text-primarycolor"> Social Media Marketing </a> </li>
+                                <li class="pb-[5px] tab:pb-[12px]"> <a href="#" class="transition-colors hover:text-primarycolor"> E-Commerce Development </a> </li>
+                                <li class="pb-[5px] tab:pb-[12px]"> <a href="#" class="transition-colors hover:text-primarycolor"> SEO </a> </li>
+                                <li class="pb-[5px] tab:pb-[12px]"> <a href="#" class="transition-colors hover:text-primarycolor"> UI/UX Design </a> </li>
+                                <li class="pb-[5px] tab:pb-[12px]"> <a href="#" class="transition-colors hover:text-primarycolor"> Graphic Design </a> </li>
+                                <li class="pb-[5px] tab:pb-[12px]"> <a href="#" class="transition-colors hover:text-primarycolor"> Online Reputation Management </a> </li>
+                                <li class="pb-[5px] tab:pb-[12px]"> <a href="#" class="transition-colors hover:text-primarycolor"> PPC Management </a> </li>
+                                <li class="pb-[5px] tab:pb-[12px]"> <a href="#" class="transition-colors hover:text-primarycolor"> Social Media Manager </a> </li>
+                                <li class="pb-[5px] tab:pb-[12px]"> <a href="#" class="transition-colors hover:text-primarycolor"> Content Writing </a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="pb-[8px] tab:pb-[12px]"> <a href="#" class="transition-colors hover:text-primarycolor"> Life at SHUVO IT </a> </li>
+                    <li class="pb-[8px] tab:pb-[12px]"> <a href="#" class="transition-colors hover:text-primarycolor"> Career </a> </li>
+                    <li class="pb-[8px] tab:pb-[12px]"> <a href="#" class="transition-colors hover:text-primarycolor"> Our Team </a> </li>
+                    <li class="pb-[8px] tab:pb-[12px]"> <a href="#" class="transition-colors hover:text-primarycolor"> Contact Us </a> </li>
+                </ul>
+            </div>
+        </header>
+        <!-- Header End -->
+
+
+        <!-- Hero Section -->
+        <div class="web-dev-hero pt-[205px]">
+            <div class="container">
+                <h1 class="smm-hero-title max-w-[855px] text-[125px] leading-[121px] font-bold">
+                    SOCIAL MEDIA <span class="font-normal"> MARKETING </span>
+                </h1>
+                <p class="wd-hero-sub-desc text-[30px] leading-[20px] mt-[15px]">
+                    Increase Your Engagement & Sales
+                </p>
+                <a href="#" 
+                    class="wd-hero-btn block text-black text-[30px] leading-[60px] font-medium py-[12px] bg-primarycolor rounded-[15px] w-[311px] text-center uppercase mt-[76px]"> 
+                    Let's Talk 
+                </a>
+            </div>
+        </div>
+        <!-- Hero Section End -->
+
+        <!-- Marquee Section -->
+        <section class="marquee mt-[151px]">
+            <div class="container">
+                <div class="swiper-container swiper--bottom">
+                    <ul class="swiper-wrapper">
+                        <li class="swiper-slide">
+                            <span class="text-[110px] leading-[120px] text-[#171717] font-[900]"> - </span>
+                        </li>
+                        <li class="swiper-slide">
+                            <span class="text-[110px] leading-[120px] text-[#171717] font-[900]"> Explore  </span>
+                        </li>
+                        <li class="swiper-slide">
+                            <span class="text-[110px] leading-[120px] text-[#171717] font-[900]"> - </span>
+                        </li>
+                        <li class="swiper-slide">
+                            <span class="text-[110px] leading-[120px] text-[#171717] font-[900]"> Research </span>
+                        </li>
+                        <li class="swiper-slide">
+                            <span class="text-[110px] leading-[120px] text-[#171717] font-[900]"> - </span>
+                        </li>
+                        <li class="swiper-slide">
+                            <span class="text-[110px] leading-[120px] text-[#171717] font-[900]"> Analysis</span>
+                        </li>
+                        <li class="swiper-slide">
+                            <span class="text-[110px] leading-[120px] text-[#171717] font-[900]"> - </span>
+                        </li>
+                        <li class="swiper-slide">
+                            <span class="text-[110px] leading-[120px] text-[#171717] font-[900]"> Design </span>
+                        </li>
+                        <li class="swiper-slide">
+                            <span class="text-[110px] leading-[120px] text-[#171717] font-[900]"> - </span>
+                        </li>
+                        <li class="swiper-slide">
+                            <span class="text-[110px] leading-[120px] text-[#171717] font-[900]"> Testing </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- Marquee Section End -->
+
+        <!-- SMM Services -->
+        <section class="smm-services pt-[206px]">
+            <div class="container">
+                <h2 class="dm-sub-title max-w-[746px] text-[70px] leading-[80px] font-medium">
+                    SOCIAL MEDIA MARKETING SERVICES
+                </h2>
+
+                <!-- SMM Services Wrapper -->
+                <div>
+                    <div class="smm-s-wrapper w-full mt-[50px] h-[952px] bg-[url(../images/smm/e-commerce-online.png)] rounded-[20px] flex items-end">
+                        <div class="services-content relative w-full h-[140px] px-[109px]">
+                            <div class="smm-serices-layer bg-[#000000] absolute w-full h-full top-0 right-0 bottom-0 left-0"></div>
+                        </div>
+                    </div>
+                    <p class="smm-s-banner-desc text-[30px] leading-[35px] text-white text-center z-[1] relative w-[90%] mx-auto -mt-[120px] pb-[15px]">
+                        Are you looking for an effective way to grow your business’ brand awareness, number of new customers, and website traffic? Then you should be on social media! Check out our social media marketing service and build a strong social media presence. Contact us to get started.
+                    </p>
+                </div>
+
+                <!-- SMM Services Block -->
+                <div class="smm-service-block flex gap-[32px] mt-[65px]">
+                    <div class="smm-service-block-item min-h-[683px] bg-[#1C1410] relative rounded-[20px] pt-[87.5px] pl-[40px] pr-[52px] pb-[90px] transition-all hover:shadow-lg">
+                        <div class="smm-eye">
+                            <svg class="smm-eye-close"
+                             xmlns="http://www.w3.org/2000/svg" width="83" height="39.508" viewBox="0 0 83 39.508">
+                                <g id="witness" transform="translate(0 -21.746)">
+                                  <path id="Path_459" data-name="Path 459" d="M16.863,172.129a24.54,24.54,0,0,1,6.01-16.109,67.525,67.525,0,0,0-22.29,14.7,1.979,1.979,0,0,0,0,2.806,67.389,67.389,0,0,0,22.289,14.7,24.53,24.53,0,0,1-6.009-16.105Z" transform="translate(0 -130.628)" fill="#fff"/>
+                                  <path id="Path_460" data-name="Path 460" d="M369.452,156.04a24.59,24.59,0,0,1,0,32.214,67.525,67.525,0,0,0,22.29-14.7,1.978,1.978,0,0,0,0-2.806,67.392,67.392,0,0,0-22.289-14.7Z" transform="translate(-309.324 -130.645)" fill="#fff"/>
+                                  <path id="Path_461" data-name="Path 461" d="M153.374,133.62a19.754,19.754,0,1,0,19.754,19.754A19.776,19.776,0,0,0,153.374,133.62Zm0,29.031a9.276,9.276,0,1,1,9.276-9.276A9.287,9.287,0,0,1,153.374,162.651Z" transform="translate(-111.874 -111.874)" fill="#fff"/>
+                                  <circle id="Ellipse_185" data-name="Ellipse 185" cx="4.5" cy="4.5" r="4.5" transform="translate(37 37)" fill="#fff"/>
+                                </g>
+                            </svg>
+
+                            <svg class="smm-eye-open hidden" 
+                            xmlns="http://www.w3.org/2000/svg" width="83" height="83" viewBox="0 0 83 83">
+                                <g id="witness" transform="translate(0)">
+                                  <path id="Path_459" data-name="Path 459" d="M16.863,172.129a24.54,24.54,0,0,1,6.01-16.109,67.525,67.525,0,0,0-22.29,14.7,1.979,1.979,0,0,0,0,2.806,67.389,67.389,0,0,0,22.289,14.7,24.53,24.53,0,0,1-6.009-16.105Z" transform="translate(0 -130.628)" fill="#f26522"/>
+                                  <path id="Path_460" data-name="Path 460" d="M369.452,156.04a24.59,24.59,0,0,1,0,32.214,67.525,67.525,0,0,0,22.29-14.7,1.978,1.978,0,0,0,0-2.806,67.392,67.392,0,0,0-22.289-14.7Z" transform="translate(-309.324 -130.645)" fill="#f26522"/>
+                                  <path id="Path_461" data-name="Path 461" d="M153.374,133.62a19.754,19.754,0,1,0,19.754,19.754A19.776,19.776,0,0,0,153.374,133.62Zm0,29.031a9.276,9.276,0,1,1,9.276-9.276A9.287,9.287,0,0,1,153.374,162.651Z" transform="translate(-111.874 -111.874)" fill="#f26522"/>
+                                  <circle id="Ellipse_185" data-name="Ellipse 185" cx="4.5" cy="4.5" r="4.5" transform="translate(37 37)" fill="#f26522"/>
+                                  <g id="Group_158" data-name="Group 158">
+                                    <path id="Path_462" data-name="Path 462" d="M242.441,10.572a2.441,2.441,0,0,0,2.441-2.441V2.441a2.441,2.441,0,1,0-4.882,0V8.13A2.441,2.441,0,0,0,242.441,10.572Z" transform="translate(-200.941)" fill="#f26522"/>
+                                    <path id="Path_463" data-name="Path 463" d="M338.046,32.256a2.441,2.441,0,0,0,3.33-.911l3.245-5.689a2.441,2.441,0,1,0-4.241-2.419l-3.245,5.689A2.441,2.441,0,0,0,338.046,32.256Z" transform="translate(-281.999 -18.423)" fill="#f26522"/>
+                                    <path id="Path_464" data-name="Path 464" d="M126.809,31.344a2.441,2.441,0,0,0,4.241-2.419l-3.245-5.689a2.441,2.441,0,0,0-4.241,2.419Z" transform="translate(-103.187 -18.423)" fill="#f26522"/>
+                                    <path id="Path_465" data-name="Path 465" d="M242.441,445.042A2.441,2.441,0,0,0,240,447.483v5.689a2.441,2.441,0,0,0,4.882,0v-5.689A2.441,2.441,0,0,0,242.441,445.042Z" transform="translate(-200.941 -372.614)" fill="#f26522"/>
+                                    <path id="Path_466" data-name="Path 466" d="M130.14,423.354a2.441,2.441,0,0,0-3.33.911l-3.245,5.689a2.441,2.441,0,1,0,4.241,2.419l3.245-5.689A2.441,2.441,0,0,0,130.14,423.354Z" transform="translate(-103.187 -354.187)" fill="#f26522"/>
+                                    <path id="Path_467" data-name="Path 467" d="M341.376,424.265a2.441,2.441,0,0,0-4.241,2.419l3.245,5.689a2.441,2.441,0,1,0,4.241-2.419Z" transform="translate(-281.999 -354.186)" fill="#f26522"/>
+                                  </g>
+                                </g>
+                              </svg>
+                        </div>
+                        <span class="smm-service-title block text-[30px] leading-[35px] capitalize font-semibold mt-[23px]"> Develop Brand Awareness (Followers) </span>
+                        <p class="smm-service-desc text-[24px] leading-[35px] mt-[29px]">
+                            Growing your followers on social networks will help you increase word of mouth and referrals. Our social media marketing services will help you increase your followers with relevant people. We will ensure that your followers match the demographics, interests, and behaviors of your typical customers.
+                        </p>
+
+                        <div class="smm-service-grad-layer"></div>
+                    </div>
+
+                    <div class="smm-service-block-item min-h-[683px] bg-[#1C1410] relative rounded-[20px] pt-[87.5px] pl-[40px] pr-[52px] pb-[90px] transition-all hover:shadow-lg">
+                        <div class="smm-eye">
+                            <svg class="smm-eye-close"
+                             xmlns="http://www.w3.org/2000/svg" width="83" height="39.508" viewBox="0 0 83 39.508">
+                                <g id="witness" transform="translate(0 -21.746)">
+                                  <path id="Path_459" data-name="Path 459" d="M16.863,172.129a24.54,24.54,0,0,1,6.01-16.109,67.525,67.525,0,0,0-22.29,14.7,1.979,1.979,0,0,0,0,2.806,67.389,67.389,0,0,0,22.289,14.7,24.53,24.53,0,0,1-6.009-16.105Z" transform="translate(0 -130.628)" fill="#fff"/>
+                                  <path id="Path_460" data-name="Path 460" d="M369.452,156.04a24.59,24.59,0,0,1,0,32.214,67.525,67.525,0,0,0,22.29-14.7,1.978,1.978,0,0,0,0-2.806,67.392,67.392,0,0,0-22.289-14.7Z" transform="translate(-309.324 -130.645)" fill="#fff"/>
+                                  <path id="Path_461" data-name="Path 461" d="M153.374,133.62a19.754,19.754,0,1,0,19.754,19.754A19.776,19.776,0,0,0,153.374,133.62Zm0,29.031a9.276,9.276,0,1,1,9.276-9.276A9.287,9.287,0,0,1,153.374,162.651Z" transform="translate(-111.874 -111.874)" fill="#fff"/>
+                                  <circle id="Ellipse_185" data-name="Ellipse 185" cx="4.5" cy="4.5" r="4.5" transform="translate(37 37)" fill="#fff"/>
+                                </g>
+                            </svg>
+
+                            <svg class="smm-eye-open hidden" 
+                            xmlns="http://www.w3.org/2000/svg" width="83" height="83" viewBox="0 0 83 83">
+                                <g id="witness" transform="translate(0)">
+                                  <path id="Path_459" data-name="Path 459" d="M16.863,172.129a24.54,24.54,0,0,1,6.01-16.109,67.525,67.525,0,0,0-22.29,14.7,1.979,1.979,0,0,0,0,2.806,67.389,67.389,0,0,0,22.289,14.7,24.53,24.53,0,0,1-6.009-16.105Z" transform="translate(0 -130.628)" fill="#f26522"/>
+                                  <path id="Path_460" data-name="Path 460" d="M369.452,156.04a24.59,24.59,0,0,1,0,32.214,67.525,67.525,0,0,0,22.29-14.7,1.978,1.978,0,0,0,0-2.806,67.392,67.392,0,0,0-22.289-14.7Z" transform="translate(-309.324 -130.645)" fill="#f26522"/>
+                                  <path id="Path_461" data-name="Path 461" d="M153.374,133.62a19.754,19.754,0,1,0,19.754,19.754A19.776,19.776,0,0,0,153.374,133.62Zm0,29.031a9.276,9.276,0,1,1,9.276-9.276A9.287,9.287,0,0,1,153.374,162.651Z" transform="translate(-111.874 -111.874)" fill="#f26522"/>
+                                  <circle id="Ellipse_185" data-name="Ellipse 185" cx="4.5" cy="4.5" r="4.5" transform="translate(37 37)" fill="#f26522"/>
+                                  <g id="Group_158" data-name="Group 158">
+                                    <path id="Path_462" data-name="Path 462" d="M242.441,10.572a2.441,2.441,0,0,0,2.441-2.441V2.441a2.441,2.441,0,1,0-4.882,0V8.13A2.441,2.441,0,0,0,242.441,10.572Z" transform="translate(-200.941)" fill="#f26522"/>
+                                    <path id="Path_463" data-name="Path 463" d="M338.046,32.256a2.441,2.441,0,0,0,3.33-.911l3.245-5.689a2.441,2.441,0,1,0-4.241-2.419l-3.245,5.689A2.441,2.441,0,0,0,338.046,32.256Z" transform="translate(-281.999 -18.423)" fill="#f26522"/>
+                                    <path id="Path_464" data-name="Path 464" d="M126.809,31.344a2.441,2.441,0,0,0,4.241-2.419l-3.245-5.689a2.441,2.441,0,0,0-4.241,2.419Z" transform="translate(-103.187 -18.423)" fill="#f26522"/>
+                                    <path id="Path_465" data-name="Path 465" d="M242.441,445.042A2.441,2.441,0,0,0,240,447.483v5.689a2.441,2.441,0,0,0,4.882,0v-5.689A2.441,2.441,0,0,0,242.441,445.042Z" transform="translate(-200.941 -372.614)" fill="#f26522"/>
+                                    <path id="Path_466" data-name="Path 466" d="M130.14,423.354a2.441,2.441,0,0,0-3.33.911l-3.245,5.689a2.441,2.441,0,1,0,4.241,2.419l3.245-5.689A2.441,2.441,0,0,0,130.14,423.354Z" transform="translate(-103.187 -354.187)" fill="#f26522"/>
+                                    <path id="Path_467" data-name="Path 467" d="M341.376,424.265a2.441,2.441,0,0,0-4.241,2.419l3.245,5.689a2.441,2.441,0,1,0,4.241-2.419Z" transform="translate(-281.999 -354.186)" fill="#f26522"/>
+                                  </g>
+                                </g>
+                              </svg>
+                        </div>
+                        <span class="smm-service-title block text-[30px] leading-[35px] capitalize font-semibold mt-[23px]"> Build Relationships (Engagement) </span>
+                        <p class="smm-service-desc text-[24px] leading-[35px] mt-[29px]">
+                            When you build a strong connection through engagement with your audience, they are more likely to buy from you. We will help you increase engagement (likes, comments, etc.) on your social media posts. The more engagement you have, the stronger your connection is with your audience.
+                        </p>
+
+                        <div class="smm-service-grad-layer"></div>
+                    </div>
+
+                    <div class="smm-service-block-item min-h-[683px] bg-[#1C1410] relative rounded-[20px] pt-[87.5px] pl-[40px] pr-[52px] pb-[90px] transition-all hover:shadow-lg">
+                        <div class="smm-eye">
+                            <svg class="smm-eye-close"
+                             xmlns="http://www.w3.org/2000/svg" width="83" height="39.508" viewBox="0 0 83 39.508">
+                                <g id="witness" transform="translate(0 -21.746)">
+                                  <path id="Path_459" data-name="Path 459" d="M16.863,172.129a24.54,24.54,0,0,1,6.01-16.109,67.525,67.525,0,0,0-22.29,14.7,1.979,1.979,0,0,0,0,2.806,67.389,67.389,0,0,0,22.289,14.7,24.53,24.53,0,0,1-6.009-16.105Z" transform="translate(0 -130.628)" fill="#fff"/>
+                                  <path id="Path_460" data-name="Path 460" d="M369.452,156.04a24.59,24.59,0,0,1,0,32.214,67.525,67.525,0,0,0,22.29-14.7,1.978,1.978,0,0,0,0-2.806,67.392,67.392,0,0,0-22.289-14.7Z" transform="translate(-309.324 -130.645)" fill="#fff"/>
+                                  <path id="Path_461" data-name="Path 461" d="M153.374,133.62a19.754,19.754,0,1,0,19.754,19.754A19.776,19.776,0,0,0,153.374,133.62Zm0,29.031a9.276,9.276,0,1,1,9.276-9.276A9.287,9.287,0,0,1,153.374,162.651Z" transform="translate(-111.874 -111.874)" fill="#fff"/>
+                                  <circle id="Ellipse_185" data-name="Ellipse 185" cx="4.5" cy="4.5" r="4.5" transform="translate(37 37)" fill="#fff"/>
+                                </g>
+                            </svg>
+
+                            <svg class="smm-eye-open hidden" 
+                            xmlns="http://www.w3.org/2000/svg" width="83" height="83" viewBox="0 0 83 83">
+                                <g id="witness" transform="translate(0)">
+                                  <path id="Path_459" data-name="Path 459" d="M16.863,172.129a24.54,24.54,0,0,1,6.01-16.109,67.525,67.525,0,0,0-22.29,14.7,1.979,1.979,0,0,0,0,2.806,67.389,67.389,0,0,0,22.289,14.7,24.53,24.53,0,0,1-6.009-16.105Z" transform="translate(0 -130.628)" fill="#f26522"/>
+                                  <path id="Path_460" data-name="Path 460" d="M369.452,156.04a24.59,24.59,0,0,1,0,32.214,67.525,67.525,0,0,0,22.29-14.7,1.978,1.978,0,0,0,0-2.806,67.392,67.392,0,0,0-22.289-14.7Z" transform="translate(-309.324 -130.645)" fill="#f26522"/>
+                                  <path id="Path_461" data-name="Path 461" d="M153.374,133.62a19.754,19.754,0,1,0,19.754,19.754A19.776,19.776,0,0,0,153.374,133.62Zm0,29.031a9.276,9.276,0,1,1,9.276-9.276A9.287,9.287,0,0,1,153.374,162.651Z" transform="translate(-111.874 -111.874)" fill="#f26522"/>
+                                  <circle id="Ellipse_185" data-name="Ellipse 185" cx="4.5" cy="4.5" r="4.5" transform="translate(37 37)" fill="#f26522"/>
+                                  <g id="Group_158" data-name="Group 158">
+                                    <path id="Path_462" data-name="Path 462" d="M242.441,10.572a2.441,2.441,0,0,0,2.441-2.441V2.441a2.441,2.441,0,1,0-4.882,0V8.13A2.441,2.441,0,0,0,242.441,10.572Z" transform="translate(-200.941)" fill="#f26522"/>
+                                    <path id="Path_463" data-name="Path 463" d="M338.046,32.256a2.441,2.441,0,0,0,3.33-.911l3.245-5.689a2.441,2.441,0,1,0-4.241-2.419l-3.245,5.689A2.441,2.441,0,0,0,338.046,32.256Z" transform="translate(-281.999 -18.423)" fill="#f26522"/>
+                                    <path id="Path_464" data-name="Path 464" d="M126.809,31.344a2.441,2.441,0,0,0,4.241-2.419l-3.245-5.689a2.441,2.441,0,0,0-4.241,2.419Z" transform="translate(-103.187 -18.423)" fill="#f26522"/>
+                                    <path id="Path_465" data-name="Path 465" d="M242.441,445.042A2.441,2.441,0,0,0,240,447.483v5.689a2.441,2.441,0,0,0,4.882,0v-5.689A2.441,2.441,0,0,0,242.441,445.042Z" transform="translate(-200.941 -372.614)" fill="#f26522"/>
+                                    <path id="Path_466" data-name="Path 466" d="M130.14,423.354a2.441,2.441,0,0,0-3.33.911l-3.245,5.689a2.441,2.441,0,1,0,4.241,2.419l3.245-5.689A2.441,2.441,0,0,0,130.14,423.354Z" transform="translate(-103.187 -354.187)" fill="#f26522"/>
+                                    <path id="Path_467" data-name="Path 467" d="M341.376,424.265a2.441,2.441,0,0,0-4.241,2.419l3.245,5.689a2.441,2.441,0,1,0,4.241-2.419Z" transform="translate(-281.999 -354.186)" fill="#f26522"/>
+                                  </g>
+                                </g>
+                              </svg>
+                        </div>
+                        <span class="smm-service-title block text-[30px] leading-[35px] capitalize font-semibold mt-[23px]"> Increasing Website Exposure (Traffic & Conversions) </span>
+                        <p class="smm-service-desc text-[24px] leading-[35px] mt-[29px]">
+                            Growing your followers on social networks will help you increase word of mouth and referrals. Our social media marketing services will help you increase your followers with relevant people. We will ensure that your followers match the demographics, interests, and behaviors of your typical customers.
+                        </p>
+
+                        <div class="smm-service-grad-layer"></div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- SMM Services End -->
+
+        <!-- Our SMM Services -->
+        <section class="our-smm-services sec-res-pt pt-[180px]">
+            <div class="container">
+                <h2 class="dm-sub-title max-w-[746px] text-[70px] leading-[80px] font-medium">
+                    OUR SOCIAL MEDIA MARKETING SERVICES
+                </h2>
+                <h4 class="wd-hero-sub-desc text-[30px] leading-[20px] mt-[15px]">
+                    Social Media Marketing For Small Businesses
+                </h4>
+                <p class="smm-s-desc text-[20px] leading-[30px] mt-[42px]">
+                    You can avail our social media promotion service for any of the social media platforms below. If you want to learn more about our SMM promotion services, then you can simply click the buttons below or schedule a free meeting with one of our digital marketing experts.
+                </p>
+
+                <!-- Our SMM Services Wrapper -->
+                <div class="o-smm-s-block-wrapper mt-[130px] flex justify-end items-center gap-[33px]">
+                    <div class="o-smm-s-block relative">
+                        <img class="o-smm-s-block-banner transition-all" src="assets/images/smm/smm-services/facebook.svg" alt="facebook marketng">
+                        <div class="o-smm-s-block-c hidden bg-[#3D6AD6] absolute top-0 bottom-0 left-0 right-0 w-full h-full pl-[40px] pt-[50px] pr-[20px] pb-[65px]">
+                            <span class="o-smm-s-block-c-t block text-[30px] leading-[40px] font-semibold uppercase"> facebook </span>
+                            <p class="o-smm-s-block-c-desc text-[20px] leading-[30px] mt-[20px]">
+                               With over 2 billion monthly active users, you are guranteed to reach your desired audience through Fcaebook. Use the leading social media platform to grow your business. 
+                            </p>
+                            <a href="#" class="o-smm-s-block-c-a w-[302px] h-[36px] flex justify-center items-center text-[20px] leading-[30px] bg-white text-[#3D6AD6] capitalize px-[16px] mt-[72px]">
+                                facebook marketing service
+                            </a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="o-smm-s-block relative">
+                            <img src="assets/images/smm/smm-services/instagram.svg" alt="instagram marketng">
+                            <div class="o-smm-s-block-c hidden instagram absolute top-0 bottom-0 left-0 right-0 w-full h-full pl-[40px] pt-[50px] pr-[20px] pb-[65px]">
+                                <span class="o-smm-s-block-c-t block text-[30px] leading-[40px] font-semibold uppercase"> instagram </span>
+                                <p class="o-smm-s-block-c-desc text-[20px] leading-[30px] mt-[20px]">
+                                   With over 2 billion monthly active users, you are guranteed to reach your desired audience through Instagram. Use the leading social media platform to grow your business. 
+                                </p>
+                                <a href="#" class="o-smm-s-block-c-a w-[302px] h-[36px] flex justify-center items-center text-[20px] leading-[30px] bg-white text-[#f09433] capitalize px-[16px] mt-[72px]">
+                                    instagram marketing service
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="o-smm-s-block mt-gap relative mt-[33px]">
+                            <img src="assets/images/smm/smm-services/twitter.svg" alt="twitter marketng">
+                            <div class="o-smm-s-block-c hidden bg-[#03A9F4] absolute top-0 bottom-0 left-0 right-0 w-full h-full pl-[40px] pt-[50px] pr-[20px] pb-[65px]">
+                                <span class="o-smm-s-block-c-t block text-[30px] leading-[40px] font-semibold uppercase"> twitter </span>
+                                <p class="o-smm-s-block-c-desc text-[20px] leading-[30px] mt-[20px]">
+                                   With over 2 billion monthly active users, you are guranteed to reach your desired audience through Twitter. Use the leading social media platform to grow your business. 
+                                </p>
+                                <a href="#" class="o-smm-s-block-c-a w-[302px] h-[36px] flex justify-center items-center text-[20px] leading-[30px] bg-white text-[#03A9F4] capitalize px-[16px] mt-[72px]">
+                                    twitter marketing service
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Our SMM Services End -->
+
+        <!-- Why Choose Us -->
+        <section class="why-choose-us sec-res-pt pt-[180px]">
+            <div class="container">
+                <h3 class="dm-sub-title text-[70px] leading-[80px] font-semibold">
+                    WHY CHOOSE UPSPELL
+                </h3>
+                <p class="wd-hero-sub-desc text-[30px] leading-[35px]">
+                    Stay on Top of Your Brand Mentions and Search Results
+                </p>
+
+                <!-- Why Choose Us Wrapper -->
+                <div class="smm-w-choose-wrapper mt-[113px]">
+                    <ul class="flex gap-[28px]">
+                        <li class="w-[32%]">
+                            <div class="smm-w-c-block min-h-[394px] bg-[#1C1410] pl-[42px] pt-[41.6px] pr-[22px] pb-[45px]">
+                                <div class="smm-w-c-icon-b">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="53.718" height="46.667" viewBox="0 0 53.718 46.667">
+                                        <path id="reviews" d="M49.291,4.61H11.4a7.9,7.9,0,0,0-7.9,7.9V37.769a7.9,7.9,0,0,0,7.9,7.9h4.737v3.253a2.373,2.373,0,0,0,3.695,1.958l7.863-5.242H49.323a7.9,7.9,0,0,0,7.9-7.9V12.505a7.9,7.9,0,0,0-7.9-7.9ZM32.238,24.6l-2.874,3.284.411,4.358a2.362,2.362,0,0,1-3.284,2.4L22.48,32.906l-4.011,1.737a2.365,2.365,0,0,1-3.284-2.4l.411-4.358L12.721,24.6a2.381,2.381,0,0,1,1.263-3.884l4.263-.947,2.211-3.758h0a2.479,2.479,0,0,1,4.074,0l2.211,3.758,4.263.947A2.381,2.381,0,0,1,32.27,24.6Zm10.737,8.432H36.659a1.579,1.579,0,0,1,0-3.158h6.316a1.579,1.579,0,0,1,0,3.158Zm4.737-6.316H36.659a1.579,1.579,0,0,1,0-3.158H47.712a1.579,1.579,0,0,1,0,3.158Zm0-6.316H36.659a1.579,1.579,0,1,1,0-3.158H47.712a1.579,1.579,0,1,1,0,3.158Z" transform="translate(-3.5 -4.61)" fill="#fff"/>
+                                    </svg>
+                                </div>
+                                <span class="w-choose-s-block-c-t block text-primarycolor text-[24px] leading-[32px] font-semibold uppercase mt-[30.17px]"> DEDICATED ACCOUNT MANAGERS </span>
+
+                                <p class="w-choose-s-block-c-d text-[24px] leading-[30px] mt-[21px]">
+                                    At UPSPELL, we assign specific strategists depending on your industry demands, social media marketing needs and goals.
+                                </p>
+                            </div>
+                            <div class="smm-w-c-block min-h-[394px] bg-[#1C1410] pl-[42px] pt-[41.6px] pr-[22px] pb-[45px] mt-[28px]">
+                                <div class="smm-w-c-icon-b">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="53.718" height="46.667" viewBox="0 0 53.718 46.667">
+                                        <path id="reviews" d="M49.291,4.61H11.4a7.9,7.9,0,0,0-7.9,7.9V37.769a7.9,7.9,0,0,0,7.9,7.9h4.737v3.253a2.373,2.373,0,0,0,3.695,1.958l7.863-5.242H49.323a7.9,7.9,0,0,0,7.9-7.9V12.505a7.9,7.9,0,0,0-7.9-7.9ZM32.238,24.6l-2.874,3.284.411,4.358a2.362,2.362,0,0,1-3.284,2.4L22.48,32.906l-4.011,1.737a2.365,2.365,0,0,1-3.284-2.4l.411-4.358L12.721,24.6a2.381,2.381,0,0,1,1.263-3.884l4.263-.947,2.211-3.758h0a2.479,2.479,0,0,1,4.074,0l2.211,3.758,4.263.947A2.381,2.381,0,0,1,32.27,24.6Zm10.737,8.432H36.659a1.579,1.579,0,0,1,0-3.158h6.316a1.579,1.579,0,0,1,0,3.158Zm4.737-6.316H36.659a1.579,1.579,0,0,1,0-3.158H47.712a1.579,1.579,0,0,1,0,3.158Zm0-6.316H36.659a1.579,1.579,0,1,1,0-3.158H47.712a1.579,1.579,0,1,1,0,3.158Z" transform="translate(-3.5 -4.61)" fill="#fff"/>
+                                    </svg>
+                                </div>
+                                <span class="w-choose-s-block-c-t block text-primarycolor text-[24px] leading-[32px] font-semibold uppercase mt-[30.17px]"> EXTENSIVE ONBOARDING PROCESS </span>
+
+                                <p class="w-choose-s-block-c-d text-[24px] leading-[30px] mt-[21px]">
+                                    Our social media marketing consultants provide you with an in-depth social media marketing strategy breakdown during your campaign inception.
+                                </p>
+                            </div>
+                        </li>
+
+                        <li class="w-[32%] mt-[88px]">
+                            <div class="smm-w-c-block min-h-[394px] bg-[#1C1410] pl-[42px] pt-[41.6px] pr-[22px] pb-[45px]">
+                                <div class="smm-w-c-icon-b">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="53.718" height="46.667" viewBox="0 0 53.718 46.667">
+                                        <path id="reviews" d="M49.291,4.61H11.4a7.9,7.9,0,0,0-7.9,7.9V37.769a7.9,7.9,0,0,0,7.9,7.9h4.737v3.253a2.373,2.373,0,0,0,3.695,1.958l7.863-5.242H49.323a7.9,7.9,0,0,0,7.9-7.9V12.505a7.9,7.9,0,0,0-7.9-7.9ZM32.238,24.6l-2.874,3.284.411,4.358a2.362,2.362,0,0,1-3.284,2.4L22.48,32.906l-4.011,1.737a2.365,2.365,0,0,1-3.284-2.4l.411-4.358L12.721,24.6a2.381,2.381,0,0,1,1.263-3.884l4.263-.947,2.211-3.758h0a2.479,2.479,0,0,1,4.074,0l2.211,3.758,4.263.947A2.381,2.381,0,0,1,32.27,24.6Zm10.737,8.432H36.659a1.579,1.579,0,0,1,0-3.158h6.316a1.579,1.579,0,0,1,0,3.158Zm4.737-6.316H36.659a1.579,1.579,0,0,1,0-3.158H47.712a1.579,1.579,0,0,1,0,3.158Zm0-6.316H36.659a1.579,1.579,0,1,1,0-3.158H47.712a1.579,1.579,0,1,1,0,3.158Z" transform="translate(-3.5 -4.61)" fill="#fff"/>
+                                    </svg>
+                                </div>
+                                <span class="w-choose-s-block-c-t block text-primarycolor text-[24px] leading-[32px] font-semibold uppercase mt-[30.17px]"> CUSTOM SOCIAL MEDIA MARKETING STRATEGY </span>
+
+                                <p class="w-choose-s-block-c-d text-[24px] leading-[30px] mt-[21px]">
+                                    Boost your social media engagement and marketing efforts with a social media marketing strategy designed to fit your needs and budget.
+                                </p>
+                            </div>
+                            <div class="smm-w-c-block min-h-[394px] bg-[#1C1410] pl-[42px] pt-[41.6px] pr-[22px] pb-[45px] mt-[28px]">
+                                <div class="smm-w-c-icon-b">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="53.718" height="46.667" viewBox="0 0 53.718 46.667">
+                                        <path id="reviews" d="M49.291,4.61H11.4a7.9,7.9,0,0,0-7.9,7.9V37.769a7.9,7.9,0,0,0,7.9,7.9h4.737v3.253a2.373,2.373,0,0,0,3.695,1.958l7.863-5.242H49.323a7.9,7.9,0,0,0,7.9-7.9V12.505a7.9,7.9,0,0,0-7.9-7.9ZM32.238,24.6l-2.874,3.284.411,4.358a2.362,2.362,0,0,1-3.284,2.4L22.48,32.906l-4.011,1.737a2.365,2.365,0,0,1-3.284-2.4l.411-4.358L12.721,24.6a2.381,2.381,0,0,1,1.263-3.884l4.263-.947,2.211-3.758h0a2.479,2.479,0,0,1,4.074,0l2.211,3.758,4.263.947A2.381,2.381,0,0,1,32.27,24.6Zm10.737,8.432H36.659a1.579,1.579,0,0,1,0-3.158h6.316a1.579,1.579,0,0,1,0,3.158Zm4.737-6.316H36.659a1.579,1.579,0,0,1,0-3.158H47.712a1.579,1.579,0,0,1,0,3.158Zm0-6.316H36.659a1.579,1.579,0,1,1,0-3.158H47.712a1.579,1.579,0,1,1,0,3.158Z" transform="translate(-3.5 -4.61)" fill="#fff"/>
+                                    </svg>
+                                </div>
+                                <span class="w-choose-s-block-c-t block text-primarycolor text-[24px] leading-[32px] font-semibold uppercase mt-[30.17px]"> SOCIAL MEDIA CAMPAIGN REPORTS </span>
+
+                                <p class="w-choose-s-block-c-d text-[24px] leading-[30px] mt-[21px]">
+                                    Our custom, in-depth reporting measures include social media campaign reports that give a full overview of your social media performance.
+                                </p>
+                            </div>
+                        </li>
+
+                        <li class="w-[32%]">
+                            <div class="smm-w-c-block min-h-[394px] bg-[#1C1410] pl-[42px] pt-[41.6px] pr-[22px] pb-[45px]">
+                                <div class="smm-w-c-icon-b">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="53.718" height="46.667" viewBox="0 0 53.718 46.667">
+                                        <path id="reviews" d="M49.291,4.61H11.4a7.9,7.9,0,0,0-7.9,7.9V37.769a7.9,7.9,0,0,0,7.9,7.9h4.737v3.253a2.373,2.373,0,0,0,3.695,1.958l7.863-5.242H49.323a7.9,7.9,0,0,0,7.9-7.9V12.505a7.9,7.9,0,0,0-7.9-7.9ZM32.238,24.6l-2.874,3.284.411,4.358a2.362,2.362,0,0,1-3.284,2.4L22.48,32.906l-4.011,1.737a2.365,2.365,0,0,1-3.284-2.4l.411-4.358L12.721,24.6a2.381,2.381,0,0,1,1.263-3.884l4.263-.947,2.211-3.758h0a2.479,2.479,0,0,1,4.074,0l2.211,3.758,4.263.947A2.381,2.381,0,0,1,32.27,24.6Zm10.737,8.432H36.659a1.579,1.579,0,0,1,0-3.158h6.316a1.579,1.579,0,0,1,0,3.158Zm4.737-6.316H36.659a1.579,1.579,0,0,1,0-3.158H47.712a1.579,1.579,0,0,1,0,3.158Zm0-6.316H36.659a1.579,1.579,0,1,1,0-3.158H47.712a1.579,1.579,0,1,1,0,3.158Z" transform="translate(-3.5 -4.61)" fill="#fff"/>
+                                    </svg>
+                                </div>
+                                <span class="w-choose-s-block-c-t block text-primarycolor text-[24px] leading-[32px] font-semibold uppercase mt-[30.17px]"> PAID AND ORGANIC TEAM </span>
+
+                                <p class="w-choose-s-block-c-d text-[24px] leading-[30px] mt-[21px]">
+                                    We ensure our clients are matched with a subject matter expert. Our team comprises organic and paid strategists with years of expertise and experience, so you can rest easy knowing your campaign is well taken care of.
+                                </p>
+                            </div>
+                            <div class="smm-w-c-block min-h-[394px] bg-[#1C1410] pl-[42px] pt-[41.6px] pr-[22px] pb-[45px] mt-[28px]">
+                                <div class="smm-w-c-icon-b">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="53.718" height="46.667" viewBox="0 0 53.718 46.667">
+                                        <path id="reviews" d="M49.291,4.61H11.4a7.9,7.9,0,0,0-7.9,7.9V37.769a7.9,7.9,0,0,0,7.9,7.9h4.737v3.253a2.373,2.373,0,0,0,3.695,1.958l7.863-5.242H49.323a7.9,7.9,0,0,0,7.9-7.9V12.505a7.9,7.9,0,0,0-7.9-7.9ZM32.238,24.6l-2.874,3.284.411,4.358a2.362,2.362,0,0,1-3.284,2.4L22.48,32.906l-4.011,1.737a2.365,2.365,0,0,1-3.284-2.4l.411-4.358L12.721,24.6a2.381,2.381,0,0,1,1.263-3.884l4.263-.947,2.211-3.758h0a2.479,2.479,0,0,1,4.074,0l2.211,3.758,4.263.947A2.381,2.381,0,0,1,32.27,24.6Zm10.737,8.432H36.659a1.579,1.579,0,0,1,0-3.158h6.316a1.579,1.579,0,0,1,0,3.158Zm4.737-6.316H36.659a1.579,1.579,0,0,1,0-3.158H47.712a1.579,1.579,0,0,1,0,3.158Zm0-6.316H36.659a1.579,1.579,0,1,1,0-3.158H47.712a1.579,1.579,0,1,1,0,3.158Z" transform="translate(-3.5 -4.61)" fill="#fff"/>
+                                    </svg>
+                                </div>
+                                <span class="w-choose-s-block-c-t block text-primarycolor text-[24px] leading-[32px] font-semibold uppercase mt-[30.17px]"> DIVERSE MARKETING EXPERIENCE </span>
+
+                                <p class="w-choose-s-block-c-d text-[24px] leading-[30px] mt-[21px]">
+                                    UPSPELL has experience in many different markets, including B2B and B2C at all sizes. Whether you own a startup, enterprise or a multi-location company, our social media marketing firm strives to go above and beyond your expectations.
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- Why Choose Us End -->
+
+        <!-- Have Any Questions -->
+        <section class="have-a-questions sec-res-pt pt-[180px]">
+            <div class="container">
+
+                <!-- Have Any Questions Wrapper -->
+                <div class="have-a-questions-wrapper flex justify-between">
+                    <div>
+                        <h3 class="have-a-questions-t text-[70px] leading-[80px] font-semibold">
+                            ANY QUESTION FOR US?
+                        </h3>
+                        <p class="wd-hero-sub-desc text-[30px] leading-[35px]">
+                            We will be happy and will answer any questions you want to ask us.
+                        </p>
+                    </div>
+
+                    <a href="#" 
+                    class="icon have-a-q-w-btn w-[107px] h-[107px] rounded-full bg-primarycolor hover:border-2 hover:border-primarycolor hover:bg-black flex justify-center items-center transition-colors">
+                        <i class="fa-solid fa-arrow-right text-black text-[12px] tab:text-5xl transform rotate-[45deg]"></i>
+                    </a>
+
+                </div>
+            </div>
+        </section>
+        <!-- Have Any Questions End -->
+
+        <!-- Footer Section -->
+        <footer class="mt-[75.05px] tab:mt-[202.75px]">
+            <div class="container">
+                <div class="footer-wrapper flex justify-between">
+                    <div class="footer-item w-full">
+                        <div class="f-company-details max-w-[480px] xl:max-w-[560px]">
+                            <img src="assets/images/logo.png" alt="Footer">
+                            <p class=" text-[14px] tab:text-[20px] leading-[18px] tab:leading-[27px] text-[#E1E1E1] mt-[9px]">
+                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.
+                            </p>
+                        </div>
+                        <div class="flex justify-between gap-[78.75px]">
+                            <div class="mt-[41px] tab:mt-[67px] w-[480px] xl:w-[560px]">
+                                <ul class="w-full flex flex-col gap-[12px]">
+                                    <li class="pb-[10px] border-b border-primary-text-color transition-colors hover:text-primarycolor hover:border-primarycolor text-primary-text-color text-[14px] tab:text-[24px] leading-[19px] tab:leading-[32px]"> 
+                                        <a href="#" class="flex justify-between items-center">
+                                            <span> ABOUT US </span> <i class="fa-solid fa-arrow-right transform -rotate-[45deg]"></i> 
+                                        </a>
+                                    </li>
+                                    <li class="pb-[10px] border-b border-primary-text-color transition-colors hover:text-primarycolor hover:border-primarycolor text-primary-text-color text-[14px] tab:text-[24px] leading-[19px] tab:leading-[32px]"> 
+                                        <a href="#" class="flex justify-between items-center">
+                                            <span> SEO </span> <i class="fa-solid fa-arrow-right transform -rotate-[45deg]"></i>
+                                        </a> 
+                                    </li>
+                                    <li class="pb-[10px]  transition-colors hover:text-primarycolor hover:border-primarycolor text-primary-text-color text-[14px] tab:text-[24px] leading-[19px] tab:leading-[32px]"> 
+                                        <a href="#" class="flex justify-between items-center">
+                                            <span> DIGITAL MARKETING </span> <i class="fa-solid fa-arrow-right transform -rotate-[45deg]"></i> 
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <ul class="social text-right -mt-[55px] tab:-mt-[105px]">
+                                <li class="pb-[8px] tab:pb-[15px] xl:pb-[23px]">
+                                    <a href="#" 
+                                    class="block text-primary-text-color transition-colors hover:text-primarycolor text-[16px] tab:text-[30px] leading-[22px] tab:leading-[35px] tracking-[0.32px] tab:tracking-normal font-bold">
+                                        FACEBOOK
+                                    </a>
+                                </li>
+                                <li class="pb-[8px] tab:pb-[15px] xl:pb-[23px]">
+                                    <a href="#" 
+                                    class="block text-primary-text-color transition-colors hover:text-primarycolor text-[16px] tab:text-[30px] leading-[22px] tab:leading-[35px] tracking-[0.32px] tab:tracking-normal font-bold">
+                                        TWITTER
+                                    </a>
+                                </li>
+                                <li class="pb-[8px] tab:pb-[15px] xl:pb-[23px]">
+                                    <a href="#" 
+                                    class="block text-primary-text-color transition-colors hover:text-primarycolor text-[16px] tab:text-[30px] leading-[22px] tab:leading-[35px] tracking-[0.32px] tab:tracking-normal font-bold">
+                                        INSTAGRAM
+                                    </a>
+                                </li>
+                                <li class="pb-[8px] tab:pb-[15px] xl:pb-[23px]">
+                                    <a href="#" 
+                                    class="block text-primary-text-color transition-colors hover:text-primarycolor text-[16px] tab:text-[30px] leading-[22px] tab:leading-[35px] tracking-[0.32px] tab:tracking-normal font-bold">
+                                        LINKEDIN
+                                    </a>
+                                </li>
+                                <li class="pb-[8px] tab:pb-[15px] xl:pb-[23px]">
+                                    <a href="#" 
+                                    class="block text-primary-text-color transition-colors hover:text-primarycolor text-[16px] tab:text-[30px] leading-[22px] tab:leading-[35px] tracking-[0.32px] tab:tracking-normal font-bold">
+                                        YOUTUBE
+                                    </a>
+                                </li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="footer-copyright pt-[12px] pb-[11.23px] tab:pb-[28.75px] border-t border-primary-text-color mt-[41.75px] tab:mt-[72px] xl:mt-[92px]">
+                    <p class="text-primary-text-color text-[12px] tab:text-[18px] leading-[16px] tab:leading-[24px] text-center">
+                        Copyright © 2023 <a href="#" class="text-primarycolor">UPSPELL</a>. All Rights Reserved.
+                    </p>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer End -->
+        
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script defer src="assets/js/main.js"></script>
+    <script>
+        let SwiperBottom = new Swiper(".swiper--bottom", {
+        spaceBetween: 0,
+        centeredSlides: true,
+        infinite: true,
+        speed: 10000,
+        autoplay: {
+            delay: 1,
+            reverseDirection: false,
+        },
+        loop: true,
+        loopedSlides: 4,
+        slidesPerView: "auto",
+        allowTouchMove: false,
+        disableOnInteraction: true,
+    });
+    </script>
+
+</body>
+</html>

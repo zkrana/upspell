@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title> UPSPELL </title>
+</head>
+<body>
+    <main>
+        <!-- Header -->
+        <header class="relative">
+            <div class="container">
+                <div class="desk-menu flex justify-between items-center pt-[22.67px] tab:pt-[33px]">
+                    <!-- Logo -->
+                    <a href="index.html">
+                        <img src="assets/images/logo.png" alt="Logo">
+                    </a>
+                    <!-- Desktop Menubar -->
+                    <div class="menu-wrapper flex gap-[87px] items-center">
+                        <a href="#" class="text-xl uppercase border-t border-b border-primarycolor transition-colors hover:text-primarycolor hover:border-white">
+                            WORK WITH US
+                        </a>
+                        <!-- Menu Div -->
+                        <div id="menu-nav" class="menu-icon cursor-pointer relative w-[47px] h-[34px]">
+                            <span class="line-up absolute top-0 w-full h-[2px] bg-white rounded-full"></span>
+                            <span class="line-middle absolute transform top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] w-[80%] h-[2px] bg-white rounded-full"></span>
+                            <span class="line-down absolute bottom-0 w-full h-[2px] bg-white rounded-full"></span>
+                        </div>
+                    </div>
+                </div>   
+            </div>
+            
+            <!-- Navigation Menu -->
+            <div class="main-nav-wrapper hidden fixed left-0 top-0 right-0 bottom-0 w-full h-screen bg-black z-10 pt-[16px] tab:pt-[33px] pl-[20px] tab:pl-[83px] xl:pl-[133px] pr-[21px] tab:pr-[51px] transition-all">
+                <div class="menu-header w-full flex justify-between">
+                    <img src="assets/images/logo.png" alt="Logo">
+                    <span id="closeMenu">
+                        <i class="fa-solid fa-xmark text-primary-text-color text-[28px] cursor-pointer"></i>
+                    </span>
+                </div>
+                <ul class=" max-w-[400px] mt-[21px] tab:mt-[51px] text-[14px] tab:text-[24px] leading-[21px] tab:leading-[32px]">
+                    <li class="pb-[8px] tab:pb-[12px]"> <a href="#" class="transition-colors hover:text-primarycolor"> Home </a> </li>
+                    <li class="pb-[8px] tab:pb-[12px]"> <a href="#" class="transition-colors hover:text-primarycolor"> About Us </a> </li>
+                    <li class="pb-[8px] tab:pb-[12px]"> 
+                        <a href="#" class="flex items-center gap-[12px] transition-colors hover:text-primarycolor" id="sub-menu-trigger"> 
+                            <span> Services </span> <span class="mt-1 transition-transform"> 
+                                <i class="fa-solid fa-angle-down text-primarycolor"></i> 
+                            </span> 
+                        </a> 
+                        <div class="sub-menu hidden pl-[20px] tab:pl-[34px]">
+                            <ul class="mt-[8px] tab:mt-[20px]">
+                                <li class="pb-[5px] tab:pb-[12px]"> <a href="#" class="transition-colors hover:text-primarycolor"> Digital Marketing </a> </li>
+                                <li class="pb-[5px] tab:pb-[12px]"> <a href="#" class="transition-colors hover:text-primarycolor"> Web Design and Development </a> </li>
+                                <li class="pb-[5px] tab:pb-[12px]"> <a href="#" class="transition-colors hover:text-primarycolor"> Social Media Marketing </a> </li>
+                                <li class="pb-[5px] tab:pb-[12px]"> <a href="#" class="transition-colors hover:text-primarycolor"> E-Commerce Development </a> </li>
+                                <li class="pb-[5px] tab:pb-[12px]"> <a href="#" class="transition-colors hover:text-primarycolor"> SEO </a> </li>
+                                <li class="pb-[5px] tab:pb-[12px]"> <a href="#" class="transition-colors hover:text-primarycolor"> UI/UX Design </a> </li>
+                                <li class="pb-[5px] tab:pb-[12px]"> <a href="#" class="transition-colors hover:text-primarycolor"> Graphic Design </a> </li>
+                                <li class="pb-[5px] tab:pb-[12px]"> <a href="#" class="transition-colors hover:text-primarycolor"> Online Reputation Management </a> </li>
+                                <li class="pb-[5px] tab:pb-[12px]"> <a href="#" class="transition-colors hover:text-primarycolor"> PPC Management </a> </li>
+                                <li class="pb-[5px] tab:pb-[12px]"> <a href="#" class="transition-colors hover:text-primarycolor"> Social Media Manager </a> </li>
+                                <li class="pb-[5px] tab:pb-[12px]"> <a href="#" class="transition-colors hover:text-primarycolor"> Content Writing </a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="pb-[8px] tab:pb-[12px]"> <a href="#" class="transition-colors hover:text-primarycolor"> Life at SHUVO IT </a> </li>
+                    <li class="pb-[8px] tab:pb-[12px]"> <a href="#" class="transition-colors hover:text-primarycolor"> Career </a> </li>
+                    <li class="pb-[8px] tab:pb-[12px]"> <a href="#" class="transition-colors hover:text-primarycolor"> Our Team </a> </li>
+                    <li class="pb-[8px] tab:pb-[12px]"> <a href="#" class="transition-colors hover:text-primarycolor"> Contact Us </a> </li>
+                </ul>
+            </div>
+        </header>
+        <!-- Header End -->
+
+
+        <!-- Hero Section -->
+        <div class="web-dev-hero pt-[138px]">
+            <div class="container">
+                <h1 class="wd-hero-title text-[177px] leading-[191px]">
+                    WE DESIGN FOR <span class="font-bold"> HUMAN, </span> NOT <span class="quirky-alien text-primarycolor font-medium"> ALIEN </span>
+                </h1>
+                <p class="wd-hero-sub-desc text-[35px] leading-[80px] -mt-[20px]">
+                    If you hire Experienced <span class="text-[#368CD6]"> {Developers} </span> ? 
+                    <code class="text-[#4EBA9F]"> <span class="code-left -mr-[20px] text-[#616161]">&lt;</span> Save Money <span class="code-right text-[#616161] -ml-[20px]"> /&gt; </span></code>
+                     : 'All Over'
+                </p>
+               <a href="#" class="wd-hero-btn block text-black text-[30px] leading-[60px] font-medium py-[12px] bg-primarycolor rounded-[15px] w-[311px] text-center uppercase mt-[76px]"> Let's Talk </a>
+            </div>
+        </div>
+        <!-- Hero Section End -->
+
+        <!-- Our Specialty -->
+        <section class="our-specialty mt-[304px]">
+            <div class="container">
+                <div class="page-s-header-content wd-header-t flex justify-between items-center gap-11">
+                    <h2 class="text-[70px] w-[45%] leading-[93px] font-semibold uppercase relative after:content-[''] after:absolute after:bottom-[25px] after:ml-[15px] after:w-[45%] after:h-[1px] after:bg-primarycolor after:top-[]"> OUR <span class="text-primarycolor"> SPECIALITY </span> </h2>
+                    <p class="w-[55%] text-[24px] leading-[30px]">
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt.
+                    </p>
+                </div>
+                
+                <!-- Our Specialty Wrapper -->
+                <div class="wd-specialty-wrapper wd-mt-fix flex flex-wrap justify-between gap-[32px] mt-[92px]">
+                    <div class="wd-specialty-item w-[32%] bg-[#0D0C0C] border border-[#707070] rounded-[20px] pl-[51px] pr-[50px] pt-[42px] pb-[80px]">
+                        <div class="wd-specialty-icon-b w-[57px] h-[57px] bg-[#191414] rounded-xl flex justify-center items-center mb-[45px]">
+                            <i class="fa-solid fa-file-invoice text-[32px]"></i>
+                        </div>
+                        <span class="wd-specialty-title uppercase text-[35px] leading-[46px] text-[#CFCFCF] font-medium"> HIGHLY EXPERIENCED </span>
+                        <p class="wd-specialty-desc text-[20px] leading-[25px] text-[#707070] pt-[14px]">
+                            We always recruit the most experienced developers in our team who can give you flawless prototype in a matter of time.
+                        </p>
+                    </div>
+                    <div class="wd-specialty-item w-[32%] bg-[#0D0C0C] border border-[#707070] rounded-[20px] pl-[51px] pr-[50px] pt-[42px] pb-[80px]">
+                        <div class="wd-specialty-icon-b w-[57px] h-[57px] bg-[#191414] rounded-xl flex justify-center items-center mb-[45px]">
+                            <i class="fa-solid fa-file-invoice text-[32px]"></i>
+                        </div>
+                        <span class="wd-specialty-title uppercase text-[35px] leading-[46px] text-[#CFCFCF] font-medium"> PROFESSIONALS </span>
+                        <p class="wd-specialty-desc text-[20px] leading-[25px] text-[#707070] pt-[14px]">
+                            Professionalism matters to us, so we hired professionals from the industry to serve you exceeding any obstacles and limitations.
+                        </p>
+                    </div>
+                    <div class="wd-specialty-item w-[32%] bg-[#0D0C0C] border border-[#707070] rounded-[20px] pl-[51px] pr-[50px] pt-[42px] pb-[80px]">
+                        <div class="wd-specialty-icon-b w-[57px] h-[57px] bg-[#191414] rounded-xl flex justify-center items-center mb-[45px]">
+                            <i class="fa-solid fa-file-invoice text-[32px]"></i>
+                        </div>
+                        <span class="wd-specialty-title uppercase text-[35px] leading-[46px] text-[#CFCFCF] font-medium"> CREATIVE UI/UX </span>
+                        <p class="wd-specialty-desc text-[20px] leading-[25px] text-[#707070] pt-[14px]">
+                            Creativity makes your audience entertained and interested in your work, so we bring creative UX/UI design at first.
+                        </p>
+                    </div>
+                    <div class="wd-specialty-item w-[32%] bg-[#0D0C0C] border border-[#707070] rounded-[20px] pl-[51px] pr-[50px] pt-[42px] pb-[80px]">
+                        <div class="wd-specialty-icon-b w-[57px] h-[57px] bg-[#191414] rounded-xl flex justify-center items-center mb-[45px]">
+                            <i class="fa-solid fa-file-invoice text-[32px]"></i>
+                        </div>
+                        <span class="wd-specialty-title uppercase text-[35px] leading-[46px] text-[#CFCFCF] font-medium"> SUPER FAST DELIVERY </span>
+                        <p class="wd-specialty-desc text-[20px] leading-[25px] text-[#707070] pt-[14px]">
+                            Promise and responsibility can build longer relationships. Keeping that as motto, we deliver our projects in time with full revisions.
+                        </p>
+                    </div>
+                    <div class="wd-specialty-item w-[32%] bg-[#0D0C0C] border border-[#707070] rounded-[20px] pl-[51px] pr-[50px] pt-[42px] pb-[80px]">
+                        <div class="wd-specialty-icon-b w-[57px] h-[57px] bg-[#191414] rounded-xl flex justify-center items-center mb-[45px]">
+                            <i class="fa-solid fa-file-invoice text-[32px]"></i>
+                        </div>
+                        <span class="wd-specialty-title uppercase text-[35px] leading-[46px] text-[#CFCFCF] font-medium"> FAST SUPPORT </span>
+                        <p class="wd-specialty-desc text-[20px] leading-[25px] text-[#707070] pt-[14px]">
+                            Our 24x7 active support team will respond you instantly in case of any urgency. We will connect you to the developers end for any issue.
+                        </p>
+                    </div>
+                    <div class="wd-specialty-item w-[32%] bg-[#0D0C0C] border border-[#707070] rounded-[20px] pl-[51px] pr-[50px] pt-[42px] pb-[80px]">
+                        <div class="wd-specialty-icon-b w-[57px] h-[57px] bg-[#191414] rounded-xl flex justify-center items-center mb-[45px]">
+                            <i class="fa-solid fa-file-invoice text-[32px]"></i>
+                        </div>
+                        <span class="wd-specialty-title uppercase text-[35px] leading-[46px] text-[#CFCFCF] font-medium"> SATISFIED SERVICE </span>
+                        <p class="wd-specialty-desc text-[20px] leading-[25px] text-[#707070] pt-[14px]">
+                            Our proven work results will make you come back again. We have clients from almost every countries with satisfaction.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Our Specialty End -->
+
+        <!-- Technical Expertise -->
+        <section class="technical-expertise com-sec-gap mt-[180px]">
+            <div class="container">
+                <h2 class="dm-sub-title text-[70px] leading-[93px] font-semibold uppercase"> TECHNICAL <span class="text-primarycolor"> EXPERTISE </span> </h2>
+                <p class="dm-agency-desc text-[30px] leading-[40px]">  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt. </p>
+                
+                <!-- Technical Expertise Wrapper -->
+                <div class="wd-technical-exp-wrapper flex flex-wrap gap-[32px] mt-[63px]">
+                    <div class="wd-technical-exp-item w-[243px] h-[277px] rounded-[20px] bg-[#1C1410] flex flex-col justify-center items-center gap-[29px] cursor-pointer transition-all">
+                        <img class="html hidden" src="assets/images/web-dev/expertise/html.svg" alt="HTML5">
+                        <span class="wd-technical-exp-title text-[#CFCFCF] text-[35px] leading-[43px] uppercase"> HTML5 </span>
+                    </div>
+                    <div class="wd-technical-exp-item w-[243px] h-[277px] rounded-[20px] bg-[#1C1410] flex flex-col justify-center items-center gap-[29px] cursor-pointer transition-all">
+                        <img class="html hidden" src="assets/images/web-dev/expertise/css.svg" alt="CSS3">
+                        <span class="wd-technical-exp-title text-[#CFCFCF] text-[35px] leading-[43px] uppercase"> CSS3 </span>
+                    </div>
+                    <div class="wd-technical-exp-item w-[243px] h-[277px] rounded-[20px] bg-[#1C1410] flex flex-col justify-center items-center gap-[29px] cursor-pointer transition-all">
+                        <img class="html hidden" src="assets/images/web-dev/expertise/java-script.svg" alt="JAVASCRIPT">
+                        <span class="wd-technical-exp-title text-[#CFCFCF] text-[35px] leading-[43px] uppercase"> JAVASCRIPT </span>
+                    </div>
+                    <div class="wd-technical-exp-item w-[243px] h-[277px] rounded-[20px] bg-[#1C1410] flex flex-col justify-center items-center gap-[29px] cursor-pointer transition-all">
+                        <img class="html hidden" src="assets/images/web-dev/expertise/react.svg" alt="REACT">
+                        <span class="wd-technical-exp-title text-[#CFCFCF] text-[35px] leading-[43px]"> REACT </span>
+                    </div>
+                    <div class="wd-technical-exp-item w-[243px] h-[277px] rounded-[20px] bg-[#1C1410] flex flex-col justify-center items-center gap-[29px] cursor-pointer transition-all">
+                        <img class="html hidden" src="assets/images/web-dev/expertise/php.svg" alt="PHP">
+                        <span class="wd-technical-exp-title text-[#CFCFCF] text-[35px] leading-[43px]"> PHP </span>
+                    </div>
+                    <div class="wd-technical-exp-item w-[243px] h-[277px] rounded-[20px] bg-[#1C1410] flex flex-col justify-center items-center gap-[29px] cursor-pointer transition-all">
+                        <img class="html hidden" src="assets/images/web-dev/expertise/laravel.svg" alt="LARAVEL">
+                        <span class="wd-technical-exp-title text-[#CFCFCF] text-[35px] leading-[43px]"> LARAVEL </span>
+                    </div>
+                    <div class="wd-technical-exp-item w-[243px] h-[277px] rounded-[20px] bg-[#1C1410] flex flex-col justify-center items-center gap-[29px] cursor-pointer transition-all">
+                        <img class="html hidden" src="assets/images/web-dev/expertise/asp.svg" alt="ASP.NET">
+                        <span class="wd-technical-exp-title text-[#CFCFCF] text-[35px] leading-[43px] uppercase"> ASP.NET </span>
+                    </div>
+                    <div class="wd-technical-exp-item w-[243px] h-[277px] rounded-[20px] bg-[#1C1410] flex flex-col justify-center items-center gap-[29px] cursor-pointer transition-all">
+                        <img class="html hidden" src="assets/images/web-dev/expertise/nodejs.svg" alt="NODE JS">
+                        <span class="wd-technical-exp-title text-[#CFCFCF] text-[35px] leading-[43px] uppercase"> NODE JS </span>
+                    </div>
+                    <div class="wd-technical-exp-item w-[243px] h-[277px] rounded-[20px] bg-[#1C1410] flex flex-col justify-center items-center gap-[29px] cursor-pointer transition-all">
+                        <img class="html hidden" src="assets/images/web-dev/expertise/wordpress.svg" alt="WORDPRESS">
+                        <span class="wd-technical-exp-title text-[#CFCFCF] text-[35px] leading-[43px] uppercase"> WORDPRESS </span>
+                    </div>
+                    <div class="wd-technical-exp-item w-[243px] h-[277px] rounded-[20px] bg-[#1C1410] flex flex-col justify-center items-center gap-[29px] cursor-pointer transition-all">
+                        <img class="html hidden" src="assets/images/web-dev/expertise/magento.svg" alt="MAGENTO">
+                        <span class="wd-technical-exp-title text-[#CFCFCF] text-[35px] leading-[43px]"> MAGENTO </span>
+                    </div>
+                    <div class="wd-technical-exp-item w-[243px] h-[277px] rounded-[20px] bg-[#1C1410] flex flex-col justify-center items-center gap-[29px] cursor-pointer transition-all">
+                        <img class="html hidden" src="assets/images/web-dev/expertise/shopify.svg" alt="SHOPIFY">
+                        <span class="wd-technical-exp-title text-[#CFCFCF] text-[35px] leading-[43px]"> SHOPIFY </span>
+                    </div>
+                    <div class="wd-technical-exp-item w-[243px] h-[277px] rounded-[20px] bg-[#1C1410] flex flex-col justify-center items-center gap-[29px] cursor-pointer transition-all">
+                        <img class="html hidden" src="assets/images/web-dev/expertise/joomla.svg" alt="JOOMLA">
+                        <span class="wd-technical-exp-title text-[#CFCFCF] text-[35px] leading-[43px]"> JOOMLA </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Technical Expertise End -->
+
+
+        <!-- Pricing Plan -->
+        <section class="pricing-plan com-sec-gap mt-[180px]">
+            <div class="container">
+                <h2 class="dm-sub-title text-[70px] leading-[93px] font-semibold uppercase"> OUR PRICING <span class="text-primarycolor"> PLANS </span> </h2>
+                <p class="dm-agency-desc text-[30px] leading-[40px]">  We Aren’t Just Your Agency - We Are Your Partner In Growth. </p>
+
+                <!-- Pricing Plan Wrapper -->
+                <div class="pricing-plan-wrapper flex justify-between gap-[32px] mt-[120px]">
+                    <div class="pricing-plan-item w-[32%] bg-[#1C1410] rounded-[20px]">
+                        <div class="pricing-header text-center pt-[14px] pb-[9px] px-[27px]"> 
+                            <span class="text-[#CFCFCF] text-[45px] leading-[60px] uppercase"> STARTER </span> 
+                        </div>
+
+                        <div class="pricing-body pt-[53px] pb-[39px]">
+                            <div class="pricing-box w-full h-[220px] block mx-auto relative">
+                                <div 
+                                class="pricing-l-p w-[211px] h-[211px] rounded-full bg-[#F68E5C] opacity-[0.15] absolute left-[50%] top-[50%] transform -translate-x-[50%] -translate-y-[50%] z-[1]"></div>
+                                <div 
+                                class="pricing-layer w-[186px] h-[186px] rounded-full bg-[#F265229E] opacity-[0.5] absolute left-[50%] top-[50%] transform -translate-x-[50%] -translate-y-[50%] z-[2]"></div>
+                                <div 
+                                class="pricing-layer-inner w-[148px] h-[148px] rounded-full bg-[#F26522] opacity-[0.2] absolute left-[50%] top-[50%] transform -translate-x-[50%] -translate-y-[50%] z-[3]"></div>
+                                <svg
+                                class=" absolute left-[50%] top-[50%] transform -translate-x-[50%] -translate-y-[50%] z-[4]"
+                                xmlns="http://www.w3.org/2000/svg" width="59.2" height="63.9" viewBox="0 0 59.2 63.9">
+                                    <g id="cycle" transform="translate(-3.4 -1)" opacity="0.5">
+                                      <path id="Path_404" data-name="Path 404" d="M37.7,39.8V60.2a4.7,4.7,0,0,1-9.4,0V39.8a4.7,4.7,0,1,1,9.4,0Z" fill="rgba(255,255,255,0.8)"/>
+                                      <path id="Path_405" data-name="Path 405" d="M6.5,1a3.1,3.1,0,0,0,0,6.2h6.4V1Zm53,0H53.1V7.3h6.4a3.116,3.116,0,0,0,3.1-3.1A3.138,3.138,0,0,0,59.5,1ZM40.6,2.6c0,.1.1,8.2-7.6,8.2s-7.6-8.1-7.6-8.2a1,1,0,0,0-1-1H14.9V6.7H24a9.9,9.9,0,0,0,5.5,5.5v4.7a6.108,6.108,0,0,0,0,10v5.2c-2.8,1-4.7,3.2-4.7,5.7v2.3H18.1a.945.945,0,0,0-1,1,1,1,0,0,0,1,1h6.7V54.5a1.075,1.075,0,0,0,1,1,1,1,0,0,0,1-1V37.8c0-2.4,2.8-4.3,6.2-4.3s6.2,1.9,6.2,4.3V54.5a1,1,0,0,0,2,0V51.4h6.7a1.075,1.075,0,0,0,1-1,1,1,0,0,0-1-1H41.2V37.8c0-2.5-1.9-4.7-4.7-5.7V26.9a6.114,6.114,0,0,0,2.6-5,5.979,5.979,0,0,0-2.6-5V12.2A9.9,9.9,0,0,0,42,6.7h9.2V1.6H41.7a1.028,1.028,0,0,0-1.1,1ZM31.5,12.7a7.569,7.569,0,0,0,1.5.1,7.569,7.569,0,0,0,1.5-.1v3.2a7.719,7.719,0,0,0-1.5-.2,7.719,7.719,0,0,0-1.5.2Zm3,18.8a7.569,7.569,0,0,0-1.5-.1,7.569,7.569,0,0,0-1.5.1V27.7a7.719,7.719,0,0,0,1.5.2,7.719,7.719,0,0,0,1.5-.2Zm2.6-9.7A4.055,4.055,0,0,1,33,25.9a4.118,4.118,0,0,1-4.1-4.1,4.1,4.1,0,1,1,8.2,0Z" fill="rgba(255,255,255,0.8)"/>
+                                    </g>
+                                </svg>
+                            </div>
+    
+                            <div class="pricing-tag block mx-auto mt-[44px] text-center">
+                                <span class="pricing-amnt text-[#F26522] text-[60px] leading-[80px] font-semibold opacity-[0.7]"> $3000 </span>
+                            </div>
+                            
+                            <ul class="pricing-features list-disc list-outside pl-[38px] text-[20px] leading-[30px] text-[#707070] mt-[28px] mb-[58px]">
+                                <li class="marker:text-primarycolor"> WordPress Platform </li>
+                                <li class="marker:text-primarycolor"> Premium Theme </li>
+                                <li class="marker:text-primarycolor"> Theme Customization</li>
+                                <li class="marker:text-primarycolor"> Up to 4 Pages Responsive Design </li>
+                                <li class="marker:text-primarycolor"> Site Kit N/A </li>
+                                <li class="marker:text-primarycolor"> On Page SEO </li>
+                                <li class="marker:text-primarycolor"> Speed Optimization N/A </li>
+                                <li class="marker:text-primarycolor"> Plugin Installation 6 </li>
+                                <li class="marker:text-primarycolor"> Admin Training N/A </li>
+                            </ul>
+
+                            <a href="#"
+                            class="pricing-btn flex justify-center items-center mx-auto w-[310px] h-[60px] bg-[#653C29] rounded-[10px] text-[20px] leading-[35px] uppercase font-medium text-[#1C1410] cursor-pointer"> GET STARTED </a>
+                        </div>
+                    </div>
+
+                    <div class="pricing-plan-item w-[32%] bg-[#1C1410] rounded-[20px]">
+                        <div class="pricing-header text-center pt-[14px] pb-[9px] px-[27px] relative"> 
+                            <span class="text-[#CFCFCF] text-[45px] leading-[60px] uppercase"> BUSINESS </span> 
+                            <span class="pricing-label absolute right-0 top-0 "> <i class="fa-solid fa-star text-[27px] absolute right-[14px] -top-[70px]"></i> </span>
+                        </div>
+
+                        <div class="pricing-body pt-[53px] pb-[39px]">
+                            <div class="pricing-box w-full h-[220px] block mx-auto relative">
+                                <div 
+                                class="pricing-l-p w-[211px] h-[211px] rounded-full bg-[#F68E5C] opacity-[0.15] absolute left-[50%] top-[50%] transform -translate-x-[50%] -translate-y-[50%] z-[1]"></div>
+                                <div 
+                                class="pricing-layer w-[186px] h-[186px] rounded-full bg-[#F265229E] opacity-[0.5] absolute left-[50%] top-[50%] transform -translate-x-[50%] -translate-y-[50%] z-[2]"></div>
+                                <div 
+                                class="pricing-layer-inner w-[148px] h-[148px] rounded-full bg-[#F26522] opacity-[0.2] absolute left-[50%] top-[50%] transform -translate-x-[50%] -translate-y-[50%] z-[3]"></div>
+                                <svg
+                                class=" absolute left-[50%] top-[50%] transform -translate-x-[50%] -translate-y-[50%] z-[4]"
+                                xmlns="http://www.w3.org/2000/svg" width="57.23" height="63.584" viewBox="0 0 57.23 63.584">
+                                    <g id="bike-" transform="translate(-4.2 -0.9)" opacity="0.5">
+                                      <path id="Path_406" data-name="Path 406" d="M32.758,36.9A6.445,6.445,0,0,0,26.3,43.358v14.9a6.458,6.458,0,1,0,12.915,0v-14.9A6.445,6.445,0,0,0,32.758,36.9Z" transform="translate(-0.144 -0.234)" fill="#fff"/>
+                                      <path id="Path_407" data-name="Path 407" d="M58.32,6.8H53.353a3.35,3.35,0,0,0-3.378,3.378v.3l-3.875.6a11.62,11.62,0,0,1,.5,1.987l4.173-.6a3.3,3.3,0,0,0,2.583,1.292H58.32A3.35,3.35,0,0,0,61.7,10.377,3.342,3.342,0,0,0,58.32,6.8Z" transform="translate(-0.273 -0.038)" fill="#fff"/>
+                                      <path id="Path_408" data-name="Path 408" d="M15.029,12.463l3.775.5a14.525,14.525,0,0,1,.5-1.987l-3.378-.5v-.3A3.35,3.35,0,0,0,12.545,6.8H7.578a3.378,3.378,0,0,0,0,6.756h4.868A3,3,0,0,0,15.029,12.463Z" transform="translate(0 -0.038)" fill="#fff"/>
+                                      <path id="Path_409" data-name="Path 409" d="M49.358,18.623l-4.57-1.888A17.82,17.82,0,0,0,41.906,6.9L36.74,12.96a5.373,5.373,0,0,1-4.073,1.987,5.223,5.223,0,0,1-4.073-1.987L23.427,6.9a17.583,17.583,0,0,0-2.881,9.836l-4.57,1.888A5.8,5.8,0,0,0,12.5,25.379l.7,3.08h5.762a.993.993,0,1,1,0,1.987H13.592l.894,3.775h6.458a.993.993,0,1,1,0,1.987H14.983l2.086,8.842a1.07,1.07,0,0,0,.993.795H23.03V53a.993.993,0,0,0,1.987,0V40.679c0-4.371,3.875-6.358,7.551-6.358s7.65,1.987,7.65,6.458V52.9a.993.993,0,1,0,1.987,0V45.746h4.967a.967.967,0,0,0,.993-.795l2.086-8.842H44.589a.993.993,0,1,1,0-1.987h6.16l.894-3.775H46.377a.993.993,0,1,1,0-1.987h5.762l.7-3.08a5.687,5.687,0,0,0-3.477-6.656ZM37.734,30.545H27.6a4.77,4.77,0,0,1-4.769-4.769A4.855,4.855,0,0,1,27.6,20.908H37.734A4.77,4.77,0,0,1,42.5,25.677a4.855,4.855,0,0,1-4.769,4.868Z" transform="translate(-0.053 -0.039)" fill="#fff"/>
+                                      <path id="Path_410" data-name="Path 410" d="M32.747,12.921A3.45,3.45,0,0,0,35.33,11.63l5.464-6.358c-.2-.2-.3-.4-.5-.6C38.013,2.291,35.33.9,32.747.9S27.482,2.291,25.2,4.576c-.2.2-.3.4-.5.6l5.464,6.358A3.007,3.007,0,0,0,32.747,12.921Z" transform="translate(-0.133)" fill="#fff"/>
+                                      <path id="Path_411" data-name="Path 411" d="M37.815,23H27.682A2.777,2.777,0,0,0,24.9,25.782a2.843,2.843,0,0,0,2.782,2.782H37.815a2.782,2.782,0,0,0,0-5.564Z" transform="translate(-0.135 -0.144)" fill="#fff"/>
+                                    </g>
+                                </svg>
+                            </div>
+    
+                            <div class="pricing-tag block mx-auto mt-[44px] text-center">
+                                <span class="pricing-amnt text-[#F26522] text-[60px] leading-[80px] font-semibold opacity-[0.7]"> $5000 </span>
+                            </div>
+                            
+                            <ul class="pricing-features list-disc list-outside pl-[38px] text-[20px] leading-[30px] text-[#707070] mt-[28px] mb-[58px]">
+                                <li class="marker:text-primarycolor"> WordPress Platform </li>
+                                <li class="marker:text-primarycolor"> Premium Theme </li>
+                                <li class="marker:text-primarycolor"> Theme Customization</li>
+                                <li class="marker:text-primarycolor"> Up to 4 Pages Responsive Design </li>
+                                <li class="marker:text-primarycolor"> Site Kit N/A </li>
+                                <li class="marker:text-primarycolor"> On Page SEO </li>
+                                <li class="marker:text-primarycolor"> Speed Optimization N/A </li>
+                                <li class="marker:text-primarycolor"> Plugin Installation 6 </li>
+                                <li class="marker:text-primarycolor"> Admin Training N/A </li>
+                            </ul>
+
+                            <a href="#"
+                            class="pricing-btn flex justify-center items-center mx-auto w-[310px] h-[60px] bg-[#653C29] rounded-[10px] text-[20px] leading-[35px] uppercase font-medium text-[#1C1410] cursor-pointer"> GET STARTED </a>
+                        </div>
+                    </div>
+
+                    <div class="pricing-plan-item w-[32%] bg-[#1C1410] rounded-[20px]">
+                        <div class="pricing-header text-center pt-[14px] pb-[9px] px-[27px]"> 
+                            <span class="text-[#CFCFCF] text-[45px] leading-[60px] uppercase"> CUSTOM </span> 
+                        </div>
+
+                        <div class="pricing-body pt-[53px] pb-[39px]">
+                            <div class="pricing-box w-full h-[220px] block mx-auto relative">
+                                <div 
+                                class="pricing-l-p w-[211px] h-[211px] rounded-full bg-[#F68E5C] opacity-[0.15] absolute left-[50%] top-[50%] transform -translate-x-[50%] -translate-y-[50%] z-[1]"></div>
+                                <div 
+                                class="pricing-layer w-[186px] h-[186px] rounded-full bg-[#F265229E] opacity-[0.5] absolute left-[50%] top-[50%] transform -translate-x-[50%] -translate-y-[50%] z-[2]"></div>
+                                <div 
+                                class="pricing-layer-inner w-[148px] h-[148px] rounded-full bg-[#F26522] opacity-[0.2] absolute left-[50%] top-[50%] transform -translate-x-[50%] -translate-y-[50%] z-[3]"></div>
+                                <svg
+                                class=" absolute left-[50%] top-[50%] transform -translate-x-[50%] -translate-y-[50%] z-[4]"
+                                xmlns="http://www.w3.org/2000/svg" width="74" height="49.333" viewBox="0 0 74 49.333">
+                                    <path id="car" d="M89.332,116.356c-.462-.771-5.027-2.743-5.027-2.743.794-.41,1.337-.495,1.337-2.191,0-1.85-.009-2.467-1.243-2.467H80.214c-.017-.037-.035-.076-.052-.114-2.7-5.9-3.063-7.389-7.092-9.4-5.4-2.687-15.534-2.823-19.505-2.823s-14.1.136-19.5,2.823c-4.033,2-3.933,3.036-7.092,9.4a.589.589,0,0,1-.062.114H22.723c-1.224,0-1.233.617-1.233,2.467,0,1.7.543,1.781,1.337,2.191a43.95,43.95,0,0,0-5.027,2.743c-.617.617-1.233,4.933-1.233,12.333s.617,14.8.617,14.8h1.841c0,2.158.318,2.467,1.243,2.467H32.6c.925,0,1.233-.308,1.233-2.467H73.3c0,2.158.308,2.467,1.233,2.467H87.173c.617,0,.925-.463.925-2.467h1.85s.617-7.554.617-14.8-.771-11.562-1.233-12.333ZM33.41,123.284a79.677,79.677,0,0,1-8.454.472c-3.148,0-3.256.2-3.478-1.764a11.125,11.125,0,0,1,.079-2.7l.1-.47h.462a21.26,21.26,0,0,1,6.868,1.045,15.108,15.108,0,0,1,4.639,2.322,2.222,2.222,0,0,1,.826.95Zm38.1,11.1-.681,1.705H36.3s.06-.094-.771-1.724c-.617-1.206.154-1.976,1.374-2.414a51.3,51.3,0,0,1,16.664-3.262c7.4,0,14.439,2.078,16.727,3.262.848.438,1.9.746,1.221,2.442ZM31.893,113.336a14.836,14.836,0,0,1-1.5.011c.4-.715.626-1.512,1.019-2.345,1.233-2.621,2.644-5.587,5.155-6.837,3.629-1.807,11.151-2.621,16.994-2.621s13.365.808,16.994,2.621c2.511,1.25,3.916,4.218,5.155,6.837.4.84.617,1.643,1.03,2.363-.308.017-.663,0-1.509-.029Zm53.607,8.65c-.33,1.924-.022,1.77-3.324,1.77a79.681,79.681,0,0,1-8.454-.472.662.662,0,0,1-.213-1.095,14.468,14.468,0,0,1,4.639-2.322,19.984,19.984,0,0,1,6.951-1.031.5.5,0,0,1,.476.462,10.811,10.811,0,0,1-.076,2.693Z" transform="translate(-16.565 -96.623)" fill="#c29e8c"/>
+                                </svg>
+                            </div>
+    
+                            <div class="pricing-tag block mx-auto mt-[44px] text-center">
+                                <span class="pricing-amnt text-[#F26522] text-[60px] leading-[80px] font-semibold opacity-[0.7]"> $8000 </span>
+                            </div>
+                            
+                            <ul class="pricing-features list-disc list-outside pl-[38px] text-[20px] leading-[30px] text-[#707070] mt-[28px] mb-[58px]">
+                                <li class="marker:text-primarycolor"> WordPress Platform </li>
+                                <li class="marker:text-primarycolor"> Premium Theme </li>
+                                <li class="marker:text-primarycolor"> Theme Customization</li>
+                                <li class="marker:text-primarycolor"> Up to 4 Pages Responsive Design </li>
+                                <li class="marker:text-primarycolor"> Site Kit N/A </li>
+                                <li class="marker:text-primarycolor"> On Page SEO </li>
+                                <li class="marker:text-primarycolor"> Speed Optimization N/A </li>
+                                <li class="marker:text-primarycolor"> Plugin Installation 6 </li>
+                                <li class="marker:text-primarycolor"> Admin Training N/A </li>
+                            </ul>
+
+                            <a href="#" 
+                            class="pricing-btn flex justify-center items-center mx-auto w-[310px] h-[60px] bg-[#653C29] rounded-[10px] text-[20px] leading-[35px] uppercase font-medium text-[#1C1410] cursor-pointer"> GET STARTED </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Pricing Plan End -->
+
+
+        <!-- Marketing Oppurtunities -->
+        <section class="marketing-oppurtunities com-sec-gap mt-[180px]">
+            <div class="container">
+                <div class="marketing-op-wrapper flex justify-between items-center">
+                    <div class="marketing-op-items w-[802px] pt-[195px] pb-[128px] rounded-[20px] bg-[#CFCFCF] pl-[91px] flex items-center">
+                        <div class="max-w-[507px]">
+                            <h3 class="m-op-title text-[#653C29] text-[65px] leading-[75px] font-extrabold mb-[23px]"> RELISH THE MARKETING OPPORTUNITIES </h3>
+                            <p class="text-[#1C1410] text-[24px] leading-[36px]">
+                                Enjoy flourishing online shopping to increase product sales. Connect our speed optimization secret with your eCommerce website.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="marketing-op-items flex gap-[33px] flex-col">
+                        <div class="marketing-op-items-s max-w-[943px] bg-[#1C1410] rounded-[20px] pl-[55px] pt-[51px] pb-[34px] pr-[67px] -ml-[94px]">
+                            <span class="m-op-items-s-title block text-[#CFCFCF] text-[30px] leading-[30px] font-medium pb-[16px]"> Ecommerce Solutions </span>
+                            <p class="text-[#CFCFCF] text-[24px] leading-[36px] mb-[30px]">
+                                We keep the streamline of customer experience in our service. You can improve order tracking with our solutions.
+                            </p>
+                            <a href="#" class="flex justify-center items-center text-[#1C1410] text-[26px] leading-[36px] uppercase w-[307px] bg-[#FFFFFF] rounded-[9px] py-[8px] ">
+                                EXPLORE PACKAGES
+                            </a>
+                        </div>
+                        <div class="marketing-op-items-s max-w-[943px] bg-[#1C1410] rounded-[20px] pl-[55px] pt-[51px] pb-[34px] pr-[67px] -ml-[94px]">
+                            <span class="m-op-items-s-title block text-[#CFCFCF] text-[30px] leading-[30px] font-medium pb-[16px]"> Speed Optimization </span>
+                            <p class="text-[#CFCFCF] text-[24px] leading-[36px] mb-[30px]">
+                                We assure you faster site load with lower bounce rate. Let's make Google crawl your page quicker than your competitions.
+                            </p>
+                            <a href="#" class="flex justify-center items-center text-[#1C1410] text-[26px] leading-[36px] uppercase w-[307px] bg-[#FFFFFF] rounded-[9px] py-[8px] ">
+                                EXPLORE PACKAGES
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Marketing Oppurtunities End -->
+        
+        <!-- DM Faq -->
+        <section class="dm-faq pt-[180px]">
+            <div class="container">
+                <h3 class="dm-faq-tittle max-w-[1485px] text-[70px] leading-[80px] font-semibold"> SHUVO IT WEBSITE DEVELOPMENT SERVICES </h3>
+                
+                <!-- DM Faq Wrapper -->
+                <ul class="dm-faq-wrapper flex flex-col gap-[16px] mt-[81px]">
+                    <li class="dm-faq-item bg-[#2C2C2C] rounded-xl py-[45px] px-[50px] flex justify-center flex-col items-start cursor-pointer relative"> 
+                        <span class="text-[30px] leading-[40px] text-left"> How can digital marketing improve lead generation? </span> 
+                        <i class="fa-solid fa-arrow-right-long text-[35px] text-primarycolor transform rotate-[45deg] absolute right-[50px] top-[50%] -translate-y-[50%]"></i>
+                        <p class="dm-faq-desc hidden pt-[20px]">
+                            The cost of digital marketing can vary widely depending on the specific strategies and tactics used, the level of competition in the market, and the goals of the business. Some digital marketing strategies, such as social media marketing and email marketing, can be relatively inexpensive, while others, such as pay-per-click advertising and search engine optimization, can be more costly. Additionally, the cost of digital marketing can depend on whether a business chooses to handle their marketing in-house or work with an agency or freelancer. Ultimately, the cost of digital marketing will depend on a variety of factors unique to each business, and it's important to carefully consider the potential return on investment before investing in any marketing strategy.
+                        </p>
+                    </li>
+                    <li class="dm-faq-item bg-[#2C2C2C] rounded-xl py-[45px] px-[50px] flex justify-center flex-col items-start cursor-pointer relative"> 
+                        <span class="text-[30px] leading-[40px] text-left"> How can digital marketing help small businesses? </span> 
+                        <i class="fa-solid fa-arrow-right-long text-[35px] text-primarycolor transform rotate-[45deg] absolute right-[50px] top-[50%] -translate-y-[50%]"></i>
+                        <p class="dm-faq-desc hidden pt-[20px]">
+                            The cost of digital marketing can vary widely depending on the specific strategies and tactics used, the level of competition in the market, and the goals of the business. Some digital marketing strategies, such as social media marketing and email marketing, can be relatively inexpensive, while others, such as pay-per-click advertising and search engine optimization, can be more costly. Additionally, the cost of digital marketing can depend on whether a business chooses to handle their marketing in-house or work with an agency or freelancer. Ultimately, the cost of digital marketing will depend on a variety of factors unique to each business, and it's important to carefully consider the potential return on investment before investing in any marketing strategy.
+                        </p>
+                    </li>
+                    <li class="dm-faq-item bg-[#2C2C2C] rounded-xl py-[45px] px-[50px] flex justify-center flex-col items-start cursor-pointer relative"> 
+                        <span class="text-[30px] leading-[40px] text-left"> How much does digital marketing cost? </span> 
+                        <i class="fa-solid fa-arrow-right-long text-[35px] text-primarycolor transform rotate-[45deg] absolute right-[50px] top-[50%] -translate-y-[50%]"></i>
+                        <p class="dm-faq-desc hidden pt-[20px]">
+                            The cost of digital marketing can vary widely depending on the specific strategies and tactics used, the level of competition in the market, and the goals of the business. Some digital marketing strategies, such as social media marketing and email marketing, can be relatively inexpensive, while others, such as pay-per-click advertising and search engine optimization, can be more costly. Additionally, the cost of digital marketing can depend on whether a business chooses to handle their marketing in-house or work with an agency or freelancer. Ultimately, the cost of digital marketing will depend on a variety of factors unique to each business, and it's important to carefully consider the potential return on investment before investing in any marketing strategy.
+                        </p>
+                    </li>
+                    <li class="dm-faq-item bg-[#2C2C2C] rounded-xl py-[45px] px-[50px] flex justify-center flex-col items-start cursor-pointer relative"> 
+                        <span class="text-[30px] leading-[40px] text-left"> What does a digital marketing agency do? </span> 
+                        <i class="fa-solid fa-arrow-right-long text-[35px] text-primarycolor transform rotate-[45deg] absolute right-[50px] top-[50%] -translate-y-[50%]"></i>
+                        <p class="dm-faq-desc hidden pt-[20px]">
+                            The cost of digital marketing can vary widely depending on the specific strategies and tactics used, the level of competition in the market, and the goals of the business. Some digital marketing strategies, such as social media marketing and email marketing, can be relatively inexpensive, while others, such as pay-per-click advertising and search engine optimization, can be more costly. Additionally, the cost of digital marketing can depend on whether a business chooses to handle their marketing in-house or work with an agency or freelancer. Ultimately, the cost of digital marketing will depend on a variety of factors unique to each business, and it's important to carefully consider the potential return on investment before investing in any marketing strategy.
+                        </p>
+                    </li>
+                    <li class="dm-faq-item bg-[#2C2C2C] rounded-xl py-[45px] px-[50px] flex justify-center flex-col items-start cursor-pointer relative"> 
+                        <span class="text-[30px] leading-[40px] text-left"> Can you guarantee an ROI for my campaign? </span> 
+                        <i class="fa-solid fa-arrow-right-long text-[35px] text-primarycolor transform rotate-[45deg] absolute right-[50px] top-[50%] -translate-y-[50%]"></i>
+                        <p class="dm-faq-desc hidden pt-[20px]">
+                            The cost of digital marketing can vary widely depending on the specific strategies and tactics used, the level of competition in the market, and the goals of the business. Some digital marketing strategies, such as social media marketing and email marketing, can be relatively inexpensive, while others, such as pay-per-click advertising and search engine optimization, can be more costly. Additionally, the cost of digital marketing can depend on whether a business chooses to handle their marketing in-house or work with an agency or freelancer. Ultimately, the cost of digital marketing will depend on a variety of factors unique to each business, and it's important to carefully consider the potential return on investment before investing in any marketing strategy.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- DM Faq End -->
+
+        <!-- Footer Section -->
+        <footer class="mt-[75.05px] tab:mt-[202.75px]">
+            <div class="container">
+                <div class="footer-wrapper flex justify-between">
+                    <div class="footer-item w-full">
+                        <div class="f-company-details max-w-[480px] xl:max-w-[560px]">
+                            <img src="assets/images/logo.png" alt="Footer">
+                            <p class=" text-[14px] tab:text-[20px] leading-[18px] tab:leading-[27px] text-[#E1E1E1] mt-[9px]">
+                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.
+                            </p>
+                        </div>
+                        <div class="flex justify-between gap-[78.75px]">
+                            <div class="mt-[41px] tab:mt-[67px] w-[480px] xl:w-[560px]">
+                                <ul class="w-full flex flex-col gap-[12px]">
+                                    <li class="pb-[10px] border-b border-primary-text-color transition-colors hover:text-primarycolor hover:border-primarycolor text-primary-text-color text-[14px] tab:text-[24px] leading-[19px] tab:leading-[32px]"> 
+                                        <a href="#" class="flex justify-between items-center">
+                                            <span> ABOUT US </span> <i class="fa-solid fa-arrow-right transform -rotate-[45deg]"></i> 
+                                        </a>
+                                    </li>
+                                    <li class="pb-[10px] border-b border-primary-text-color transition-colors hover:text-primarycolor hover:border-primarycolor text-primary-text-color text-[14px] tab:text-[24px] leading-[19px] tab:leading-[32px]"> 
+                                        <a href="#" class="flex justify-between items-center">
+                                            <span> SEO </span> <i class="fa-solid fa-arrow-right transform -rotate-[45deg]"></i>
+                                        </a> 
+                                    </li>
+                                    <li class="pb-[10px]  transition-colors hover:text-primarycolor hover:border-primarycolor text-primary-text-color text-[14px] tab:text-[24px] leading-[19px] tab:leading-[32px]"> 
+                                        <a href="#" class="flex justify-between items-center">
+                                            <span> DIGITAL MARKETING </span> <i class="fa-solid fa-arrow-right transform -rotate-[45deg]"></i> 
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <ul class="social text-right -mt-[55px] tab:-mt-[105px]">
+                                <li class="pb-[8px] tab:pb-[15px] xl:pb-[23px]">
+                                    <a href="#" 
+                                    class="block text-primary-text-color transition-colors hover:text-primarycolor text-[16px] tab:text-[30px] leading-[22px] tab:leading-[35px] tracking-[0.32px] tab:tracking-normal font-bold">
+                                        FACEBOOK
+                                    </a>
+                                </li>
+                                <li class="pb-[8px] tab:pb-[15px] xl:pb-[23px]">
+                                    <a href="#" 
+                                    class="block text-primary-text-color transition-colors hover:text-primarycolor text-[16px] tab:text-[30px] leading-[22px] tab:leading-[35px] tracking-[0.32px] tab:tracking-normal font-bold">
+                                        TWITTER
+                                    </a>
+                                </li>
+                                <li class="pb-[8px] tab:pb-[15px] xl:pb-[23px]">
+                                    <a href="#" 
+                                    class="block text-primary-text-color transition-colors hover:text-primarycolor text-[16px] tab:text-[30px] leading-[22px] tab:leading-[35px] tracking-[0.32px] tab:tracking-normal font-bold">
+                                        INSTAGRAM
+                                    </a>
+                                </li>
+                                <li class="pb-[8px] tab:pb-[15px] xl:pb-[23px]">
+                                    <a href="#" 
+                                    class="block text-primary-text-color transition-colors hover:text-primarycolor text-[16px] tab:text-[30px] leading-[22px] tab:leading-[35px] tracking-[0.32px] tab:tracking-normal font-bold">
+                                        LINKEDIN
+                                    </a>
+                                </li>
+                                <li class="pb-[8px] tab:pb-[15px] xl:pb-[23px]">
+                                    <a href="#" 
+                                    class="block text-primary-text-color transition-colors hover:text-primarycolor text-[16px] tab:text-[30px] leading-[22px] tab:leading-[35px] tracking-[0.32px] tab:tracking-normal font-bold">
+                                        YOUTUBE
+                                    </a>
+                                </li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="footer-copyright pt-[12px] pb-[11.23px] tab:pb-[28.75px] border-t border-primary-text-color mt-[41.75px] tab:mt-[72px] xl:mt-[92px]">
+                    <p class="text-primary-text-color text-[12px] tab:text-[18px] leading-[16px] tab:leading-[24px] text-center">
+                        Copyright © 2023 <a href="#" class="text-primarycolor">UPSPELL</a>. All Rights Reserved.
+                    </p>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer End -->
+
+    </main>
+
+    <script defer src="assets/js/main.js"></script>
+
+</body>
+</html>
